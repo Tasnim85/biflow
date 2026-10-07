@@ -1,0 +1,99 @@
+[
+  {
+    "step": 0,
+    "column": "transaction_id",
+    "operation": "strip",
+    "changed_cells": 78,
+    "missing_before": 0,
+    "missing_after": 0,
+    "explanation": "Normalize surrounding spaces and blank cells in transaction_id; 78 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 1,
+    "column": "client_id",
+    "operation": "strip",
+    "changed_cells": 80,
+    "missing_before": 0,
+    "missing_after": 0,
+    "explanation": "Normalize surrounding spaces and blank cells in client_id; 80 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 2,
+    "column": "transaction_date",
+    "operation": "strip",
+    "changed_cells": 72,
+    "missing_before": 35,
+    "missing_after": 35,
+    "explanation": "Normalize surrounding spaces and blank cells in transaction_date; 72 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 3,
+    "column": "transaction_date",
+    "operation": "convert_dates",
+    "changed_cells": 2,
+    "missing_before": 35,
+    "missing_after": 37,
+    "explanation": "Parse ISO/day-first slash dates; preserve timestamp UTC where applicable; invalid values become missing.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 4,
+    "column": "amount",
+    "operation": "strip",
+    "changed_cells": 74,
+    "missing_before": 34,
+    "missing_after": 34,
+    "explanation": "Normalize surrounding spaces and blank cells in amount; 74 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 5,
+    "column": "amount",
+    "operation": "convert_numeric",
+    "changed_cells": 596,
+    "missing_before": 34,
+    "missing_after": 36,
+    "explanation": "Convert currency/number strings to nullable numeric values; 596 storage-type anomalies.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 6,
+    "column": "payment_method",
+    "operation": "strip",
+    "changed_cells": 73,
+    "missing_before": 36,
+    "missing_after": 36,
+    "explanation": "Normalize surrounding spaces and blank cells in payment_method; 73 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 7,
+    "column": "payment_method",
+    "operation": "normalize_categories",
+    "changed_cells": 594,
+    "missing_before": 36,
+    "missing_after": 36,
+    "explanation": "Canonical casefolded categories; 594 noncanonical cells. No fuzzy merging of distinct categories.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 8,
+    "column": "product_id",
+    "operation": "strip",
+    "changed_cells": 82,
+    "missing_before": 0,
+    "missing_after": 0,
+    "explanation": "Normalize surrounding spaces and blank cells in product_id; 82 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 9,
+    "operation": "remove_duplicates",
+    "rows_removed": 30,
+    "explanation": "Remove identical normalized rows; 30 raw duplicates detected.",
+    "origin": "local_rule"
+  }
+]

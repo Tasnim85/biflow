@@ -1,0 +1,1634 @@
+{
+  "backend": "asyncio",
+  "elapsed_seconds": 8.770432,
+  "sum_task_seconds": 10.563026,
+  "nodes": {
+    "Profiling": {
+      "agent": "Profiling",
+      "status": "COMPLETED",
+      "dependencies": [],
+      "started_at": "2026-10-07T12:48:49.003131+00:00",
+      "ended_at": "2026-10-07T12:48:49.280474+00:00",
+      "start_offset_seconds": 0.48493979999329895,
+      "end_offset_seconds": 0.762674400000833,
+      "duration_seconds": 0.22462,
+      "input": {
+        "customers": {
+          "rows": 210,
+          "columns": [
+            "customer_id",
+            "first_name",
+            "last_name",
+            "email",
+            "phone",
+            "city",
+            "age",
+            "registration_date"
+          ]
+        },
+        "clients_2026": {
+          "rows": 210,
+          "columns": [
+            "location",
+            "email_address",
+            "client_identifier",
+            "customer_age",
+            "telephone",
+            "signup_date",
+            "full_name"
+          ]
+        },
+        "transactions": {
+          "rows": 630,
+          "columns": [
+            "transaction_id",
+            "client_id",
+            "transaction_date",
+            "amount",
+            "payment_method",
+            "product_id"
+          ]
+        },
+        "employees": {
+          "rows": 52,
+          "columns": [
+            "employee_id",
+            "employee_name",
+            "department",
+            "salary",
+            "hire_date",
+            "email"
+          ]
+        },
+        "products": {
+          "rows": 32,
+          "columns": [
+            "product_id",
+            "product_name",
+            "category",
+            "price"
+          ]
+        }
+      },
+      "output": {
+        "customers": {
+          "dataset": "customers",
+          "rows": 210,
+          "columns": 8,
+          "column_names": {
+            "items": 8
+          },
+          "missing_count": 83,
+          "missing_percentage": 4.94,
+          "duplicate_count": 10,
+          "duplicate_percentage": 4.76,
+          "column_profiles": {
+            "items": 8
+          }
+        },
+        "clients_2026": {
+          "dataset": "clients_2026",
+          "rows": 210,
+          "columns": 7,
+          "column_names": {
+            "items": 7
+          },
+          "missing_count": 68,
+          "missing_percentage": 4.63,
+          "duplicate_count": 10,
+          "duplicate_percentage": 4.76,
+          "column_profiles": {
+            "items": 7
+          }
+        },
+        "transactions": {
+          "dataset": "transactions",
+          "rows": 630,
+          "columns": 6,
+          "column_names": {
+            "items": 6
+          },
+          "missing_count": 105,
+          "missing_percentage": 2.78,
+          "duplicate_count": 30,
+          "duplicate_percentage": 4.76,
+          "column_profiles": {
+            "items": 6
+          }
+        },
+        "employees": {
+          "dataset": "employees",
+          "rows": 52,
+          "columns": 6,
+          "column_names": {
+            "items": 6
+          },
+          "missing_count": 10,
+          "missing_percentage": 3.21,
+          "duplicate_count": 2,
+          "duplicate_percentage": 3.85,
+          "column_profiles": {
+            "items": 6
+          }
+        },
+        "products": {
+          "dataset": "products",
+          "rows": 32,
+          "columns": 4,
+          "column_names": {
+            "items": 4
+          },
+          "missing_count": 4,
+          "missing_percentage": 3.12,
+          "duplicate_count": 2,
+          "duplicate_percentage": 6.25,
+          "column_profiles": {
+            "items": 4
+          }
+        }
+      },
+      "confidence": null,
+      "error": null,
+      "explanation": "No dependencies; ready at pipeline start."
+    },
+    "Similarity · DSO 6": {
+      "agent": "Similarity · DSO 6",
+      "status": "COMPLETED",
+      "dependencies": [
+        "Profiling"
+      ],
+      "started_at": "2026-10-07T12:48:49.385978+00:00",
+      "ended_at": "2026-10-07T12:48:54.458318+00:00",
+      "start_offset_seconds": 0.8684235999826342,
+      "end_offset_seconds": 5.940764600003604,
+      "duration_seconds": 4.952684,
+      "input": {
+        "Profiling": {
+          "customers": {
+            "dataset": "customers",
+            "rows": 210,
+            "columns": 8,
+            "column_names": {
+              "items": 8
+            },
+            "missing_count": 83,
+            "missing_percentage": 4.94,
+            "duplicate_count": 10,
+            "duplicate_percentage": 4.76,
+            "column_profiles": {
+              "items": 8
+            }
+          },
+          "clients_2026": {
+            "dataset": "clients_2026",
+            "rows": 210,
+            "columns": 7,
+            "column_names": {
+              "items": 7
+            },
+            "missing_count": 68,
+            "missing_percentage": 4.63,
+            "duplicate_count": 10,
+            "duplicate_percentage": 4.76,
+            "column_profiles": {
+              "items": 7
+            }
+          },
+          "transactions": {
+            "dataset": "transactions",
+            "rows": 630,
+            "columns": 6,
+            "column_names": {
+              "items": 6
+            },
+            "missing_count": 105,
+            "missing_percentage": 2.78,
+            "duplicate_count": 30,
+            "duplicate_percentage": 4.76,
+            "column_profiles": {
+              "items": 6
+            }
+          },
+          "employees": {
+            "dataset": "employees",
+            "rows": 52,
+            "columns": 6,
+            "column_names": {
+              "items": 6
+            },
+            "missing_count": 10,
+            "missing_percentage": 3.21,
+            "duplicate_count": 2,
+            "duplicate_percentage": 3.85,
+            "column_profiles": {
+              "items": 6
+            }
+          },
+          "products": {
+            "dataset": "products",
+            "rows": 32,
+            "columns": 4,
+            "column_names": {
+              "items": 4
+            },
+            "missing_count": 4,
+            "missing_percentage": 3.12,
+            "duplicate_count": 2,
+            "duplicate_percentage": 6.25,
+            "column_profiles": {
+              "items": 4
+            }
+          }
+        }
+      },
+      "output": {
+        "pairs": {
+          "items": 10
+        },
+        "matrix": {
+          "rows": 5,
+          "columns": 5
+        },
+        "backend": "local_hashing",
+        "warning": null,
+        "threshold": 0.75,
+        "embedding_dimensions": 1024,
+        "formula": "Column score = .50 embedding cosine + .15 canonical name + .10 pattern + .10 dtype compatibility + .10 cardinality + .05 shared ID. Hungarian assignment; sum divided by maximum sch",
+        "recipes": {
+          "items": 1
+        },
+        "confidence": 0.8203
+      },
+      "confidence": 0.8203,
+      "error": null,
+      "explanation": "Waits for Profiling"
+    },
+    "Semantics · DSO 7": {
+      "agent": "Semantics · DSO 7",
+      "status": "COMPLETED",
+      "dependencies": [
+        "Profiling"
+      ],
+      "started_at": "2026-10-07T12:48:49.334449+00:00",
+      "ended_at": "2026-10-07T12:48:51.111938+00:00",
+      "start_offset_seconds": 0.8172682999866083,
+      "end_offset_seconds": 2.59369870001683,
+      "duration_seconds": 1.72533,
+      "input": {
+        "Profiling": {
+          "customers": {
+            "dataset": "customers",
+            "rows": 210,
+            "columns": 8,
+            "column_names": {
+              "items": 8
+            },
+            "missing_count": 83,
+            "missing_percentage": 4.94,
+            "duplicate_count": 10,
+            "duplicate_percentage": 4.76,
+            "column_profiles": {
+              "items": 8
+            }
+          },
+          "clients_2026": {
+            "dataset": "clients_2026",
+            "rows": 210,
+            "columns": 7,
+            "column_names": {
+              "items": 7
+            },
+            "missing_count": 68,
+            "missing_percentage": 4.63,
+            "duplicate_count": 10,
+            "duplicate_percentage": 4.76,
+            "column_profiles": {
+              "items": 7
+            }
+          },
+          "transactions": {
+            "dataset": "transactions",
+            "rows": 630,
+            "columns": 6,
+            "column_names": {
+              "items": 6
+            },
+            "missing_count": 105,
+            "missing_percentage": 2.78,
+            "duplicate_count": 30,
+            "duplicate_percentage": 4.76,
+            "column_profiles": {
+              "items": 6
+            }
+          },
+          "employees": {
+            "dataset": "employees",
+            "rows": 52,
+            "columns": 6,
+            "column_names": {
+              "items": 6
+            },
+            "missing_count": 10,
+            "missing_percentage": 3.21,
+            "duplicate_count": 2,
+            "duplicate_percentage": 3.85,
+            "column_profiles": {
+              "items": 6
+            }
+          },
+          "products": {
+            "dataset": "products",
+            "rows": 32,
+            "columns": 4,
+            "column_names": {
+              "items": 4
+            },
+            "missing_count": 4,
+            "missing_percentage": 3.12,
+            "duplicate_count": 2,
+            "duplicate_percentage": 6.25,
+            "column_profiles": {
+              "items": 4
+            }
+          }
+        }
+      },
+      "output": {
+        "customers": {
+          "items": 8
+        },
+        "clients_2026": {
+          "items": 7
+        },
+        "transactions": {
+          "items": 6
+        },
+        "employees": {
+          "items": 6
+        },
+        "products": {
+          "items": 4
+        }
+      },
+      "confidence": 0.9192,
+      "error": null,
+      "explanation": "Waits for Profiling"
+    },
+    "Data Quality": {
+      "agent": "Data Quality",
+      "status": "COMPLETED",
+      "dependencies": [
+        "Semantics · DSO 7"
+      ],
+      "started_at": "2026-10-07T12:48:51.314282+00:00",
+      "ended_at": "2026-10-07T12:48:52.833543+00:00",
+      "start_offset_seconds": 2.7959522000164725,
+      "end_offset_seconds": 4.315152700000908,
+      "duration_seconds": 1.379634,
+      "input": {
+        "Semantics · DSO 7": {
+          "customers": {
+            "items": 8
+          },
+          "clients_2026": {
+            "items": 7
+          },
+          "transactions": {
+            "items": 6
+          },
+          "employees": {
+            "items": 6
+          },
+          "products": {
+            "items": 4
+          }
+        }
+      },
+      "output": {
+        "customers": {
+          "rows": 210,
+          "cells": 1680,
+          "missing_cells": 83,
+          "duplicate_rows": 10,
+          "invalid_cells": 10,
+          "formatting_cells": 256,
+          "type_inconsistent_cells": 199,
+          "category_inconsistent_cells": 198,
+          "missing_rate": 4.94,
+          "duplicate_rate": 4.76,
+          "invalid_rate": 0.63,
+          "type_inconsistency_rate": 12.46
+        },
+        "clients_2026": {
+          "rows": 210,
+          "cells": 1470,
+          "missing_cells": 68,
+          "duplicate_rows": 10,
+          "invalid_cells": 10,
+          "formatting_cells": 226,
+          "type_inconsistent_cells": 199,
+          "category_inconsistent_cells": 199,
+          "missing_rate": 4.63,
+          "duplicate_rate": 4.76,
+          "invalid_rate": 0.71,
+          "type_inconsistency_rate": 14.19
+        },
+        "transactions": {
+          "rows": 630,
+          "cells": 3780,
+          "missing_cells": 105,
+          "duplicate_rows": 30,
+          "invalid_cells": 4,
+          "formatting_cells": 459,
+          "type_inconsistent_cells": 596,
+          "category_inconsistent_cells": 594,
+          "missing_rate": 2.78,
+          "duplicate_rate": 4.76,
+          "invalid_rate": 0.11,
+          "type_inconsistency_rate": 16.22
+        },
+        "employees": {
+          "rows": 52,
+          "cells": 312,
+          "missing_cells": 10,
+          "duplicate_rows": 2,
+          "invalid_cells": 3,
+          "formatting_cells": 50,
+          "type_inconsistent_cells": 50,
+          "category_inconsistent_cells": 50,
+          "missing_rate": 3.21,
+          "duplicate_rate": 3.85,
+          "invalid_rate": 0.99,
+          "type_inconsistency_rate": 16.56
+        },
+        "products": {
+          "rows": 32,
+          "cells": 128,
+          "missing_cells": 4,
+          "duplicate_rows": 2,
+          "invalid_cells": 0,
+          "formatting_cells": 13,
+          "type_inconsistent_cells": 30,
+          "category_inconsistent_cells": 31,
+          "missing_rate": 3.12,
+          "duplicate_rate": 6.25,
+          "invalid_rate": 0.0,
+          "type_inconsistency_rate": 24.19
+        }
+      },
+      "confidence": null,
+      "error": null,
+      "explanation": "Waits for Semantics · DSO 7"
+    },
+    "Cleaning Plan · DSO 5": {
+      "agent": "Cleaning Plan · DSO 5",
+      "status": "COMPLETED",
+      "dependencies": [
+        "Profiling",
+        "Similarity · DSO 6",
+        "Semantics · DSO 7",
+        "Data Quality"
+      ],
+      "started_at": "2026-10-07T12:48:54.516260+00:00",
+      "ended_at": "2026-10-07T12:48:54.579745+00:00",
+      "start_offset_seconds": 5.998278999992181,
+      "end_offset_seconds": 6.061228100035805,
+      "duration_seconds": 0.003299,
+      "input": {
+        "Profiling": {
+          "customers": {
+            "dataset": "customers",
+            "rows": 210,
+            "columns": 8,
+            "column_names": {
+              "items": 8
+            },
+            "missing_count": 83,
+            "missing_percentage": 4.94,
+            "duplicate_count": 10,
+            "duplicate_percentage": 4.76,
+            "column_profiles": {
+              "items": 8
+            }
+          },
+          "clients_2026": {
+            "dataset": "clients_2026",
+            "rows": 210,
+            "columns": 7,
+            "column_names": {
+              "items": 7
+            },
+            "missing_count": 68,
+            "missing_percentage": 4.63,
+            "duplicate_count": 10,
+            "duplicate_percentage": 4.76,
+            "column_profiles": {
+              "items": 7
+            }
+          },
+          "transactions": {
+            "dataset": "transactions",
+            "rows": 630,
+            "columns": 6,
+            "column_names": {
+              "items": 6
+            },
+            "missing_count": 105,
+            "missing_percentage": 2.78,
+            "duplicate_count": 30,
+            "duplicate_percentage": 4.76,
+            "column_profiles": {
+              "items": 6
+            }
+          },
+          "employees": {
+            "dataset": "employees",
+            "rows": 52,
+            "columns": 6,
+            "column_names": {
+              "items": 6
+            },
+            "missing_count": 10,
+            "missing_percentage": 3.21,
+            "duplicate_count": 2,
+            "duplicate_percentage": 3.85,
+            "column_profiles": {
+              "items": 6
+            }
+          },
+          "products": {
+            "dataset": "products",
+            "rows": 32,
+            "columns": 4,
+            "column_names": {
+              "items": 4
+            },
+            "missing_count": 4,
+            "missing_percentage": 3.12,
+            "duplicate_count": 2,
+            "duplicate_percentage": 6.25,
+            "column_profiles": {
+              "items": 4
+            }
+          }
+        },
+        "Similarity · DSO 6": {
+          "pairs": {
+            "items": 10
+          },
+          "matrix": {
+            "rows": 5,
+            "columns": 5
+          },
+          "backend": "local_hashing",
+          "warning": null,
+          "threshold": 0.75,
+          "embedding_dimensions": 1024,
+          "formula": "Column score = .50 embedding cosine + .15 canonical name + .10 pattern + .10 dtype compatibility + .10 cardinality + .05 shared ID. Hungarian assignment; sum divided by maximum sch",
+          "recipes": {
+            "items": 1
+          },
+          "confidence": 0.8203
+        },
+        "Semantics · DSO 7": {
+          "customers": {
+            "items": 8
+          },
+          "clients_2026": {
+            "items": 7
+          },
+          "transactions": {
+            "items": 6
+          },
+          "employees": {
+            "items": 6
+          },
+          "products": {
+            "items": 4
+          }
+        },
+        "Data Quality": {
+          "customers": {
+            "rows": 210,
+            "cells": 1680,
+            "missing_cells": 83,
+            "duplicate_rows": 10,
+            "invalid_cells": 10,
+            "formatting_cells": 256,
+            "type_inconsistent_cells": 199,
+            "category_inconsistent_cells": 198,
+            "missing_rate": 4.94,
+            "duplicate_rate": 4.76,
+            "invalid_rate": 0.63,
+            "type_inconsistency_rate": 12.46
+          },
+          "clients_2026": {
+            "rows": 210,
+            "cells": 1470,
+            "missing_cells": 68,
+            "duplicate_rows": 10,
+            "invalid_cells": 10,
+            "formatting_cells": 226,
+            "type_inconsistent_cells": 199,
+            "category_inconsistent_cells": 199,
+            "missing_rate": 4.63,
+            "duplicate_rate": 4.76,
+            "invalid_rate": 0.71,
+            "type_inconsistency_rate": 14.19
+          },
+          "transactions": {
+            "rows": 630,
+            "cells": 3780,
+            "missing_cells": 105,
+            "duplicate_rows": 30,
+            "invalid_cells": 4,
+            "formatting_cells": 459,
+            "type_inconsistent_cells": 596,
+            "category_inconsistent_cells": 594,
+            "missing_rate": 2.78,
+            "duplicate_rate": 4.76,
+            "invalid_rate": 0.11,
+            "type_inconsistency_rate": 16.22
+          },
+          "employees": {
+            "rows": 52,
+            "cells": 312,
+            "missing_cells": 10,
+            "duplicate_rows": 2,
+            "invalid_cells": 3,
+            "formatting_cells": 50,
+            "type_inconsistent_cells": 50,
+            "category_inconsistent_cells": 50,
+            "missing_rate": 3.21,
+            "duplicate_rate": 3.85,
+            "invalid_rate": 0.99,
+            "type_inconsistency_rate": 16.56
+          },
+          "products": {
+            "rows": 32,
+            "cells": 128,
+            "missing_cells": 4,
+            "duplicate_rows": 2,
+            "invalid_cells": 0,
+            "formatting_cells": 13,
+            "type_inconsistent_cells": 30,
+            "category_inconsistent_cells": 31,
+            "missing_rate": 3.12,
+            "duplicate_rate": 6.25,
+            "invalid_rate": 0.0,
+            "type_inconsistency_rate": 24.19
+          }
+        }
+      },
+      "output": {
+        "customers": {
+          "dataset": "customers",
+          "steps": {
+            "items": 17
+          },
+          "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+          "provider": "local_rules",
+          "provider_message": "No API key required.",
+          "reused_steps": 0
+        },
+        "clients_2026": {
+          "dataset": "clients_2026",
+          "steps": {
+            "items": 16
+          },
+          "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+          "provider": "local_rules",
+          "provider_message": "No API key required.",
+          "reused_steps": 14
+        },
+        "transactions": {
+          "dataset": "transactions",
+          "steps": {
+            "items": 10
+          },
+          "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+          "provider": "local_rules",
+          "provider_message": "No API key required.",
+          "reused_steps": 0
+        },
+        "employees": {
+          "dataset": "employees",
+          "steps": {
+            "items": 12
+          },
+          "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+          "provider": "local_rules",
+          "provider_message": "No API key required.",
+          "reused_steps": 0
+        },
+        "products": {
+          "dataset": "products",
+          "steps": {
+            "items": 7
+          },
+          "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+          "provider": "local_rules",
+          "provider_message": "No API key required.",
+          "reused_steps": 0
+        }
+      },
+      "confidence": null,
+      "error": null,
+      "explanation": "Waits for Profiling, Similarity · DSO 6, Semantics · DSO 7, Data Quality"
+    },
+    "Plan Validation": {
+      "agent": "Plan Validation",
+      "status": "COMPLETED",
+      "dependencies": [
+        "Cleaning Plan · DSO 5",
+        "Semantics · DSO 7"
+      ],
+      "started_at": "2026-10-07T12:48:54.631913+00:00",
+      "ended_at": "2026-10-07T12:48:54.694020+00:00",
+      "start_offset_seconds": 6.113374300010037,
+      "end_offset_seconds": 6.17575500003295,
+      "duration_seconds": 0.003049,
+      "input": {
+        "Cleaning Plan · DSO 5": {
+          "customers": {
+            "dataset": "customers",
+            "steps": {
+              "items": 17
+            },
+            "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+            "provider": "local_rules",
+            "provider_message": "No API key required.",
+            "reused_steps": 0
+          },
+          "clients_2026": {
+            "dataset": "clients_2026",
+            "steps": {
+              "items": 16
+            },
+            "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+            "provider": "local_rules",
+            "provider_message": "No API key required.",
+            "reused_steps": 14
+          },
+          "transactions": {
+            "dataset": "transactions",
+            "steps": {
+              "items": 10
+            },
+            "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+            "provider": "local_rules",
+            "provider_message": "No API key required.",
+            "reused_steps": 0
+          },
+          "employees": {
+            "dataset": "employees",
+            "steps": {
+              "items": 12
+            },
+            "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+            "provider": "local_rules",
+            "provider_message": "No API key required.",
+            "reused_steps": 0
+          },
+          "products": {
+            "dataset": "products",
+            "steps": {
+              "items": 7
+            },
+            "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+            "provider": "local_rules",
+            "provider_message": "No API key required.",
+            "reused_steps": 0
+          }
+        },
+        "Semantics · DSO 7": {
+          "customers": {
+            "items": 8
+          },
+          "clients_2026": {
+            "items": 7
+          },
+          "transactions": {
+            "items": 6
+          },
+          "employees": {
+            "items": 6
+          },
+          "products": {
+            "items": 4
+          }
+        }
+      },
+      "output": {
+        "customers": {
+          "plan": {
+            "dataset": "customers",
+            "steps": {
+              "items": 17
+            },
+            "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+            "provider": "local_rules",
+            "provider_message": "No API key required.",
+            "reused_steps": 0
+          },
+          "plan_hash": "b3f30b0eb1be085ad0f063821b882eb90e13b6559173564137fc174417c3b774",
+          "valid": true
+        },
+        "clients_2026": {
+          "plan": {
+            "dataset": "clients_2026",
+            "steps": {
+              "items": 16
+            },
+            "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+            "provider": "local_rules",
+            "provider_message": "No API key required.",
+            "reused_steps": 14
+          },
+          "plan_hash": "a6ab6e93d2e6493f24f955613a24ed36c939cdd2dc798fc7ace0d367c297a5e4",
+          "valid": true
+        },
+        "transactions": {
+          "plan": {
+            "dataset": "transactions",
+            "steps": {
+              "items": 10
+            },
+            "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+            "provider": "local_rules",
+            "provider_message": "No API key required.",
+            "reused_steps": 0
+          },
+          "plan_hash": "289f019b6d7364e6ac22e79887e2fab5e5c4fa0e1de41340b8a5d16d79f2e573",
+          "valid": true
+        },
+        "employees": {
+          "plan": {
+            "dataset": "employees",
+            "steps": {
+              "items": 12
+            },
+            "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+            "provider": "local_rules",
+            "provider_message": "No API key required.",
+            "reused_steps": 0
+          },
+          "plan_hash": "780e4beefac858c7a776cf8d1f6a6a222ce80d8c801979f0e2d98238583a755b",
+          "valid": true
+        },
+        "products": {
+          "plan": {
+            "dataset": "products",
+            "steps": {
+              "items": 7
+            },
+            "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+            "provider": "local_rules",
+            "provider_message": "No API key required.",
+            "reused_steps": 0
+          },
+          "plan_hash": "64e4f5c575b80d1cfd3114771b92168b30f9609ee583b1fcac75dfd2c594efde",
+          "valid": true
+        }
+      },
+      "confidence": null,
+      "error": null,
+      "explanation": "Waits for Cleaning Plan · DSO 5, Semantics · DSO 7"
+    },
+    "Controlled Execution": {
+      "agent": "Controlled Execution",
+      "status": "COMPLETED",
+      "dependencies": [
+        "Plan Validation",
+        "Semantics · DSO 7"
+      ],
+      "started_at": "2026-10-07T12:48:54.754071+00:00",
+      "ended_at": "2026-10-07T12:48:57.047903+00:00",
+      "start_offset_seconds": 6.236395100015216,
+      "end_offset_seconds": 8.530421500036027,
+      "duration_seconds": 2.232398,
+      "input": {
+        "Plan Validation": {
+          "customers": {
+            "plan": {
+              "dataset": "customers",
+              "steps": {
+                "items": 17
+              },
+              "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+              "provider": "local_rules",
+              "provider_message": "No API key required.",
+              "reused_steps": 0
+            },
+            "plan_hash": "b3f30b0eb1be085ad0f063821b882eb90e13b6559173564137fc174417c3b774",
+            "valid": true
+          },
+          "clients_2026": {
+            "plan": {
+              "dataset": "clients_2026",
+              "steps": {
+                "items": 16
+              },
+              "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+              "provider": "local_rules",
+              "provider_message": "No API key required.",
+              "reused_steps": 14
+            },
+            "plan_hash": "a6ab6e93d2e6493f24f955613a24ed36c939cdd2dc798fc7ace0d367c297a5e4",
+            "valid": true
+          },
+          "transactions": {
+            "plan": {
+              "dataset": "transactions",
+              "steps": {
+                "items": 10
+              },
+              "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+              "provider": "local_rules",
+              "provider_message": "No API key required.",
+              "reused_steps": 0
+            },
+            "plan_hash": "289f019b6d7364e6ac22e79887e2fab5e5c4fa0e1de41340b8a5d16d79f2e573",
+            "valid": true
+          },
+          "employees": {
+            "plan": {
+              "dataset": "employees",
+              "steps": {
+                "items": 12
+              },
+              "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+              "provider": "local_rules",
+              "provider_message": "No API key required.",
+              "reused_steps": 0
+            },
+            "plan_hash": "780e4beefac858c7a776cf8d1f6a6a222ce80d8c801979f0e2d98238583a755b",
+            "valid": true
+          },
+          "products": {
+            "plan": {
+              "dataset": "products",
+              "steps": {
+                "items": 7
+              },
+              "missing_policy": "Preserve unknown business values; explicit fill_missing is opt-in only.",
+              "provider": "local_rules",
+              "provider_message": "No API key required.",
+              "reused_steps": 0
+            },
+            "plan_hash": "64e4f5c575b80d1cfd3114771b92168b30f9609ee583b1fcac75dfd2c594efde",
+            "valid": true
+          }
+        },
+        "Semantics · DSO 7": {
+          "customers": {
+            "items": 8
+          },
+          "clients_2026": {
+            "items": 7
+          },
+          "transactions": {
+            "items": 6
+          },
+          "employees": {
+            "items": 6
+          },
+          "products": {
+            "items": 4
+          }
+        }
+      },
+      "output": {
+        "customers": {
+          "cleaned": {
+            "rows": 200,
+            "columns": 8
+          },
+          "audit": {
+            "items": 17
+          },
+          "after": {
+            "rows": 200,
+            "cells": 1600,
+            "missing_cells": 82,
+            "duplicate_rows": 0,
+            "invalid_cells": 0,
+            "formatting_cells": 0,
+            "type_inconsistent_cells": 0,
+            "category_inconsistent_cells": 0,
+            "missing_rate": 5.12,
+            "duplicate_rate": 0.0,
+            "invalid_rate": 0.0,
+            "type_inconsistency_rate": 0.0
+          },
+          "validation": {
+            "plan_valid": true,
+            "schema_preserved": true,
+            "row_count_not_increased": true,
+            "plan_hash": "b3f30b0eb1be085ad0f063821b882eb90e13b6559173564137fc174417c3b774"
+          }
+        },
+        "clients_2026": {
+          "cleaned": {
+            "rows": 200,
+            "columns": 7
+          },
+          "audit": {
+            "items": 16
+          },
+          "after": {
+            "rows": 200,
+            "cells": 1400,
+            "missing_cells": 71,
+            "duplicate_rows": 0,
+            "invalid_cells": 0,
+            "formatting_cells": 0,
+            "type_inconsistent_cells": 0,
+            "category_inconsistent_cells": 0,
+            "missing_rate": 5.07,
+            "duplicate_rate": 0.0,
+            "invalid_rate": 0.0,
+            "type_inconsistency_rate": 0.0
+          },
+          "validation": {
+            "plan_valid": true,
+            "schema_preserved": true,
+            "row_count_not_increased": true,
+            "plan_hash": "a6ab6e93d2e6493f24f955613a24ed36c939cdd2dc798fc7ace0d367c297a5e4"
+          }
+        },
+        "transactions": {
+          "cleaned": {
+            "rows": 600,
+            "columns": 6
+          },
+          "audit": {
+            "items": 10
+          },
+          "after": {
+            "rows": 600,
+            "cells": 3600,
+            "missing_cells": 101,
+            "duplicate_rows": 0,
+            "invalid_cells": 0,
+            "formatting_cells": 0,
+            "type_inconsistent_cells": 0,
+            "category_inconsistent_cells": 0,
+            "missing_rate": 2.81,
+            "duplicate_rate": 0.0,
+            "invalid_rate": 0.0,
+            "type_inconsistency_rate": 0.0
+          },
+          "validation": {
+            "plan_valid": true,
+            "schema_preserved": true,
+            "row_count_not_increased": true,
+            "plan_hash": "289f019b6d7364e6ac22e79887e2fab5e5c4fa0e1de41340b8a5d16d79f2e573"
+          }
+        },
+        "employees": {
+          "cleaned": {
+            "rows": 50,
+            "columns": 6
+          },
+          "audit": {
+            "items": 12
+          },
+          "after": {
+            "rows": 50,
+            "cells": 300,
+            "missing_cells": 12,
+            "duplicate_rows": 0,
+            "invalid_cells": 0,
+            "formatting_cells": 0,
+            "type_inconsistent_cells": 0,
+            "category_inconsistent_cells": 0,
+            "missing_rate": 4.0,
+            "duplicate_rate": 0.0,
+            "invalid_rate": 0.0,
+            "type_inconsistency_rate": 0.0
+          },
+          "validation": {
+            "plan_valid": true,
+            "schema_preserved": true,
+            "row_count_not_increased": true,
+            "plan_hash": "780e4beefac858c7a776cf8d1f6a6a222ce80d8c801979f0e2d98238583a755b"
+          }
+        },
+        "products": {
+          "cleaned": {
+            "rows": 30,
+            "columns": 4
+          },
+          "audit": {
+            "items": 7
+          },
+          "after": {
+            "rows": 30,
+            "cells": 120,
+            "missing_cells": 3,
+            "duplicate_rows": 0,
+            "invalid_cells": 0,
+            "formatting_cells": 0,
+            "type_inconsistent_cells": 0,
+            "category_inconsistent_cells": 0,
+            "missing_rate": 2.5,
+            "duplicate_rate": 0.0,
+            "invalid_rate": 0.0,
+            "type_inconsistency_rate": 0.0
+          },
+          "validation": {
+            "plan_valid": true,
+            "schema_preserved": true,
+            "row_count_not_increased": true,
+            "plan_hash": "64e4f5c575b80d1cfd3114771b92168b30f9609ee583b1fcac75dfd2c594efde"
+          }
+        }
+      },
+      "confidence": null,
+      "error": null,
+      "explanation": "Waits for Plan Validation, Semantics · DSO 7"
+    },
+    "Final Validation & BI": {
+      "agent": "Final Validation & BI",
+      "status": "COMPLETED",
+      "dependencies": [
+        "Controlled Execution",
+        "Data Quality"
+      ],
+      "started_at": "2026-10-07T12:48:57.125031+00:00",
+      "ended_at": "2026-10-07T12:48:57.224801+00:00",
+      "start_offset_seconds": 8.606872999982443,
+      "end_offset_seconds": 8.706353900022805,
+      "duration_seconds": 0.042012,
+      "input": {
+        "Controlled Execution": {
+          "customers": {
+            "cleaned": {
+              "rows": 200,
+              "columns": 8
+            },
+            "audit": {
+              "items": 17
+            },
+            "after": {
+              "rows": 200,
+              "cells": 1600,
+              "missing_cells": 82,
+              "duplicate_rows": 0,
+              "invalid_cells": 0,
+              "formatting_cells": 0,
+              "type_inconsistent_cells": 0,
+              "category_inconsistent_cells": 0,
+              "missing_rate": 5.12,
+              "duplicate_rate": 0.0,
+              "invalid_rate": 0.0,
+              "type_inconsistency_rate": 0.0
+            },
+            "validation": {
+              "plan_valid": true,
+              "schema_preserved": true,
+              "row_count_not_increased": true,
+              "plan_hash": "b3f30b0eb1be085ad0f063821b882eb90e13b6559173564137fc174417c3b774"
+            }
+          },
+          "clients_2026": {
+            "cleaned": {
+              "rows": 200,
+              "columns": 7
+            },
+            "audit": {
+              "items": 16
+            },
+            "after": {
+              "rows": 200,
+              "cells": 1400,
+              "missing_cells": 71,
+              "duplicate_rows": 0,
+              "invalid_cells": 0,
+              "formatting_cells": 0,
+              "type_inconsistent_cells": 0,
+              "category_inconsistent_cells": 0,
+              "missing_rate": 5.07,
+              "duplicate_rate": 0.0,
+              "invalid_rate": 0.0,
+              "type_inconsistency_rate": 0.0
+            },
+            "validation": {
+              "plan_valid": true,
+              "schema_preserved": true,
+              "row_count_not_increased": true,
+              "plan_hash": "a6ab6e93d2e6493f24f955613a24ed36c939cdd2dc798fc7ace0d367c297a5e4"
+            }
+          },
+          "transactions": {
+            "cleaned": {
+              "rows": 600,
+              "columns": 6
+            },
+            "audit": {
+              "items": 10
+            },
+            "after": {
+              "rows": 600,
+              "cells": 3600,
+              "missing_cells": 101,
+              "duplicate_rows": 0,
+              "invalid_cells": 0,
+              "formatting_cells": 0,
+              "type_inconsistent_cells": 0,
+              "category_inconsistent_cells": 0,
+              "missing_rate": 2.81,
+              "duplicate_rate": 0.0,
+              "invalid_rate": 0.0,
+              "type_inconsistency_rate": 0.0
+            },
+            "validation": {
+              "plan_valid": true,
+              "schema_preserved": true,
+              "row_count_not_increased": true,
+              "plan_hash": "289f019b6d7364e6ac22e79887e2fab5e5c4fa0e1de41340b8a5d16d79f2e573"
+            }
+          },
+          "employees": {
+            "cleaned": {
+              "rows": 50,
+              "columns": 6
+            },
+            "audit": {
+              "items": 12
+            },
+            "after": {
+              "rows": 50,
+              "cells": 300,
+              "missing_cells": 12,
+              "duplicate_rows": 0,
+              "invalid_cells": 0,
+              "formatting_cells": 0,
+              "type_inconsistent_cells": 0,
+              "category_inconsistent_cells": 0,
+              "missing_rate": 4.0,
+              "duplicate_rate": 0.0,
+              "invalid_rate": 0.0,
+              "type_inconsistency_rate": 0.0
+            },
+            "validation": {
+              "plan_valid": true,
+              "schema_preserved": true,
+              "row_count_not_increased": true,
+              "plan_hash": "780e4beefac858c7a776cf8d1f6a6a222ce80d8c801979f0e2d98238583a755b"
+            }
+          },
+          "products": {
+            "cleaned": {
+              "rows": 30,
+              "columns": 4
+            },
+            "audit": {
+              "items": 7
+            },
+            "after": {
+              "rows": 30,
+              "cells": 120,
+              "missing_cells": 3,
+              "duplicate_rows": 0,
+              "invalid_cells": 0,
+              "formatting_cells": 0,
+              "type_inconsistent_cells": 0,
+              "category_inconsistent_cells": 0,
+              "missing_rate": 2.5,
+              "duplicate_rate": 0.0,
+              "invalid_rate": 0.0,
+              "type_inconsistency_rate": 0.0
+            },
+            "validation": {
+              "plan_valid": true,
+              "schema_preserved": true,
+              "row_count_not_increased": true,
+              "plan_hash": "64e4f5c575b80d1cfd3114771b92168b30f9609ee583b1fcac75dfd2c594efde"
+            }
+          }
+        },
+        "Data Quality": {
+          "customers": {
+            "rows": 210,
+            "cells": 1680,
+            "missing_cells": 83,
+            "duplicate_rows": 10,
+            "invalid_cells": 10,
+            "formatting_cells": 256,
+            "type_inconsistent_cells": 199,
+            "category_inconsistent_cells": 198,
+            "missing_rate": 4.94,
+            "duplicate_rate": 4.76,
+            "invalid_rate": 0.63,
+            "type_inconsistency_rate": 12.46
+          },
+          "clients_2026": {
+            "rows": 210,
+            "cells": 1470,
+            "missing_cells": 68,
+            "duplicate_rows": 10,
+            "invalid_cells": 10,
+            "formatting_cells": 226,
+            "type_inconsistent_cells": 199,
+            "category_inconsistent_cells": 199,
+            "missing_rate": 4.63,
+            "duplicate_rate": 4.76,
+            "invalid_rate": 0.71,
+            "type_inconsistency_rate": 14.19
+          },
+          "transactions": {
+            "rows": 630,
+            "cells": 3780,
+            "missing_cells": 105,
+            "duplicate_rows": 30,
+            "invalid_cells": 4,
+            "formatting_cells": 459,
+            "type_inconsistent_cells": 596,
+            "category_inconsistent_cells": 594,
+            "missing_rate": 2.78,
+            "duplicate_rate": 4.76,
+            "invalid_rate": 0.11,
+            "type_inconsistency_rate": 16.22
+          },
+          "employees": {
+            "rows": 52,
+            "cells": 312,
+            "missing_cells": 10,
+            "duplicate_rows": 2,
+            "invalid_cells": 3,
+            "formatting_cells": 50,
+            "type_inconsistent_cells": 50,
+            "category_inconsistent_cells": 50,
+            "missing_rate": 3.21,
+            "duplicate_rate": 3.85,
+            "invalid_rate": 0.99,
+            "type_inconsistency_rate": 16.56
+          },
+          "products": {
+            "rows": 32,
+            "cells": 128,
+            "missing_cells": 4,
+            "duplicate_rows": 2,
+            "invalid_cells": 0,
+            "formatting_cells": 13,
+            "type_inconsistent_cells": 30,
+            "category_inconsistent_cells": 31,
+            "missing_rate": 3.12,
+            "duplicate_rate": 6.25,
+            "invalid_rate": 0.0,
+            "type_inconsistency_rate": 24.19
+          }
+        }
+      },
+      "output": {
+        "gates": {
+          "customers": {
+            "score": 99.15,
+            "threshold": 85.0,
+            "ready_for_bi": true,
+            "remaining_missing": 82,
+            "score_delta": 7.69,
+            "meaning": "Readiness is a configured demo quality gate, not a guarantee of business correctness. Missing values are disclosed."
+          },
+          "clients_2026": {
+            "score": 99.15,
+            "threshold": 85.0,
+            "ready_for_bi": true,
+            "remaining_missing": 71,
+            "score_delta": 8.25,
+            "meaning": "Readiness is a configured demo quality gate, not a guarantee of business correctness. Missing values are disclosed."
+          },
+          "transactions": {
+            "score": 99.53,
+            "threshold": 85.0,
+            "ready_for_bi": true,
+            "remaining_missing": 101,
+            "score_delta": 8.28,
+            "meaning": "Readiness is a configured demo quality gate, not a guarantee of business correctness. Missing values are disclosed."
+          },
+          "employees": {
+            "score": 99.33,
+            "threshold": 85.0,
+            "ready_for_bi": true,
+            "remaining_missing": 12,
+            "score_delta": 8.95,
+            "meaning": "Readiness is a configured demo quality gate, not a guarantee of business correctness. Missing values are disclosed."
+          },
+          "products": {
+            "score": 99.58,
+            "threshold": 85.0,
+            "ready_for_bi": true,
+            "remaining_missing": 3,
+            "score_delta": 11.09,
+            "meaning": "Readiness is a configured demo quality gate, not a guarantee of business correctness. Missing values are disclosed."
+          }
+        },
+        "integration": {
+          "relationships": {
+            "items": 3
+          },
+          "datasets": {
+            "transactions_enriched": {
+              "rows": 600,
+              "columns": 25
+            }
+          },
+          "note": "Inferred joins are exploratory. No entity merging or invented values. Many-to-one validation prevents row multiplication."
+        }
+      },
+      "confidence": null,
+      "error": null,
+      "explanation": "Waits for Controlled Execution, Data Quality"
+    }
+  },
+  "edges": [
+    [
+      "Profiling",
+      "Similarity · DSO 6"
+    ],
+    [
+      "Profiling",
+      "Semantics · DSO 7"
+    ],
+    [
+      "Profiling",
+      "Cleaning Plan · DSO 5"
+    ],
+    [
+      "Similarity · DSO 6",
+      "Cleaning Plan · DSO 5"
+    ],
+    [
+      "Semantics · DSO 7",
+      "Data Quality"
+    ],
+    [
+      "Semantics · DSO 7",
+      "Cleaning Plan · DSO 5"
+    ],
+    [
+      "Semantics · DSO 7",
+      "Plan Validation"
+    ],
+    [
+      "Semantics · DSO 7",
+      "Controlled Execution"
+    ],
+    [
+      "Data Quality",
+      "Cleaning Plan · DSO 5"
+    ],
+    [
+      "Data Quality",
+      "Final Validation & BI"
+    ],
+    [
+      "Cleaning Plan · DSO 5",
+      "Plan Validation"
+    ],
+    [
+      "Plan Validation",
+      "Controlled Execution"
+    ],
+    [
+      "Controlled Execution",
+      "Final Validation & BI"
+    ]
+  ],
+  "events": [
+    {
+      "agent": "Profiling",
+      "status": "PENDING",
+      "offset_seconds": 0.000321
+    },
+    {
+      "agent": "Similarity · DSO 6",
+      "status": "PENDING",
+      "offset_seconds": 0.06182
+    },
+    {
+      "agent": "Semantics · DSO 7",
+      "status": "PENDING",
+      "offset_seconds": 0.120555
+    },
+    {
+      "agent": "Data Quality",
+      "status": "PENDING",
+      "offset_seconds": 0.173369
+    },
+    {
+      "agent": "Cleaning Plan · DSO 5",
+      "status": "PENDING",
+      "offset_seconds": 0.238954
+    },
+    {
+      "agent": "Plan Validation",
+      "status": "PENDING",
+      "offset_seconds": 0.306245
+    },
+    {
+      "agent": "Controlled Execution",
+      "status": "PENDING",
+      "offset_seconds": 0.372708
+    },
+    {
+      "agent": "Final Validation & BI",
+      "status": "PENDING",
+      "offset_seconds": 0.431143
+    },
+    {
+      "agent": "Profiling",
+      "status": "RUNNING",
+      "offset_seconds": 0.485004
+    },
+    {
+      "agent": "Profiling",
+      "status": "COMPLETED",
+      "offset_seconds": 0.762765
+    },
+    {
+      "agent": "Semantics · DSO 7",
+      "status": "RUNNING",
+      "offset_seconds": 0.817402
+    },
+    {
+      "agent": "Similarity · DSO 6",
+      "status": "RUNNING",
+      "offset_seconds": 0.868537
+    },
+    {
+      "agent": "Semantics · DSO 7",
+      "status": "COMPLETED",
+      "offset_seconds": 2.59381
+    },
+    {
+      "agent": "Data Quality",
+      "status": "RUNNING",
+      "offset_seconds": 2.796135
+    },
+    {
+      "agent": "Data Quality",
+      "status": "COMPLETED",
+      "offset_seconds": 4.315347
+    },
+    {
+      "agent": "Similarity · DSO 6",
+      "status": "COMPLETED",
+      "offset_seconds": 5.9411
+    },
+    {
+      "agent": "Cleaning Plan · DSO 5",
+      "status": "RUNNING",
+      "offset_seconds": 5.998577
+    },
+    {
+      "agent": "Cleaning Plan · DSO 5",
+      "status": "COMPLETED",
+      "offset_seconds": 6.061383
+    },
+    {
+      "agent": "Plan Validation",
+      "status": "RUNNING",
+      "offset_seconds": 6.113637
+    },
+    {
+      "agent": "Plan Validation",
+      "status": "COMPLETED",
+      "offset_seconds": 6.17592
+    },
+    {
+      "agent": "Controlled Execution",
+      "status": "RUNNING",
+      "offset_seconds": 6.236617
+    },
+    {
+      "agent": "Controlled Execution",
+      "status": "COMPLETED",
+      "offset_seconds": 8.53075
+    },
+    {
+      "agent": "Final Validation & BI",
+      "status": "RUNNING",
+      "offset_seconds": 8.607383
+    },
+    {
+      "agent": "Final Validation & BI",
+      "status": "COMPLETED",
+      "offset_seconds": 8.7067
+    }
+  ],
+  "acyclic": true,
+  "all_completed": true,
+  "execution_order": [
+    "Profiling",
+    "Similarity · DSO 6",
+    "Semantics · DSO 7",
+    "Data Quality",
+    "Cleaning Plan · DSO 5",
+    "Plan Validation",
+    "Controlled Execution",
+    "Final Validation & BI"
+  ]
+}

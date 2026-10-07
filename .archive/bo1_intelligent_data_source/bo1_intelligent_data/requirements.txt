@@ -1,0 +1,9 @@
+pandas>=2.2,<3
+numpy>=1.26,<3
+scikit-learn>=1.5,<2
+networkx>=3.2,<4
+langgraph>=1,<2
+streamlit>=1.50,<2
+plotly>=6,<7
+pydantic>=2.7,<3
+sentence-transformers>=3,<6

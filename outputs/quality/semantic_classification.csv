@@ -1,0 +1,32 @@
+dataset,column,pandas_type,semantic_type,confidence,evidence,canonical_name
+customers,customer_id,string,IDENTIFIER,0.92,Canonical name: customer_id; identifier name | Pandas dtype: string; populated values: 210; distinct: 200,customer_id
+customers,first_name,string,PERSON_NAME,0.92,Canonical name: first_name; person name | Pandas dtype: string; populated values: 198; distinct: 12,first_name
+customers,last_name,string,PERSON_NAME,0.92,Canonical name: last_name; person name | Pandas dtype: string; populated values: 197; distinct: 10,last_name
+customers,email,string,EMAIL,0.944,Canonical name: email; email name | Pandas dtype: string; populated values: 198; distinct: 189 | 99.0% of populated sample values match the relevant pattern (up to 500 values),email
+customers,phone,string,PHONE_NUMBER,0.944,Canonical name: phone; phone alias/name | Pandas dtype: string; populated values: 199; distinct: 189 | 99.0% of populated sample values match the relevant pattern (up to 500 values),phone
+customers,city,string,LOCATION,0.92,Canonical name: city; location alias | Pandas dtype: string; populated values: 198; distinct: 16,city
+customers,age,string,AGE,0.948,Canonical name: age; age alias | Pandas dtype: string; populated values: 199; distinct: 74 | 100.0% of populated sample values match the relevant pattern (up to 500 values) | Business validation range: 0–120; integers expected,age
+customers,registration_date,string,DATE,0.944,Canonical name: signup_date; date name | Pandas dtype: string; populated values: 198; distinct: 43 | 99.0% of populated sample values match the relevant pattern (up to 500 values),signup_date
+clients_2026,location,string,LOCATION,0.92,Canonical name: city; location alias | Pandas dtype: string; populated values: 199; distinct: 16,city
+clients_2026,email_address,string,EMAIL,0.944,Canonical name: email; email name | Pandas dtype: string; populated values: 198; distinct: 189 | 99.0% of populated sample values match the relevant pattern (up to 500 values),email
+clients_2026,client_identifier,string,IDENTIFIER,0.92,Canonical name: customer_id; identifier name | Pandas dtype: string; populated values: 210; distinct: 200,customer_id
+clients_2026,customer_age,string,AGE,0.948,Canonical name: age; age alias | Pandas dtype: string; populated values: 199; distinct: 73 | 100.0% of populated sample values match the relevant pattern (up to 500 values) | Business validation range: 0–120; integers expected,age
+clients_2026,telephone,string,PHONE_NUMBER,0.944,Canonical name: phone; phone alias/name | Pandas dtype: string; populated values: 199; distinct: 189 | 99.0% of populated sample values match the relevant pattern (up to 500 values),phone
+clients_2026,signup_date,string,DATE,0.944,Canonical name: signup_date; date name | Pandas dtype: string; populated values: 199; distinct: 48 | 99.0% of populated sample values match the relevant pattern (up to 500 values),signup_date
+clients_2026,full_name,string,PERSON_NAME,0.92,Canonical name: full_name; person name | Pandas dtype: string; populated values: 198; distinct: 46,full_name
+transactions,transaction_id,string,IDENTIFIER,0.92,Canonical name: transaction_id; identifier name | Pandas dtype: string; populated values: 630; distinct: 600,transaction_id
+transactions,client_id,string,IDENTIFIER,0.92,Canonical name: customer_id; identifier name | Pandas dtype: string; populated values: 630; distinct: 250,customer_id
+transactions,transaction_date,string,DATE,0.947,Canonical name: transaction_date; date name | Pandas dtype: string; populated values: 595; distinct: 3 | 99.8% of populated sample values match the relevant pattern (up to 500 values),transaction_date
+transactions,amount,string,CURRENCY,0.947,Canonical name: amount; monetary business name | Pandas dtype: string; populated values: 596; distinct: 564 | 99.8% of populated sample values match the relevant pattern (up to 500 values),amount
+transactions,payment_method,string,CATEGORY,0.92,Canonical name: payment_method; categorical business name | Pandas dtype: string; populated values: 594; distinct: 12,payment_method
+transactions,product_id,string,IDENTIFIER,0.92,Canonical name: product_id; identifier name | Pandas dtype: string; populated values: 630; distinct: 58,product_id
+employees,employee_id,string,IDENTIFIER,0.92,Canonical name: employee_id; identifier name | Pandas dtype: string; populated values: 52; distinct: 50,employee_id
+employees,employee_name,string,PERSON_NAME,0.92,Canonical name: employee_name; person name | Pandas dtype: string; populated values: 50; distinct: 48,employee_name
+employees,department,string,CATEGORY,0.92,Canonical name: department; categorical business name | Pandas dtype: string; populated values: 50; distinct: 10,department
+employees,salary,string,CURRENCY,0.948,Canonical name: salary; monetary business name | Pandas dtype: string; populated values: 50; distinct: 48 | 100.0% of populated sample values match the relevant pattern (up to 500 values),salary
+employees,hire_date,string,DATE,0.941,Canonical name: hire_date; date name | Pandas dtype: string; populated values: 50; distinct: 3 | 98.0% of populated sample values match the relevant pattern (up to 500 values),hire_date
+employees,email,string,EMAIL,0.934,Canonical name: email; email name | Pandas dtype: string; populated values: 50; distinct: 48 | 96.0% of populated sample values match the relevant pattern (up to 500 values),email
+products,product_id,string,IDENTIFIER,0.92,Canonical name: product_id; identifier name | Pandas dtype: string; populated values: 32; distinct: 30,product_id
+products,product_name,string,TEXT,0.55,Canonical name: product_name; No strong name or value rule matched | Pandas dtype: string; populated values: 31; distinct: 29,product_name
+products,category,string,CATEGORY,0.92,Canonical name: category; categorical business name | Pandas dtype: string; populated values: 31; distinct: 9,category
+products,price,string,CURRENCY,0.948,Canonical name: price; monetary business name | Pandas dtype: string; populated values: 30; distinct: 29 | 100.0% of populated sample values match the relevant pattern (up to 500 values),price

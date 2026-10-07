@@ -1,0 +1,53 @@
+employee_id,employee_name,department,salary,hire_date,email
+E0000,Employee 0,FINANCE,5040,2023-03-01,WORKER0@EXAMPLE.ORG
+ E0001 ,Employee 1,ENGINEERING,3529,2023-03-01,invalid-email
+E0002,Employee 2,FINANCE,7531,2023-03-01,WORKER2@EXAMPLE.ORG
+E0003,Employee 3,,7801,2023-03-01,worker3@example.org
+E0004,Employee 4,FINANCE,2347,2023-03-01,worker4@example.org
+E0005, Employee 5 ,Engineering,6265, 2023-03-01 ,worker5@example.org
+E0006,Employee 6,FINANCE, 1651 ,31/02/2025,worker6@example.org
+E0007,Employee 7,Sales,3898,2023-03-01,WORKER7@EXAMPLE.ORG
+E0008,Employee 8,,7804,2023-03-01,worker8@example.org
+E0009,Employee 9,Engineering,2636,2023-03-01,worker9@example.org
+E0010,Employee 10,Finance,3950,2023-03-01,worker10@example.org
+E0011, Employee 11 ,Engineering, 2927 , 2023-03-01 ,worker11@example.org
+E0012,Employee 12,Finance,6233,2023-03-01,WORKER12@EXAMPLE.ORG
+E0013,Employee 13,Sales,4515,2023-03-01,
+E0014,Employee 14,Engineering,5355,2023-03-01,
+E0015,Employee 15,ENGINEERING,7626,2023-03-01,worker15@example.org
+E0016,Employee 16,Engineering,,2023-03-01,worker16@example.org
+E0017,Employee 17,ENGINEERING,6271,2023-03-01,worker17@example.org
+E0018,Employee 18,Sales,2136,2023-03-01,WORKER18@EXAMPLE.ORG
+E0019,Employee 19,Engineering,2899,2023-03-01,worker19@example.org
+E0020,Employee 20,Sales,7654,2023-03-01,worker20@example.org
+ E0021 , Employee 21 ,ENGINEERING, 7087 ,2023-03-01,WORKER21@EXAMPLE.ORG
+E0022,Employee 22,SALES,5768, 2023-03-01 ,worker22@example.org
+ E0023 ,Employee 23,Finance,3958,2023-03-01, WORKER23@EXAMPLE.ORG 
+E0024,Employee 24, Engineering , 2798 ,2023-03-01,worker24@example.org
+E0025,Employee 25, SALES ,7036,2023-03-01, worker25@example.org 
+ E0026 ,Employee 26,Sales,6604,2023-03-01,worker26@example.org
+E0027,Employee 27,Engineering,3071,2023-03-01,WORKER27@EXAMPLE.ORG
+E0028,Employee 28,Sales,5333,2023-03-01,worker28@example.org
+E0029,Employee 29, Finance ,5521,2023-03-01,worker29@example.org
+E0030,,Engineering,4603,2023-03-01,worker30@example.org
+E0031,Employee 31,Finance,7523,2023-03-01,worker31@example.org
+E0032,Employee 32,Finance,2306, 2023-03-01 ,worker32@example.org
+E0033,Employee 33,Finance,3176,2023-03-01,worker33@example.org
+ E0034 ,Employee 34,Finance,2117,2023-03-01,WORKER34@EXAMPLE.ORG
+E0035,Employee 35, FINANCE ,6004,2023-03-01, WORKER35@EXAMPLE.ORG 
+E0036,Employee 36, FINANCE ,5686,2023-03-01,worker36@example.org
+E0037,Employee 37,SALES,7917,2023-03-01,worker37@example.org
+E0038,Employee 38,Finance,5025,2023-03-01,WORKER38@EXAMPLE.ORG
+E0039,Employee 39,Engineering,2478,2023-03-01,WORKER39@EXAMPLE.ORG
+ E0040 ,Employee 40,Engineering,4430, 2023-03-01 ,WORKER40@EXAMPLE.ORG
+E0041,Employee 41,SALES, 2074 ,2023-03-01,WORKER41@EXAMPLE.ORG
+E0042,Employee 42,ENGINEERING,5860, 2023-03-01 ,worker42@example.org
+E0043,Employee 43, Engineering ,5882,2023-03-01, worker43@example.org 
+E0044,Employee 44,Sales,,2023-03-01,WORKER44@EXAMPLE.ORG
+E0045, Employee 45 ,Engineering, 3708 ,2023-03-01, worker45@example.org 
+E0046,,FINANCE,3515,2023-03-01,worker46@example.org
+E0047,Employee 47,Finance,1963,,worker47@example.org
+E0048,Employee 48,Engineering,4198,2023-03-01,worker48@example.org
+E0049, Employee 49 ,Finance,4589,, worker49@example.org 
+E0000,Employee 0,FINANCE,5040,2023-03-01,WORKER0@EXAMPLE.ORG
+ E0001 ,Employee 1,ENGINEERING,3529,2023-03-01,invalid-email

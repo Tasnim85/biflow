@@ -1,0 +1,19 @@
+BO1 - VERSION FINALE UNIQUE
+
+1. Double-cliquez sur run_demo.bat.
+2. Le navigateur s'ouvre quand le serveur est pret.
+3. Cliquez sur "Lancer le pipeline BO1" dans la page d'accueil.
+
+Les donnees de demonstration sont deja chargees.
+Les resultats apparaissent directement sur l'accueil.
+Les details des quatre DSO sont dans la navigation a gauche.
+
+Un deuxieme double-clic sur run_demo.bat reutilise le serveur actif.
+Vous pouvez fermer la fenetre du lanceur apres le demarrage.
+Aucune cle API n'est necessaire.
+
+installer.bat sert uniquement si les dependances sont absentes.
+Les anciennes versions sont sauvegardees dans .archive.
+Le code final se trouve directement dans ce dossier, avec app.py.
+
+En cas d'erreur, consultez logs/server-error.log ou logs/last_pipeline_error.log.

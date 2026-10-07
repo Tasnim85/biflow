@@ -1,0 +1,225 @@
+{
+  "threshold": 0.7,
+  "union_candidates": [
+    {
+      "left": "customers",
+      "right": "clients",
+      "score": 0.9603,
+      "mapping": {
+        "client_id": "customer_id",
+        "town": "city",
+        "years_old": "age",
+        "customer_name": "full_name",
+        "email_address": "email",
+        "registered_on": "signup_date"
+      },
+      "operation": "candidate_union",
+      "explanation": "One-to-one schema alignment; review entity identity before concatenation"
+    }
+  ],
+  "relationships": [
+    {
+      "parent": "customers",
+      "child": "transactions",
+      "parent_key": "customer_id",
+      "child_key": "customer_id",
+      "coverage": 1.0,
+      "operation": "left_join",
+      "explanation": "100% of child distinct keys occur in unique parent keys; inferred many-to-one relationship"
+    },
+    {
+      "parent": "clients",
+      "child": "transactions",
+      "parent_key": "client_id",
+      "child_key": "customer_id",
+      "coverage": 1.0,
+      "operation": "left_join",
+      "explanation": "100% of child distinct keys occur in unique parent keys; inferred many-to-one relationship"
+    },
+    {
+      "parent": "products",
+      "child": "transactions",
+      "parent_key": "product_id",
+      "child_key": "product_id",
+      "coverage": 1.0,
+      "operation": "left_join",
+      "explanation": "100% of child distinct keys occur in unique parent keys; inferred many-to-one relationship"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "raw:customers",
+      "label": "customers",
+      "stage": "input"
+    },
+    {
+      "id": "profile:customers",
+      "label": "Profile customers",
+      "stage": "profile"
+    },
+    {
+      "id": "clean:customers",
+      "label": "Clean customers",
+      "stage": "clean"
+    },
+    {
+      "id": "raw:clients",
+      "label": "clients",
+      "stage": "input"
+    },
+    {
+      "id": "profile:clients",
+      "label": "Profile clients",
+      "stage": "profile"
+    },
+    {
+      "id": "clean:clients",
+      "label": "Clean clients",
+      "stage": "clean"
+    },
+    {
+      "id": "raw:transactions",
+      "label": "transactions",
+      "stage": "input"
+    },
+    {
+      "id": "profile:transactions",
+      "label": "Profile transactions",
+      "stage": "profile"
+    },
+    {
+      "id": "clean:transactions",
+      "label": "Clean transactions",
+      "stage": "clean"
+    },
+    {
+      "id": "raw:employees",
+      "label": "employees",
+      "stage": "input"
+    },
+    {
+      "id": "profile:employees",
+      "label": "Profile employees",
+      "stage": "profile"
+    },
+    {
+      "id": "clean:employees",
+      "label": "Clean employees",
+      "stage": "clean"
+    },
+    {
+      "id": "raw:products",
+      "label": "products",
+      "stage": "input"
+    },
+    {
+      "id": "profile:products",
+      "label": "Profile products",
+      "stage": "profile"
+    },
+    {
+      "id": "clean:products",
+      "label": "Clean products",
+      "stage": "clean"
+    },
+    {
+      "id": "integrate",
+      "label": "Integration plan",
+      "stage": "integration"
+    },
+    {
+      "id": "output",
+      "label": "Integrated output",
+      "stage": "output"
+    }
+  ],
+  "edges": [
+    [
+      "raw:customers",
+      "profile:customers"
+    ],
+    [
+      "profile:customers",
+      "clean:customers"
+    ],
+    [
+      "raw:clients",
+      "profile:clients"
+    ],
+    [
+      "profile:clients",
+      "clean:clients"
+    ],
+    [
+      "raw:transactions",
+      "profile:transactions"
+    ],
+    [
+      "profile:transactions",
+      "clean:transactions"
+    ],
+    [
+      "raw:employees",
+      "profile:employees"
+    ],
+    [
+      "profile:employees",
+      "clean:employees"
+    ],
+    [
+      "raw:products",
+      "profile:products"
+    ],
+    [
+      "profile:products",
+      "clean:products"
+    ],
+    [
+      "clean:customers",
+      "integrate"
+    ],
+    [
+      "clean:clients",
+      "integrate"
+    ],
+    [
+      "clean:transactions",
+      "integrate"
+    ],
+    [
+      "clean:employees",
+      "integrate"
+    ],
+    [
+      "clean:products",
+      "integrate"
+    ],
+    [
+      "integrate",
+      "output"
+    ]
+  ],
+  "explanation": "The DAG models processing dependencies. Business relationships are separate evidence; they do not create arbitrary source-to-source cycles.",
+  "execution_order": [
+    "raw:customers",
+    "profile:customers",
+    "clean:customers",
+    "raw:clients",
+    "profile:clients",
+    "clean:clients",
+    "raw:transactions",
+    "profile:transactions",
+    "clean:transactions",
+    "raw:employees",
+    "profile:employees",
+    "clean:employees",
+    "raw:products",
+    "profile:products",
+    "clean:products",
+    "integrate",
+    "output"
+  ],
+  "warnings": [
+    "Relationships are inferred, not declared constraints. Review suggested unions and joins."
+  ]
+}

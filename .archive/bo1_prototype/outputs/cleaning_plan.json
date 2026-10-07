@@ -1,0 +1,1024 @@
+{
+  "customers": {
+    "plan": {
+      "types": [
+        {
+          "column": "customer_id",
+          "semantic_type": "identifier",
+          "confidence": 0.98,
+          "evidence": [
+            "Identifier column name; values preserved as keys"
+          ]
+        },
+        {
+          "column": "full_name",
+          "semantic_type": "person_name",
+          "confidence": 0.85,
+          "evidence": [
+            "Name alias"
+          ]
+        },
+        {
+          "column": "email",
+          "semantic_type": "email",
+          "confidence": 0.95,
+          "evidence": [
+            "Email name or email-shaped values"
+          ]
+        },
+        {
+          "column": "city",
+          "semantic_type": "location",
+          "confidence": 0.9,
+          "evidence": [
+            "Location alias"
+          ]
+        },
+        {
+          "column": "signup_date",
+          "semantic_type": "date",
+          "confidence": 0.95,
+          "evidence": [
+            "Date-related name; ISO/day-first parsing"
+          ]
+        },
+        {
+          "column": "age",
+          "semantic_type": "age",
+          "confidence": 0.98,
+          "evidence": [
+            "Age alias; expected range 0–120"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "column": "customer_id",
+          "semantic_type": "identifier",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "full_name",
+          "semantic_type": "person_name",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "email",
+          "semantic_type": "email",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "city",
+          "semantic_type": "location",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "signup_date",
+          "semantic_type": "date",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "age",
+          "semantic_type": "age",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "operation": "drop_duplicates",
+          "explanation": "Remove identical rows after normalization. No unsupported imputation of identities or business facts."
+        }
+      ],
+      "missing_policy": "Preserve missing values for explicit downstream handling"
+    },
+    "audit": {
+      "columns": [
+        {
+          "column": "customer_id",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "full_name",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "email",
+          "changed_cells": 1,
+          "new_missing": 1
+        },
+        {
+          "column": "city",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "signup_date",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "age",
+          "changed_cells": 1,
+          "new_missing": 1
+        }
+      ],
+      "duplicates_removed": 3,
+      "before": {
+        "rows": 123,
+        "missing_cells": 21,
+        "invalid_cells": 2,
+        "duplicate_rows": 3,
+        "formatting_cells": 0,
+        "completeness": 97.15,
+        "validity": 99.72,
+        "uniqueness": 97.56,
+        "consistency": 100.0,
+        "score": 98.61,
+        "issues": [
+          {
+            "column": "customer_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "full_name",
+            "semantic_type": "person_name",
+            "missing": 5,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "email",
+            "semantic_type": "email",
+            "missing": 4,
+            "invalid": 1,
+            "formatting": 0
+          },
+          {
+            "column": "city",
+            "semantic_type": "location",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "signup_date",
+            "semantic_type": "date",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "age",
+            "semantic_type": "age",
+            "missing": 4,
+            "invalid": 1,
+            "formatting": 0
+          }
+        ]
+      },
+      "after": {
+        "rows": 120,
+        "missing_cells": 22,
+        "invalid_cells": 0,
+        "duplicate_rows": 0,
+        "formatting_cells": 0,
+        "completeness": 96.94,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": 100.0,
+        "score": 99.24,
+        "issues": [
+          {
+            "column": "customer_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "full_name",
+            "semantic_type": "person_name",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "email",
+            "semantic_type": "email",
+            "missing": 5,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "city",
+            "semantic_type": "location",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "signup_date",
+            "semantic_type": "date",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "age",
+            "semantic_type": "age",
+            "missing": 5,
+            "invalid": 0,
+            "formatting": 0
+          }
+        ]
+      }
+    }
+  },
+  "clients": {
+    "plan": {
+      "types": [
+        {
+          "column": "town",
+          "semantic_type": "location",
+          "confidence": 0.9,
+          "evidence": [
+            "Location alias"
+          ]
+        },
+        {
+          "column": "email_address",
+          "semantic_type": "email",
+          "confidence": 0.95,
+          "evidence": [
+            "Email name or email-shaped values"
+          ]
+        },
+        {
+          "column": "client_id",
+          "semantic_type": "identifier",
+          "confidence": 0.98,
+          "evidence": [
+            "Identifier column name; values preserved as keys"
+          ]
+        },
+        {
+          "column": "years_old",
+          "semantic_type": "age",
+          "confidence": 0.98,
+          "evidence": [
+            "Age alias; expected range 0–120"
+          ]
+        },
+        {
+          "column": "registered_on",
+          "semantic_type": "date",
+          "confidence": 0.95,
+          "evidence": [
+            "Date-related name; ISO/day-first parsing"
+          ]
+        },
+        {
+          "column": "customer_name",
+          "semantic_type": "person_name",
+          "confidence": 0.85,
+          "evidence": [
+            "Name alias"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "column": "town",
+          "semantic_type": "location",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "email_address",
+          "semantic_type": "email",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "client_id",
+          "semantic_type": "identifier",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "years_old",
+          "semantic_type": "age",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "registered_on",
+          "semantic_type": "date",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "customer_name",
+          "semantic_type": "person_name",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "operation": "drop_duplicates",
+          "explanation": "Remove identical rows after normalization. No unsupported imputation of identities or business facts."
+        }
+      ],
+      "missing_policy": "Preserve missing values for explicit downstream handling"
+    },
+    "audit": {
+      "columns": [
+        {
+          "column": "town",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "email_address",
+          "changed_cells": 119,
+          "new_missing": 0
+        },
+        {
+          "column": "client_id",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "years_old",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "registered_on",
+          "changed_cells": 119,
+          "new_missing": 0
+        },
+        {
+          "column": "customer_name",
+          "changed_cells": 0,
+          "new_missing": 0
+        }
+      ],
+      "duplicates_removed": 3,
+      "before": {
+        "rows": 123,
+        "missing_cells": 20,
+        "invalid_cells": 0,
+        "duplicate_rows": 3,
+        "formatting_cells": 119,
+        "completeness": 97.29,
+        "validity": 100.0,
+        "uniqueness": 97.56,
+        "consistency": 83.88,
+        "score": 94.68,
+        "issues": [
+          {
+            "column": "town",
+            "semantic_type": "location",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "email_address",
+            "semantic_type": "email",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 119
+          },
+          {
+            "column": "client_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "years_old",
+            "semantic_type": "age",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "registered_on",
+            "semantic_type": "date",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "customer_name",
+            "semantic_type": "person_name",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          }
+        ]
+      },
+      "after": {
+        "rows": 120,
+        "missing_cells": 20,
+        "invalid_cells": 0,
+        "duplicate_rows": 0,
+        "formatting_cells": 0,
+        "completeness": 97.22,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": 100.0,
+        "score": 99.31,
+        "issues": [
+          {
+            "column": "town",
+            "semantic_type": "location",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "email_address",
+            "semantic_type": "email",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "client_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "years_old",
+            "semantic_type": "age",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "registered_on",
+            "semantic_type": "date",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "customer_name",
+            "semantic_type": "person_name",
+            "missing": 4,
+            "invalid": 0,
+            "formatting": 0
+          }
+        ]
+      }
+    }
+  },
+  "transactions": {
+    "plan": {
+      "types": [
+        {
+          "column": "transaction_id",
+          "semantic_type": "identifier",
+          "confidence": 0.98,
+          "evidence": [
+            "Identifier column name; values preserved as keys"
+          ]
+        },
+        {
+          "column": "customer_id",
+          "semantic_type": "identifier",
+          "confidence": 0.98,
+          "evidence": [
+            "Identifier column name; values preserved as keys"
+          ]
+        },
+        {
+          "column": "product_id",
+          "semantic_type": "identifier",
+          "confidence": 0.98,
+          "evidence": [
+            "Identifier column name; values preserved as keys"
+          ]
+        },
+        {
+          "column": "amount",
+          "semantic_type": "currency",
+          "confidence": 0.95,
+          "evidence": [
+            "Monetary name and numeric/currency values"
+          ]
+        },
+        {
+          "column": "transaction_date",
+          "semantic_type": "date",
+          "confidence": 0.95,
+          "evidence": [
+            "Date-related name; ISO/day-first parsing"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "column": "transaction_id",
+          "semantic_type": "identifier",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "customer_id",
+          "semantic_type": "identifier",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "product_id",
+          "semantic_type": "identifier",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "amount",
+          "semantic_type": "currency",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "transaction_date",
+          "semantic_type": "date",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "operation": "drop_duplicates",
+          "explanation": "Remove identical rows after normalization. No unsupported imputation of identities or business facts."
+        }
+      ],
+      "missing_policy": "Preserve missing values for explicit downstream handling"
+    },
+    "audit": {
+      "columns": [
+        {
+          "column": "transaction_id",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "customer_id",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "product_id",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "amount",
+          "changed_cells": 349,
+          "new_missing": 1
+        },
+        {
+          "column": "transaction_date",
+          "changed_cells": 0,
+          "new_missing": 0
+        }
+      ],
+      "duplicates_removed": 3,
+      "before": {
+        "rows": 363,
+        "missing_cells": 28,
+        "invalid_cells": 1,
+        "duplicate_rows": 3,
+        "formatting_cells": 0,
+        "completeness": 98.46,
+        "validity": 99.94,
+        "uniqueness": 99.17,
+        "consistency": 100.0,
+        "score": 99.39,
+        "issues": [
+          {
+            "column": "transaction_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "customer_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "product_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "amount",
+            "semantic_type": "currency",
+            "missing": 14,
+            "invalid": 1,
+            "formatting": 0
+          },
+          {
+            "column": "transaction_date",
+            "semantic_type": "date",
+            "missing": 14,
+            "invalid": 0,
+            "formatting": 0
+          }
+        ]
+      },
+      "after": {
+        "rows": 360,
+        "missing_cells": 29,
+        "invalid_cells": 0,
+        "duplicate_rows": 0,
+        "formatting_cells": 0,
+        "completeness": 98.39,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": 100.0,
+        "score": 99.6,
+        "issues": [
+          {
+            "column": "transaction_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "customer_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "product_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "amount",
+            "semantic_type": "currency",
+            "missing": 15,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "transaction_date",
+            "semantic_type": "date",
+            "missing": 14,
+            "invalid": 0,
+            "formatting": 0
+          }
+        ]
+      }
+    }
+  },
+  "employees": {
+    "plan": {
+      "types": [
+        {
+          "column": "employee_id",
+          "semantic_type": "identifier",
+          "confidence": 0.98,
+          "evidence": [
+            "Identifier column name; values preserved as keys"
+          ]
+        },
+        {
+          "column": "employee_name",
+          "semantic_type": "person_name",
+          "confidence": 0.85,
+          "evidence": [
+            "Name alias"
+          ]
+        },
+        {
+          "column": "department",
+          "semantic_type": "category",
+          "confidence": 0.75,
+          "evidence": [
+            "Low value cardinality"
+          ]
+        },
+        {
+          "column": "salary",
+          "semantic_type": "currency",
+          "confidence": 0.95,
+          "evidence": [
+            "Monetary name and numeric/currency values"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "column": "employee_id",
+          "semantic_type": "identifier",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "employee_name",
+          "semantic_type": "person_name",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "department",
+          "semantic_type": "category",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "salary",
+          "semantic_type": "currency",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "operation": "drop_duplicates",
+          "explanation": "Remove identical rows after normalization. No unsupported imputation of identities or business facts."
+        }
+      ],
+      "missing_policy": "Preserve missing values for explicit downstream handling"
+    },
+    "audit": {
+      "columns": [
+        {
+          "column": "employee_id",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "employee_name",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "department",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "salary",
+          "changed_cells": 0,
+          "new_missing": 0
+        }
+      ],
+      "duplicates_removed": 3,
+      "before": {
+        "rows": 33,
+        "missing_cells": 3,
+        "invalid_cells": 0,
+        "duplicate_rows": 3,
+        "formatting_cells": 0,
+        "completeness": 97.73,
+        "validity": 100.0,
+        "uniqueness": 90.91,
+        "consistency": 100.0,
+        "score": 97.16,
+        "issues": [
+          {
+            "column": "employee_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "employee_name",
+            "semantic_type": "person_name",
+            "missing": 1,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "department",
+            "semantic_type": "category",
+            "missing": 1,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "salary",
+            "semantic_type": "currency",
+            "missing": 1,
+            "invalid": 0,
+            "formatting": 0
+          }
+        ]
+      },
+      "after": {
+        "rows": 30,
+        "missing_cells": 3,
+        "invalid_cells": 0,
+        "duplicate_rows": 0,
+        "formatting_cells": 0,
+        "completeness": 97.5,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": 100.0,
+        "score": 99.38,
+        "issues": [
+          {
+            "column": "employee_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "employee_name",
+            "semantic_type": "person_name",
+            "missing": 1,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "department",
+            "semantic_type": "category",
+            "missing": 1,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "salary",
+            "semantic_type": "currency",
+            "missing": 1,
+            "invalid": 0,
+            "formatting": 0
+          }
+        ]
+      }
+    }
+  },
+  "products": {
+    "plan": {
+      "types": [
+        {
+          "column": "product_id",
+          "semantic_type": "identifier",
+          "confidence": 0.98,
+          "evidence": [
+            "Identifier column name; values preserved as keys"
+          ]
+        },
+        {
+          "column": "product_name",
+          "semantic_type": "text",
+          "confidence": 0.85,
+          "evidence": [
+            "Name alias"
+          ]
+        },
+        {
+          "column": "price",
+          "semantic_type": "currency",
+          "confidence": 0.95,
+          "evidence": [
+            "Monetary name and numeric/currency values"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "column": "product_id",
+          "semantic_type": "identifier",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "product_name",
+          "semantic_type": "text",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "column": "price",
+          "semantic_type": "currency",
+          "operation": "normalize_and_validate",
+          "explanation": "Trim whitespace; lowercase emails; parse dates/currency; replace invalid values with missing. Preserve identifiers and existing missing values."
+        },
+        {
+          "operation": "drop_duplicates",
+          "explanation": "Remove identical rows after normalization. No unsupported imputation of identities or business facts."
+        }
+      ],
+      "missing_policy": "Preserve missing values for explicit downstream handling"
+    },
+    "audit": {
+      "columns": [
+        {
+          "column": "product_id",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "product_name",
+          "changed_cells": 0,
+          "new_missing": 0
+        },
+        {
+          "column": "price",
+          "changed_cells": 21,
+          "new_missing": 0
+        }
+      ],
+      "duplicates_removed": 3,
+      "before": {
+        "rows": 23,
+        "missing_cells": 3,
+        "invalid_cells": 0,
+        "duplicate_rows": 3,
+        "formatting_cells": 0,
+        "completeness": 95.65,
+        "validity": 100.0,
+        "uniqueness": 86.96,
+        "consistency": 100.0,
+        "score": 95.65,
+        "issues": [
+          {
+            "column": "product_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "product_name",
+            "semantic_type": "text",
+            "missing": 1,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "price",
+            "semantic_type": "currency",
+            "missing": 2,
+            "invalid": 0,
+            "formatting": 0
+          }
+        ]
+      },
+      "after": {
+        "rows": 20,
+        "missing_cells": 2,
+        "invalid_cells": 0,
+        "duplicate_rows": 0,
+        "formatting_cells": 0,
+        "completeness": 96.67,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": 100.0,
+        "score": 99.17,
+        "issues": [
+          {
+            "column": "product_id",
+            "semantic_type": "identifier",
+            "missing": 0,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "product_name",
+            "semantic_type": "text",
+            "missing": 1,
+            "invalid": 0,
+            "formatting": 0
+          },
+          {
+            "column": "price",
+            "semantic_type": "currency",
+            "missing": 1,
+            "invalid": 0,
+            "formatting": 0
+          }
+        ]
+      }
+    }
+  }
+}

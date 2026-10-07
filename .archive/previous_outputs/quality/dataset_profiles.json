@@ -1,0 +1,598 @@
+{
+  "customers": {
+    "dataset": "customers",
+    "rows": 210,
+    "columns": 8,
+    "column_names": [
+      "customer_id",
+      "first_name",
+      "last_name",
+      "email",
+      "phone",
+      "city",
+      "age",
+      "registration_date"
+    ],
+    "missing_count": 83,
+    "missing_percentage": 4.94,
+    "duplicate_count": 10,
+    "duplicate_percentage": 4.76,
+    "column_profiles": [
+      {
+        "column": "customer_id",
+        "dtype": "string",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 200,
+        "sample_values": [
+          "C00001",
+          "C00002",
+          "C00003",
+          "C00004",
+          " C00005 "
+        ],
+        "statistics": null
+      },
+      {
+        "column": "first_name",
+        "dtype": "string",
+        "missing_count": 12,
+        "missing_percentage": 5.71,
+        "unique_values": 12,
+        "sample_values": [
+          "Samar",
+          "Nour",
+          " Lina ",
+          " Lina ",
+          "Adam"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "last_name",
+        "dtype": "string",
+        "missing_count": 13,
+        "missing_percentage": 6.19,
+        "unique_values": 10,
+        "sample_values": [
+          " Karoui ",
+          "Trabelsi",
+          "Trabelsi",
+          "Ben Ali",
+          "Hamdi"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "email",
+        "dtype": "string",
+        "missing_count": 12,
+        "missing_percentage": 5.71,
+        "unique_values": 189,
+        "sample_values": [
+          "client0@example.com",
+          "invalid-email",
+          "client2@example.com",
+          "CLIENT3@EXAMPLE.COM",
+          "client4@example.com"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "phone",
+        "dtype": "string",
+        "missing_count": 11,
+        "missing_percentage": 5.24,
+        "unique_values": 189,
+        "sample_values": [
+          "+21620000000",
+          "+21620000001",
+          "+21620000002",
+          "+21620000003",
+          "123"
+        ],
+        "statistics": {
+          "min": 123.0,
+          "max": 21620000199.0,
+          "mean": 21402713664.884422,
+          "median": 21620000096.0
+        }
+      },
+      {
+        "column": "city",
+        "dtype": "string",
+        "missing_count": 12,
+        "missing_percentage": 5.71,
+        "unique_values": 16,
+        "sample_values": [
+          "Paris",
+          "Paris",
+          "SFAX",
+          "PARIS",
+          "SFAX"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "age",
+        "dtype": "string",
+        "missing_count": 11,
+        "missing_percentage": 5.24,
+        "unique_values": 74,
+        "sample_values": [
+          " 53 ",
+          " 62 ",
+          "-12",
+          "210",
+          "65"
+        ],
+        "statistics": {
+          "min": -12.0,
+          "max": 210.0,
+          "mean": 48.88442211055276,
+          "median": 48.0
+        }
+      },
+      {
+        "column": "registration_date",
+        "dtype": "string",
+        "missing_count": 12,
+        "missing_percentage": 5.71,
+        "unique_values": 43,
+        "sample_values": [
+          "2025-01-01",
+          "2025-01-02",
+          "2025-01-03",
+          "2025-01-04",
+          "2025-01-05"
+        ],
+        "statistics": null
+      }
+    ]
+  },
+  "clients_2026": {
+    "dataset": "clients_2026",
+    "rows": 210,
+    "columns": 7,
+    "column_names": [
+      "location",
+      "email_address",
+      "client_identifier",
+      "customer_age",
+      "telephone",
+      "signup_date",
+      "full_name"
+    ],
+    "missing_count": 68,
+    "missing_percentage": 4.63,
+    "duplicate_count": 10,
+    "duplicate_percentage": 4.76,
+    "column_profiles": [
+      {
+        "column": "location",
+        "dtype": "string",
+        "missing_count": 11,
+        "missing_percentage": 5.24,
+        "unique_values": 16,
+        "sample_values": [
+          "Paris",
+          "PARIS",
+          "Sfax",
+          "Paris",
+          "SFAX"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "email_address",
+        "dtype": "string",
+        "missing_count": 12,
+        "missing_percentage": 5.71,
+        "unique_values": 189,
+        "sample_values": [
+          "CLIENT0@EXAMPLE.COM",
+          "invalid-email",
+          "CLIENT2@EXAMPLE.COM",
+          "client3@example.com",
+          " CLIENT4@EXAMPLE.COM "
+        ],
+        "statistics": null
+      },
+      {
+        "column": "client_identifier",
+        "dtype": "string",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 200,
+        "sample_values": [
+          "C00001",
+          "C00002",
+          "C00003",
+          "C00004",
+          "C00005"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "customer_age",
+        "dtype": "string",
+        "missing_count": 11,
+        "missing_percentage": 5.24,
+        "unique_values": 73,
+        "sample_values": [
+          "53",
+          "62",
+          "-12",
+          "210",
+          "65"
+        ],
+        "statistics": {
+          "min": -12.0,
+          "max": 210.0,
+          "mean": 49.04522613065327,
+          "median": 48.0
+        }
+      },
+      {
+        "column": "telephone",
+        "dtype": "string",
+        "missing_count": 11,
+        "missing_percentage": 5.24,
+        "unique_values": 189,
+        "sample_values": [
+          "+21620000000",
+          "+21620000001",
+          "+21620000002",
+          "+21620000003",
+          "123"
+        ],
+        "statistics": {
+          "min": 123.0,
+          "max": 21620000199.0,
+          "mean": 21402713664.31658,
+          "median": 21620000095.0
+        }
+      },
+      {
+        "column": "signup_date",
+        "dtype": "string",
+        "missing_count": 11,
+        "missing_percentage": 5.24,
+        "unique_values": 48,
+        "sample_values": [
+          "01/01/2025",
+          "02/01/2025",
+          "03/01/2025",
+          " 04/01/2025 ",
+          " 05/01/2025 "
+        ],
+        "statistics": null
+      },
+      {
+        "column": "full_name",
+        "dtype": "string",
+        "missing_count": 12,
+        "missing_percentage": 5.71,
+        "unique_values": 46,
+        "sample_values": [
+          "Nour Karoui",
+          "Youssef Trabelsi",
+          "Lina Hamdi",
+          "Lina Trabelsi",
+          "Adam Ben Ali"
+        ],
+        "statistics": null
+      }
+    ]
+  },
+  "transactions": {
+    "dataset": "transactions",
+    "rows": 630,
+    "columns": 6,
+    "column_names": [
+      "transaction_id",
+      "client_id",
+      "transaction_date",
+      "amount",
+      "payment_method",
+      "product_id"
+    ],
+    "missing_count": 105,
+    "missing_percentage": 2.78,
+    "duplicate_count": 30,
+    "duplicate_percentage": 4.76,
+    "column_profiles": [
+      {
+        "column": "transaction_id",
+        "dtype": "string",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 600,
+        "sample_values": [
+          "T000000",
+          "T000001",
+          "T000002",
+          "T000003",
+          "T000004"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "client_id",
+        "dtype": "string",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 250,
+        "sample_values": [
+          "C00020",
+          "C00142",
+          "C00105",
+          " C00197 ",
+          "C00150"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "transaction_date",
+        "dtype": "string",
+        "missing_count": 35,
+        "missing_percentage": 5.56,
+        "unique_values": 3,
+        "sample_values": [
+          "2025-02-15",
+          "2025-02-15",
+          "2025-02-15",
+          "2025-02-15",
+          "2025-02-15"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "amount",
+        "dtype": "string",
+        "missing_count": 34,
+        "missing_percentage": 5.4,
+        "unique_values": 564,
+        "sample_values": [
+          "$296.25",
+          "$203.19",
+          "$469.45",
+          " $505.52 ",
+          "$159.91"
+        ],
+        "statistics": {
+          "min": 5.31,
+          "max": 999999.0,
+          "mean": 3668.5087542087545,
+          "median": 299.28
+        }
+      },
+      {
+        "column": "payment_method",
+        "dtype": "string",
+        "missing_count": 36,
+        "missing_percentage": 5.71,
+        "unique_values": 12,
+        "sample_values": [
+          "Transfer",
+          "Cash",
+          " TRANSFER ",
+          "Cash",
+          "Transfer"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "product_id",
+        "dtype": "string",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 58,
+        "sample_values": [
+          " P0013 ",
+          "P0014",
+          "P0008",
+          " P0009 ",
+          "P0006"
+        ],
+        "statistics": null
+      }
+    ]
+  },
+  "employees": {
+    "dataset": "employees",
+    "rows": 52,
+    "columns": 6,
+    "column_names": [
+      "employee_id",
+      "employee_name",
+      "department",
+      "salary",
+      "hire_date",
+      "email"
+    ],
+    "missing_count": 10,
+    "missing_percentage": 3.21,
+    "duplicate_count": 2,
+    "duplicate_percentage": 3.85,
+    "column_profiles": [
+      {
+        "column": "employee_id",
+        "dtype": "string",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 50,
+        "sample_values": [
+          "E0000",
+          " E0001 ",
+          "E0002",
+          "E0003",
+          "E0004"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "employee_name",
+        "dtype": "string",
+        "missing_count": 2,
+        "missing_percentage": 3.85,
+        "unique_values": 48,
+        "sample_values": [
+          "Employee 0",
+          "Employee 1",
+          "Employee 2",
+          "Employee 3",
+          "Employee 4"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "department",
+        "dtype": "string",
+        "missing_count": 2,
+        "missing_percentage": 3.85,
+        "unique_values": 10,
+        "sample_values": [
+          "FINANCE",
+          "ENGINEERING",
+          "FINANCE",
+          "FINANCE",
+          "Engineering"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "salary",
+        "dtype": "string",
+        "missing_count": 2,
+        "missing_percentage": 3.85,
+        "unique_values": 48,
+        "sample_values": [
+          "5040",
+          "3529",
+          "7531",
+          "7801",
+          "2347"
+        ],
+        "statistics": {
+          "min": 1651.0,
+          "max": 7917.0,
+          "mean": 4737.34,
+          "median": 4596.0
+        }
+      },
+      {
+        "column": "hire_date",
+        "dtype": "string",
+        "missing_count": 2,
+        "missing_percentage": 3.85,
+        "unique_values": 3,
+        "sample_values": [
+          "2023-03-01",
+          "2023-03-01",
+          "2023-03-01",
+          "2023-03-01",
+          "2023-03-01"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "email",
+        "dtype": "string",
+        "missing_count": 2,
+        "missing_percentage": 3.85,
+        "unique_values": 48,
+        "sample_values": [
+          "WORKER0@EXAMPLE.ORG",
+          "invalid-email",
+          "WORKER2@EXAMPLE.ORG",
+          "worker3@example.org",
+          "worker4@example.org"
+        ],
+        "statistics": null
+      }
+    ]
+  },
+  "products": {
+    "dataset": "products",
+    "rows": 32,
+    "columns": 4,
+    "column_names": [
+      "product_id",
+      "product_name",
+      "category",
+      "price"
+    ],
+    "missing_count": 4,
+    "missing_percentage": 3.12,
+    "duplicate_count": 2,
+    "duplicate_percentage": 6.25,
+    "column_profiles": [
+      {
+        "column": "product_id",
+        "dtype": "string",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 30,
+        "sample_values": [
+          "P0001",
+          "P0002",
+          "P0003",
+          "P0004",
+          "P0005"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "product_name",
+        "dtype": "string",
+        "missing_count": 1,
+        "missing_percentage": 3.12,
+        "unique_values": 29,
+        "sample_values": [
+          "Product 1",
+          " Product 2 ",
+          " Product 3 ",
+          "Product 4",
+          "Product 6"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "category",
+        "dtype": "string",
+        "missing_count": 1,
+        "missing_percentage": 3.12,
+        "unique_values": 9,
+        "sample_values": [
+          "Hardware",
+          "Hardware",
+          "SOFTWARE",
+          "Services",
+          "Services"
+        ],
+        "statistics": null
+      },
+      {
+        "column": "price",
+        "dtype": "string",
+        "missing_count": 2,
+        "missing_percentage": 6.25,
+        "unique_values": 29,
+        "sample_values": [
+          "$51.96",
+          "$156.47",
+          "$43.65",
+          "$182.57",
+          "$132.97"
+        ],
+        "statistics": {
+          "min": 6.06,
+          "max": 185.92,
+          "mean": 97.02466666666668,
+          "median": 113.27
+        }
+      }
+    ]
+  }
+}

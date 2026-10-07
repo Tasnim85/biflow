@@ -1,0 +1,169 @@
+[
+  {
+    "step": 0,
+    "column": "customer_id",
+    "operation": "strip",
+    "changed_cells": 27,
+    "missing_before": 0,
+    "missing_after": 0,
+    "explanation": "Normalize surrounding spaces and blank cells in customer_id; 27 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 1,
+    "column": "first_name",
+    "operation": "strip",
+    "changed_cells": 25,
+    "missing_before": 12,
+    "missing_after": 12,
+    "explanation": "Normalize surrounding spaces and blank cells in first_name; 25 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 2,
+    "column": "last_name",
+    "operation": "strip",
+    "changed_cells": 25,
+    "missing_before": 13,
+    "missing_after": 13,
+    "explanation": "Normalize surrounding spaces and blank cells in last_name; 25 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 3,
+    "column": "email",
+    "operation": "strip",
+    "changed_cells": 24,
+    "missing_before": 12,
+    "missing_after": 12,
+    "explanation": "Normalize surrounding spaces and blank cells in email; 82 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 4,
+    "column": "email",
+    "operation": "lowercase",
+    "changed_cells": 64,
+    "missing_before": 12,
+    "missing_after": 12,
+    "explanation": "Normalize email case under the demo policy.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 5,
+    "column": "email",
+    "operation": "validate_email",
+    "changed_cells": 2,
+    "missing_before": 12,
+    "missing_after": 14,
+    "explanation": "Mask invalid email formats (2 detected).",
+    "origin": "local_rule"
+  },
+  {
+    "step": 6,
+    "column": "phone",
+    "operation": "strip",
+    "changed_cells": 23,
+    "missing_before": 11,
+    "missing_after": 11,
+    "explanation": "Normalize surrounding spaces and blank cells in phone; 23 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 7,
+    "column": "phone",
+    "operation": "normalize_phone",
+    "changed_cells": 2,
+    "missing_before": 11,
+    "missing_after": 11,
+    "explanation": "Remove phone presentation separators and convert international 00 prefix to +.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 8,
+    "column": "phone",
+    "operation": "validate_phone",
+    "changed_cells": 2,
+    "missing_before": 11,
+    "missing_after": 13,
+    "explanation": "Require 8–15 digits with optional +; 2 invalid phones detected. No country prefix is invented.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 9,
+    "column": "city",
+    "operation": "strip",
+    "changed_cells": 24,
+    "missing_before": 12,
+    "missing_after": 12,
+    "explanation": "Normalize surrounding spaces and blank cells in city; 24 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 10,
+    "column": "city",
+    "operation": "normalize_categories",
+    "changed_cells": 198,
+    "missing_before": 12,
+    "missing_after": 12,
+    "explanation": "Canonical casefolded categories; 198 noncanonical cells. No fuzzy merging of distinct categories.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 11,
+    "column": "age",
+    "operation": "strip",
+    "changed_cells": 27,
+    "missing_before": 11,
+    "missing_after": 11,
+    "explanation": "Normalize surrounding spaces and blank cells in age; 27 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 12,
+    "column": "age",
+    "operation": "convert_numeric",
+    "changed_cells": 199,
+    "missing_before": 11,
+    "missing_after": 11,
+    "explanation": "Convert currency/number strings to nullable numeric values; 199 storage-type anomalies.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 13,
+    "column": "age",
+    "operation": "remove_impossible_values",
+    "changed_cells": 4,
+    "missing_before": 11,
+    "missing_after": 15,
+    "explanation": "Age must be an integer between 0 and 120.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 14,
+    "column": "registration_date",
+    "operation": "strip",
+    "changed_cells": 23,
+    "missing_before": 12,
+    "missing_after": 12,
+    "explanation": "Normalize surrounding spaces and blank cells in registration_date; 23 formatting anomalies detected. Identifier case and leading zeros are retained.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 15,
+    "column": "registration_date",
+    "operation": "convert_dates",
+    "changed_cells": 2,
+    "missing_before": 12,
+    "missing_after": 14,
+    "explanation": "Parse ISO/day-first slash dates; preserve timestamp UTC where applicable; invalid values become missing.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 16,
+    "operation": "remove_duplicates",
+    "rows_removed": 10,
+    "explanation": "Remove identical normalized rows; 10 raw duplicates detected.",
+    "origin": "local_rule"
+  }
+]
