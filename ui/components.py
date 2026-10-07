@@ -3,14 +3,14 @@ import re
 import streamlit as st
 from utils.visualization import dag_figure
 
-NAMES={'Similarity · DSO 6':'Dataset Similarity','Semantics · DSO 7':'Semantic Understanding','Cleaning Plan · DSO 5':'Cleaning Recommendations'}
+NAMES={'Dataset Similarity':'Dataset Similarity','Semantic Understanding':'Semantic Understanding','Cleaning Recommendations':'Cleaning Recommendations'}
 def label(name): return NAMES.get(name,name)
 def display_execution(execution):
     nodes={label(n):{**s,'dependencies':[label(p) for p in s['dependencies']]} for n,s in execution['nodes'].items()}
     return nodes,[(label(a),label(b)) for a,b in execution['edges']]
 
 PAGES=['Overview','Data Sources','Data Profiling','Dataset Similarity Detection','Automatic Semantic Classification','Data Quality','Intelligent Cleaning & Transformation','Parallel Agent Orchestration','Transformation Impact','Audit Trail','BI Readiness']
-STAGES=[('Data Sources','Data Sources',None),('Profiling','Data Profiling','Profiling'),('Similarity','Dataset Similarity Detection','Similarity · DSO 6'),('Semantic Understanding','Automatic Semantic Classification','Semantics · DSO 7'),('Quality','Data Quality','Data Quality'),('Cleaning','Intelligent Cleaning & Transformation','Controlled Execution'),('Validation','BI Readiness','Final Validation & BI'),('BI-ready Data','BI Readiness','Final Validation & BI')]
+STAGES=[('Data Sources','Data Sources',None),('Profiling','Data Profiling','Profiling'),('Similarity','Dataset Similarity Detection','Dataset Similarity'),('Semantic Understanding','Automatic Semantic Classification','Semantic Understanding'),('Quality','Data Quality','Data Quality'),('Cleaning','Intelligent Cleaning & Transformation','Controlled Execution'),('Validation','BI Readiness','Final Validation & BI'),('BI-ready Data','BI Readiness','Final Validation & BI')]
 EXPLANATIONS={
     'Overview':('Coordinate the preparation journey','Loaded tables','Actual independent tasks execute concurrently, then a human reviews proposed changes.','Validated tables and reports','NetworkX dependency graph + asynchronous agents'),
     'Data Sources':('Receive heterogeneous data','CSV files or reproducible synthetic data','Parse delimiters and preserve identifiers; choose the analysis scope.','Named tables and previews','Pandas, safe CSV ingestion'),
@@ -19,7 +19,7 @@ EXPLANATIONS={
     'Automatic Semantic Classification':('Identify business meaning','Names and observed values','Combine name signals, patterns, ranges and uniqueness. Review uncertain meanings.','Semantic classes and heuristic confidence','Rule ensemble for 16 business types'),
     'Data Quality':('Identify concrete quality problems','Data and reviewed semantic meanings','Measure completeness, uniqueness, validity and consistency. Accuracy requires external truth.','Quality scores and issue counts','Six-component quality assessment; IQR outliers are advisory'),
     'Intelligent Cleaning & Transformation':('Safely correct identified problems','Quality evidence and semantic types','Select operations, preview on a copy and explicitly approve before execution.','Clean data, generated code and change audit','Pydantic-validated operation allowlist; no arbitrary code execution'),
-    'Parallel Agent Orchestration':('Reduce unnecessary waiting while respecting dependencies','Loaded data and dependency graph','Independent similarity and semantic tasks overlap; dependent tasks wait.','Real task statuses, inputs, outputs and durations','asyncio / LangGraph + NetworkX'),
+    'Parallel Agent Orchestration':('Reduce unnecessary waiting while respecting dependencies','Loaded data and dependency graph','Similarity, semantic and quality tasks overlap after profiling; cleaning waits for all three.','Real task statuses, inputs, outputs and durations','asyncio / LangGraph + NetworkX'),
     'Transformation Impact':('Explain exactly what changed','Original data and approved plan','Track value changes at each operation and original row positions.','Before/after values, reasons and affected rows','Controlled engine change capture'),
     'Audit Trail':('Make decisions and execution traceable','Agent events and human actions','Record timestamps, decisions, reasons, statuses and transformations.','Downloadable audit records','Append-only JSON Lines decision log + task event log'),
     'BI Readiness':('Validate downstream suitability','Approved clean data','Recalculate quality and enforce configured score, uniqueness and validity gates.','Readiness decision, reports and clean CSV files','Quality gate + many-to-one integration validation')}

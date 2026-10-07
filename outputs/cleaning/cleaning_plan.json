@@ -6,28 +6,28 @@
         "operation": "strip",
         "column": "customer_id",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in customer_id; 27 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "first_name",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in first_name; 25 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "last_name",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in last_name; 25 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "email",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in email; 82 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
@@ -48,7 +48,7 @@
         "operation": "strip",
         "column": "phone",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in phone; 23 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
@@ -69,28 +69,28 @@
         "operation": "strip",
         "column": "city",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in city; 24 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "normalize_categories",
         "column": "city",
         "params": {},
-        "explanation": "Canonical casefolded categories; 198 noncanonical cells. No fuzzy merging of distinct categories.",
+        "explanation": "Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "age",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in age; 27 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "convert_numeric",
         "column": "age",
         "params": {},
-        "explanation": "Convert currency/number strings to nullable numeric values; 199 storage-type anomalies.",
+        "explanation": "Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.",
         "origin": "local_rule"
       },
       {
@@ -108,7 +108,7 @@
         "operation": "strip",
         "column": "registration_date",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in registration_date; 23 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
@@ -124,7 +124,7 @@
         "operation": "remove_duplicates",
         "column": null,
         "params": {},
-        "explanation": "Remove identical normalized rows; 10 raw duplicates detected.",
+        "explanation": "Remove identical normalized rows; 5 raw duplicates detected.",
         "origin": "local_rule"
       }
     ],
@@ -140,21 +140,21 @@
         "operation": "strip",
         "column": "location",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in location; 23 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+        "explanation": "Normalize surrounding spaces and blank cells in location; 12 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
         "origin": "recipe:customers"
       },
       {
         "operation": "normalize_categories",
         "column": "location",
         "params": {},
-        "explanation": "Canonical casefolded categories; 199 noncanonical cells. No fuzzy merging of distinct categories. Reused from a prior validated recipe with matching semantic class.",
+        "explanation": "Canonical casefolded categories; 99 noncanonical cells. No fuzzy merging of distinct categories. Reused from a prior validated recipe with matching semantic class.",
         "origin": "recipe:customers"
       },
       {
         "operation": "strip",
         "column": "email_address",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in email_address; 80 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+        "explanation": "Normalize surrounding spaces and blank cells in email_address; 38 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
         "origin": "recipe:customers"
       },
       {
@@ -175,21 +175,21 @@
         "operation": "strip",
         "column": "client_identifier",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in client_identifier; 26 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+        "explanation": "Normalize surrounding spaces and blank cells in client_identifier; 13 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
         "origin": "recipe:customers"
       },
       {
         "operation": "strip",
         "column": "customer_age",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in customer_age; 22 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+        "explanation": "Normalize surrounding spaces and blank cells in customer_age; 12 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
         "origin": "recipe:customers"
       },
       {
         "operation": "convert_numeric",
         "column": "customer_age",
         "params": {},
-        "explanation": "Convert currency/number strings to nullable numeric values; 199 storage-type anomalies. Reused from a prior validated recipe with matching semantic class.",
+        "explanation": "Convert currency/number strings to nullable numeric values; 99 storage-type anomalies. Reused from a prior validated recipe with matching semantic class.",
         "origin": "recipe:customers"
       },
       {
@@ -207,7 +207,7 @@
         "operation": "strip",
         "column": "telephone",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in telephone; 23 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+        "explanation": "Normalize surrounding spaces and blank cells in telephone; 13 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
         "origin": "recipe:customers"
       },
       {
@@ -228,7 +228,7 @@
         "operation": "strip",
         "column": "signup_date",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in signup_date; 27 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+        "explanation": "Normalize surrounding spaces and blank cells in signup_date; 10 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
         "origin": "recipe:customers"
       },
       {
@@ -244,14 +244,14 @@
         "operation": "strip",
         "column": "full_name",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in full_name; 25 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+        "explanation": "Normalize surrounding spaces and blank cells in full_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
         "origin": "recipe:customers"
       },
       {
         "operation": "remove_duplicates",
         "column": null,
         "params": {},
-        "explanation": "Remove identical normalized rows; 10 raw duplicates detected.",
+        "explanation": "Remove identical normalized rows; 5 raw duplicates detected.",
         "origin": "local_rule"
       }
     ],
@@ -267,21 +267,21 @@
         "operation": "strip",
         "column": "transaction_id",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in transaction_id; 78 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "client_id",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in client_id; 80 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "transaction_date",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in transaction_date; 72 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
@@ -297,42 +297,42 @@
         "operation": "strip",
         "column": "amount",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in amount; 74 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "convert_numeric",
         "column": "amount",
         "params": {},
-        "explanation": "Convert currency/number strings to nullable numeric values; 596 storage-type anomalies.",
+        "explanation": "Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "payment_method",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in payment_method; 73 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "normalize_categories",
         "column": "payment_method",
         "params": {},
-        "explanation": "Canonical casefolded categories; 594 noncanonical cells. No fuzzy merging of distinct categories.",
+        "explanation": "Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "product_id",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in product_id; 82 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "remove_duplicates",
         "column": null,
         "params": {},
-        "explanation": "Remove identical normalized rows; 30 raw duplicates detected.",
+        "explanation": "Remove identical normalized rows; 5 raw duplicates detected.",
         "origin": "local_rule"
       }
     ],
@@ -348,49 +348,49 @@
         "operation": "strip",
         "column": "employee_id",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in employee_id; 7 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in employee_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "employee_name",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in employee_name; 5 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in employee_name; 10 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "department",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in department; 6 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in department; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "normalize_categories",
         "column": "department",
         "params": {},
-        "explanation": "Canonical casefolded categories; 50 noncanonical cells. No fuzzy merging of distinct categories.",
+        "explanation": "Canonical casefolded categories; 98 noncanonical cells. No fuzzy merging of distinct categories.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "salary",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in salary; 6 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in salary; 11 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "convert_numeric",
         "column": "salary",
         "params": {},
-        "explanation": "Convert currency/number strings to nullable numeric values; 50 storage-type anomalies.",
+        "explanation": "Convert currency/number strings to nullable numeric values; 99 storage-type anomalies.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "hire_date",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in hire_date; 6 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in hire_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
@@ -406,7 +406,7 @@
         "operation": "strip",
         "column": "email",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in email; 20 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in email; 42 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
@@ -427,7 +427,7 @@
         "operation": "remove_duplicates",
         "column": null,
         "params": {},
-        "explanation": "Remove identical normalized rows; 2 raw duplicates detected.",
+        "explanation": "Remove identical normalized rows; 5 raw duplicates detected.",
         "origin": "local_rule"
       }
     ],
@@ -443,49 +443,49 @@
         "operation": "strip",
         "column": "product_id",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in product_id; 3 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "product_name",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in product_name; 4 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "category",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in category; 3 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "normalize_categories",
         "column": "category",
         "params": {},
-        "explanation": "Canonical casefolded categories; 31 noncanonical cells. No fuzzy merging of distinct categories.",
+        "explanation": "Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.",
         "origin": "local_rule"
       },
       {
         "operation": "strip",
         "column": "price",
         "params": {},
-        "explanation": "Normalize surrounding spaces and blank cells in price; 3 formatting anomalies detected. Identifier case and leading zeros are retained.",
+        "explanation": "Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.",
         "origin": "local_rule"
       },
       {
         "operation": "convert_numeric",
         "column": "price",
         "params": {},
-        "explanation": "Convert currency/number strings to nullable numeric values; 30 storage-type anomalies.",
+        "explanation": "Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.",
         "origin": "local_rule"
       },
       {
         "operation": "remove_duplicates",
         "column": null,
         "params": {},
-        "explanation": "Remove identical normalized rows; 2 raw duplicates detected.",
+        "explanation": "Remove identical normalized rows; 5 raw duplicates detected.",
         "origin": "local_rule"
       }
     ],

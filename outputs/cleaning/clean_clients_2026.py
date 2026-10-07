@@ -5,7 +5,7 @@ PLAN = {'dataset': 'clients_2026',
  'steps': [{'operation': 'strip',
             'column': 'location',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in location; 23 '
+            'explanation': 'Normalize surrounding spaces and blank cells in location; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained. Reused from a prior validated recipe with matching semantic '
                            'class.',
@@ -13,14 +13,14 @@ PLAN = {'dataset': 'clients_2026',
            {'operation': 'normalize_categories',
             'column': 'location',
             'params': {},
-            'explanation': 'Canonical casefolded categories; 199 noncanonical cells. No fuzzy '
+            'explanation': 'Canonical casefolded categories; 99 noncanonical cells. No fuzzy '
                            'merging of distinct categories. Reused from a prior validated recipe '
                            'with matching semantic class.',
             'origin': 'recipe:customers'},
            {'operation': 'strip',
             'column': 'email_address',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in email_address; 80 '
+            'explanation': 'Normalize surrounding spaces and blank cells in email_address; 38 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained. Reused from a prior validated recipe with matching semantic '
                            'class.',
@@ -40,7 +40,7 @@ PLAN = {'dataset': 'clients_2026',
            {'operation': 'strip',
             'column': 'client_identifier',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in client_identifier; 26 '
+            'explanation': 'Normalize surrounding spaces and blank cells in client_identifier; 13 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained. Reused from a prior validated recipe with matching semantic '
                            'class.',
@@ -48,7 +48,7 @@ PLAN = {'dataset': 'clients_2026',
            {'operation': 'strip',
             'column': 'customer_age',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in customer_age; 22 '
+            'explanation': 'Normalize surrounding spaces and blank cells in customer_age; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained. Reused from a prior validated recipe with matching semantic '
                            'class.',
@@ -56,7 +56,7 @@ PLAN = {'dataset': 'clients_2026',
            {'operation': 'convert_numeric',
             'column': 'customer_age',
             'params': {},
-            'explanation': 'Convert currency/number strings to nullable numeric values; 199 '
+            'explanation': 'Convert currency/number strings to nullable numeric values; 99 '
                            'storage-type anomalies. Reused from a prior validated recipe with '
                            'matching semantic class.',
             'origin': 'recipe:customers'},
@@ -68,7 +68,7 @@ PLAN = {'dataset': 'clients_2026',
            {'operation': 'strip',
             'column': 'telephone',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in telephone; 23 '
+            'explanation': 'Normalize surrounding spaces and blank cells in telephone; 13 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained. Reused from a prior validated recipe with matching semantic '
                            'class.',
@@ -90,7 +90,7 @@ PLAN = {'dataset': 'clients_2026',
            {'operation': 'strip',
             'column': 'signup_date',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in signup_date; 27 '
+            'explanation': 'Normalize surrounding spaces and blank cells in signup_date; 10 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained. Reused from a prior validated recipe with matching semantic '
                            'class.',
@@ -105,7 +105,7 @@ PLAN = {'dataset': 'clients_2026',
            {'operation': 'strip',
             'column': 'full_name',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in full_name; 25 '
+            'explanation': 'Normalize surrounding spaces and blank cells in full_name; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained. Reused from a prior validated recipe with matching semantic '
                            'class.',
@@ -113,7 +113,7 @@ PLAN = {'dataset': 'clients_2026',
            {'operation': 'remove_duplicates',
             'column': None,
             'params': {},
-            'explanation': 'Remove identical normalized rows; 10 raw duplicates detected.',
+            'explanation': 'Remove identical normalized rows; 5 raw duplicates detected.',
             'origin': 'local_rule'}],
  'missing_policy': 'Preserve unknown business values; explicit fill_missing is opt-in only.',
  'provider': 'local_rules',

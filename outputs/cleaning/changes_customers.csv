@@ -1,0 +1,339 @@
+row,column,before,after,reason,operation
+0,customer_id, C00001 ,C00001,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+6,customer_id, C00007 ,C00007,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+14,customer_id, C00015 ,C00015,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+16,customer_id, C00017 ,C00017,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+21,customer_id, C00022 ,C00022,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+27,customer_id, C00028 ,C00028,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+29,customer_id, C00030 ,C00030,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+32,customer_id, C00033 ,C00033,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+56,customer_id, C00057 ,C00057,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+76,customer_id, C00077 ,C00077,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+83,customer_id, C00084 ,C00084,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+97,customer_id, C00098 ,C00098,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+100,customer_id, C00001 ,C00001,Normalize surrounding spaces and blank cells in customer_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+9,first_name, Samar ,Samar,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+15,first_name, Nour ,Nour,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+29,first_name, Lina ,Lina,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+30,first_name, Lina ,Lina,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+39,first_name, Youssef ,Youssef,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+43,first_name, Lina ,Lina,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+50,first_name, Nour ,Nour,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+61,first_name, Nour ,Nour,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+75,first_name, Lina ,Lina,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+91,first_name, Nour ,Nour,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+92,first_name, Adam ,Adam,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+97,first_name, Nour ,Nour,Normalize surrounding spaces and blank cells in first_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+5,last_name, Hamdi ,Hamdi,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+10,last_name, Ben Ali ,Ben Ali,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+20,last_name, Trabelsi ,Trabelsi,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+30,last_name, Trabelsi ,Trabelsi,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+35,last_name, Ben Ali ,Ben Ali,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+43,last_name, Trabelsi ,Trabelsi,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+57,last_name, Trabelsi ,Trabelsi,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+67,last_name, Mansour ,Mansour,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+72,last_name, Hamdi ,Hamdi,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+75,last_name, Trabelsi ,Trabelsi,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+85,last_name, Trabelsi ,Trabelsi,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+96,last_name, Ben Ali ,Ben Ali,Normalize surrounding spaces and blank cells in last_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+21,email, CLIENT21@EXAMPLE.COM ,CLIENT21@EXAMPLE.COM,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+23,email, CLIENT23@EXAMPLE.COM ,CLIENT23@EXAMPLE.COM,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+24,email, client24@example.com ,client24@example.com,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+30,email, client30@example.com ,client30@example.com,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+42,email, CLIENT42@EXAMPLE.COM ,CLIENT42@EXAMPLE.COM,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+47,email, CLIENT47@EXAMPLE.COM ,CLIENT47@EXAMPLE.COM,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+57,email, client57@example.com ,client57@example.com,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+70,email, client70@example.com ,client70@example.com,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+77,email, client77@example.com ,client77@example.com,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+90,email, client90@example.com ,client90@example.com,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+92,email, CLIENT92@EXAMPLE.COM ,CLIENT92@EXAMPLE.COM,Normalize surrounding spaces and blank cells in email; 36 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+2,email,CLIENT2@EXAMPLE.COM,client2@example.com,Normalize email case under the demo policy.,lowercase
+3,email,CLIENT3@EXAMPLE.COM,client3@example.com,Normalize email case under the demo policy.,lowercase
+7,email,CLIENT7@EXAMPLE.COM,client7@example.com,Normalize email case under the demo policy.,lowercase
+8,email,CLIENT8@EXAMPLE.COM,client8@example.com,Normalize email case under the demo policy.,lowercase
+9,email,CLIENT9@EXAMPLE.COM,client9@example.com,Normalize email case under the demo policy.,lowercase
+13,email,CLIENT13@EXAMPLE.COM,client13@example.com,Normalize email case under the demo policy.,lowercase
+15,email,CLIENT15@EXAMPLE.COM,client15@example.com,Normalize email case under the demo policy.,lowercase
+21,email,CLIENT21@EXAMPLE.COM,client21@example.com,Normalize email case under the demo policy.,lowercase
+23,email,CLIENT23@EXAMPLE.COM,client23@example.com,Normalize email case under the demo policy.,lowercase
+31,email,CLIENT31@EXAMPLE.COM,client31@example.com,Normalize email case under the demo policy.,lowercase
+42,email,CLIENT42@EXAMPLE.COM,client42@example.com,Normalize email case under the demo policy.,lowercase
+44,email,CLIENT44@EXAMPLE.COM,client44@example.com,Normalize email case under the demo policy.,lowercase
+47,email,CLIENT47@EXAMPLE.COM,client47@example.com,Normalize email case under the demo policy.,lowercase
+52,email,CLIENT52@EXAMPLE.COM,client52@example.com,Normalize email case under the demo policy.,lowercase
+54,email,CLIENT54@EXAMPLE.COM,client54@example.com,Normalize email case under the demo policy.,lowercase
+55,email,CLIENT55@EXAMPLE.COM,client55@example.com,Normalize email case under the demo policy.,lowercase
+59,email,CLIENT59@EXAMPLE.COM,client59@example.com,Normalize email case under the demo policy.,lowercase
+61,email,CLIENT61@EXAMPLE.COM,client61@example.com,Normalize email case under the demo policy.,lowercase
+65,email,CLIENT65@EXAMPLE.COM,client65@example.com,Normalize email case under the demo policy.,lowercase
+67,email,CLIENT67@EXAMPLE.COM,client67@example.com,Normalize email case under the demo policy.,lowercase
+71,email,CLIENT71@EXAMPLE.COM,client71@example.com,Normalize email case under the demo policy.,lowercase
+75,email,CLIENT75@EXAMPLE.COM,client75@example.com,Normalize email case under the demo policy.,lowercase
+80,email,CLIENT80@EXAMPLE.COM,client80@example.com,Normalize email case under the demo policy.,lowercase
+81,email,CLIENT81@EXAMPLE.COM,client81@example.com,Normalize email case under the demo policy.,lowercase
+84,email,CLIENT84@EXAMPLE.COM,client84@example.com,Normalize email case under the demo policy.,lowercase
+85,email,CLIENT85@EXAMPLE.COM,client85@example.com,Normalize email case under the demo policy.,lowercase
+92,email,CLIENT92@EXAMPLE.COM,client92@example.com,Normalize email case under the demo policy.,lowercase
+97,email,CLIENT97@EXAMPLE.COM,client97@example.com,Normalize email case under the demo policy.,lowercase
+102,email,CLIENT2@EXAMPLE.COM,client2@example.com,Normalize email case under the demo policy.,lowercase
+103,email,CLIENT3@EXAMPLE.COM,client3@example.com,Normalize email case under the demo policy.,lowercase
+1,email,invalid-email,,Mask invalid email formats (2 detected).,validate_email
+101,email,invalid-email,,Mask invalid email formats (2 detected).,validate_email
+1,phone, +21620000001 ,+21620000001,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+12,phone, +21620000012 ,+21620000012,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+15,phone, +21620000015 ,+21620000015,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+28,phone, +21620000028 ,+21620000028,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+31,phone, +21620000031 ,+21620000031,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+60,phone, +21620000060 ,+21620000060,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+63,phone, +21620000063 ,+21620000063,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+67,phone, +21620000067 ,+21620000067,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+71,phone, +21620000071 ,+21620000071,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+79,phone, +21620000079 ,+21620000079,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+94,phone, +21620000094 ,+21620000094,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+101,phone, +21620000001 ,+21620000001,Normalize surrounding spaces and blank cells in phone; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+5,phone,00216 20 000 005,+21620000005,Remove phone presentation separators and convert international 00 prefix to +.,normalize_phone
+4,phone,123,,Require 8–15 digits with optional +; 2 invalid phones detected. No country prefix is invented.,validate_phone
+104,phone,123,,Require 8–15 digits with optional +; 2 invalid phones detected. No country prefix is invented.,validate_phone
+8,city, Sfax ,Sfax,Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+16,city, Tunis ,Tunis,Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+35,city, Sousse ,Sousse,Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+40,city, TUNIS ,TUNIS,Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+52,city, Tunis ,Tunis,Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+53,city, Sfax ,Sfax,Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+85,city, PARIS ,PARIS,Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+88,city, SOUSSE ,SOUSSE,Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+93,city, SFAX ,SFAX,Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+96,city, Paris ,Paris,Normalize surrounding spaces and blank cells in city; 10 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+0,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+1,city,PARIS,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+2,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+3,city,SOUSSE,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+4,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+5,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+6,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+7,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+8,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+9,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+10,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+12,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+13,city,SFAX,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+14,city,SOUSSE,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+15,city,SFAX,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+16,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+17,city,TUNIS,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+18,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+19,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+20,city,TUNIS,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+21,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+22,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+23,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+24,city,SOUSSE,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+25,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+27,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+28,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+29,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+30,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+31,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+32,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+33,city,PARIS,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+34,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+35,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+36,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+37,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+38,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+39,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+40,city,TUNIS,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+41,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+42,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+43,city,SOUSSE,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+44,city,SOUSSE,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+45,city,TUNIS,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+46,city,PARIS,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+47,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+48,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+50,city,TUNIS,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+51,city,SFAX,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+52,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+53,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+54,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+55,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+56,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+57,city,TUNIS,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+58,city,TUNIS,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+59,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+60,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+61,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+62,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+63,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+64,city,PARIS,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+65,city,SOUSSE,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+66,city,SFAX,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+67,city,SFAX,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+68,city,SOUSSE,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+69,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+70,city,SFAX,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+71,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+72,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+73,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+74,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+75,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+77,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+78,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+79,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+80,city,SFAX,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+81,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+82,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+83,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+84,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+85,city,PARIS,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+86,city,Tunis,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+87,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+88,city,SOUSSE,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+89,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+90,city,PARIS,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+91,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+92,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+93,city,SFAX,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+94,city,SOUSSE,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+95,city,Sousse,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+96,city,Paris,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+97,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+99,city,TUNIS,tunis,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+100,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+101,city,PARIS,paris,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+102,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+103,city,SOUSSE,sousse,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+104,city,Sfax,sfax,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+10,age, 55 ,55,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+42,age, 53 ,53,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+48,age, 28 ,28,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+53,age, 42 ,42,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+58,age, 23 ,23,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+65,age, 47 ,47,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+69,age, 62 ,62,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+72,age, 41 ,41,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+75,age, 23 ,23,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+88,age, 68 ,68,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+97,age, 29 ,29,Normalize surrounding spaces and blank cells in age; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+0,age,38,38.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+1,age,65,65.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+2,age,-12,-12.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+3,age,210,210.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+4,age,48,48.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+5,age,25,25.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+6,age,35,35.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+7,age,49,49.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+8,age,35,35.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+9,age,24,24.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+10,age,55,55.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+11,age,56,56.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+12,age,24,24.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+13,age,34,34.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+14,age,31,31.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+15,age,55,55.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+16,age,59,59.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+17,age,59,59.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+18,age,71,71.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+19,age,61,61.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+20,age,36,36.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+21,age,24,24.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+22,age,53,53.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+23,age,70,70.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+24,age,73,73.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+25,age,31,31.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+26,age,31,31.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+27,age,20,20.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+28,age,26,26.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+29,age,49,49.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+30,age,49,49.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+31,age,39,39.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+32,age,35,35.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+33,age,65,65.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+34,age,44,44.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+35,age,64,64.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+36,age,72,72.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+38,age,29,29.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+39,age,72,72.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+40,age,54,54.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+41,age,34,34.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+42,age,53,53.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+43,age,47,47.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+44,age,69,69.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+45,age,32,32.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+46,age,74,74.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+47,age,71,71.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+48,age,28,28.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+49,age,27,27.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+50,age,48,48.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+51,age,20,20.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+52,age,35,35.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+53,age,42,42.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+54,age,73,73.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+55,age,74,74.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+56,age,26,26.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+57,age,68,68.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+58,age,23,23.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+59,age,60,60.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+60,age,66,66.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+61,age,68,68.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+64,age,24,24.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+65,age,47,47.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+66,age,44,44.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+67,age,36,36.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+68,age,19,19.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+69,age,62,62.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+71,age,55,55.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+72,age,41,41.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+73,age,39,39.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+74,age,68,68.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+75,age,23,23.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+76,age,59,59.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+77,age,60,60.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+78,age,39,39.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+79,age,32,32.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+80,age,18,18.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+81,age,71,71.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+82,age,72,72.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+83,age,31,31.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+84,age,19,19.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+85,age,24,24.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+87,age,65,65.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+88,age,68,68.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+89,age,26,26.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+90,age,60,60.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+91,age,28,28.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+92,age,38,38.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+93,age,52,52.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+94,age,59,59.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+95,age,67,67.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+96,age,20,20.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+97,age,29,29.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+98,age,33,33.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+99,age,35,35.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+100,age,38,38.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+101,age,65,65.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+102,age,-12,-12.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+103,age,210,210.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+104,age,48,48.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+2,age,-12.0,,Age must be an integer between 0 and 120.,remove_impossible_values
+3,age,210.0,,Age must be an integer between 0 and 120.,remove_impossible_values
+102,age,-12.0,,Age must be an integer between 0 and 120.,remove_impossible_values
+103,age,210.0,,Age must be an integer between 0 and 120.,remove_impossible_values
+0,registration_date, 2025-01-01 ,2025-01-01,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+28,registration_date, 2025-01-01 ,2025-01-01,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+31,registration_date, 2025-01-04 ,2025-01-04,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+39,registration_date, 2025-01-12 ,2025-01-12,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+53,registration_date, 2025-01-26 ,2025-01-26,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+54,registration_date, 2025-01-27 ,2025-01-27,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+55,registration_date, 2025-01-28 ,2025-01-28,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+56,registration_date, 2025-01-01 ,2025-01-01,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+57,registration_date, 2025-01-02 ,2025-01-02,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+58,registration_date, 2025-01-03 ,2025-01-03,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+93,registration_date, 2025-01-10 ,2025-01-10,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+100,registration_date, 2025-01-01 ,2025-01-01,Normalize surrounding spaces and blank cells in registration_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+6,registration_date,31/02/2025,,Parse ISO/day-first slash dates; preserve timestamp UTC where applicable; invalid values become missing.,convert_dates
+100,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+101,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+102,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+103,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+104,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates

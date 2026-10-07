@@ -1,19 +1,13 @@
-BO1 - VERSION FINALE UNIQUE
+Intelligent Data Preparation & Integration
 
 1. Double-cliquez sur run_demo.bat.
-2. Le navigateur s'ouvre quand le serveur est pret.
-3. Cliquez sur "Lancer le pipeline BO1" dans la page d'accueil.
+2. Cliquez sur Launch Demonstration pour analyser les donnees.
+3. Explorez les pages Similarity, Semantic et Quality.
+4. Dans Intelligent Cleaning & Transformation, selectionnez les operations.
+5. Cliquez sur Preview Cleaning et verifiez les impacts.
+6. Indiquez une raison, confirmez la revue, puis Approve & Execute.
+7. Explorez Transformation Impact, Audit Trail et BI Readiness.
 
-Les donnees de demonstration sont deja chargees.
-Les resultats apparaissent directement sur l'accueil.
-Les details des quatre DSO sont dans la navigation a gauche.
-
-Un deuxieme double-clic sur run_demo.bat reutilise le serveur actif.
-Vous pouvez fermer la fenetre du lanceur apres le demarrage.
-Aucune cle API n'est necessaire.
-
-installer.bat sert uniquement si les dependances sont absentes.
-Les anciennes versions sont sauvegardees dans .archive.
-Le code final se trouve directement dans ce dossier, avec app.py.
-
-En cas d'erreur, consultez logs/server-error.log ou logs/last_pipeline_error.log.
+Aucune cle API necessaire. Les valeurs sont calculees sur les donnees.
+Le code final est directement dans ce dossier; README.md explique les limites.
+Les donnees brutes sont conservees. Le nettoyage exige votre approbation.

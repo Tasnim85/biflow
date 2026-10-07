@@ -5,45 +5,46 @@ PLAN = {'dataset': 'products',
  'steps': [{'operation': 'strip',
             'column': 'product_id',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in product_id; 3 '
+            'explanation': 'Normalize surrounding spaces and blank cells in product_id; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'product_name',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in product_name; 4 '
+            'explanation': 'Normalize surrounding spaces and blank cells in product_name; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'category',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in category; 3 formatting '
-                           'anomalies detected. Identifier case and leading zeros are retained.',
+            'explanation': 'Normalize surrounding spaces and blank cells in category; 12 '
+                           'formatting anomalies detected. Identifier case and leading zeros are '
+                           'retained.',
             'origin': 'local_rule'},
            {'operation': 'normalize_categories',
             'column': 'category',
             'params': {},
-            'explanation': 'Canonical casefolded categories; 31 noncanonical cells. No fuzzy '
+            'explanation': 'Canonical casefolded categories; 100 noncanonical cells. No fuzzy '
                            'merging of distinct categories.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'price',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in price; 3 formatting '
+            'explanation': 'Normalize surrounding spaces and blank cells in price; 11 formatting '
                            'anomalies detected. Identifier case and leading zeros are retained.',
             'origin': 'local_rule'},
            {'operation': 'convert_numeric',
             'column': 'price',
             'params': {},
-            'explanation': 'Convert currency/number strings to nullable numeric values; 30 '
+            'explanation': 'Convert currency/number strings to nullable numeric values; 100 '
                            'storage-type anomalies.',
             'origin': 'local_rule'},
            {'operation': 'remove_duplicates',
             'column': None,
             'params': {},
-            'explanation': 'Remove identical normalized rows; 2 raw duplicates detected.',
+            'explanation': 'Remove identical normalized rows; 5 raw duplicates detected.',
             'origin': 'local_rule'}],
  'missing_policy': 'Preserve unknown business values; explicit fill_missing is opt-in only.',
  'provider': 'local_rules',

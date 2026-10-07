@@ -5,28 +5,28 @@ PLAN = {'dataset': 'customers',
  'steps': [{'operation': 'strip',
             'column': 'customer_id',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in customer_id; 27 '
+            'explanation': 'Normalize surrounding spaces and blank cells in customer_id; 13 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'first_name',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in first_name; 25 '
+            'explanation': 'Normalize surrounding spaces and blank cells in first_name; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'last_name',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in last_name; 25 '
+            'explanation': 'Normalize surrounding spaces and blank cells in last_name; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'email',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in email; 82 formatting '
+            'explanation': 'Normalize surrounding spaces and blank cells in email; 36 formatting '
                            'anomalies detected. Identifier case and leading zeros are retained.',
             'origin': 'local_rule'},
            {'operation': 'lowercase',
@@ -42,7 +42,7 @@ PLAN = {'dataset': 'customers',
            {'operation': 'strip',
             'column': 'phone',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in phone; 23 formatting '
+            'explanation': 'Normalize surrounding spaces and blank cells in phone; 12 formatting '
                            'anomalies detected. Identifier case and leading zeros are retained.',
             'origin': 'local_rule'},
            {'operation': 'normalize_phone',
@@ -60,25 +60,25 @@ PLAN = {'dataset': 'customers',
            {'operation': 'strip',
             'column': 'city',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in city; 24 formatting '
+            'explanation': 'Normalize surrounding spaces and blank cells in city; 10 formatting '
                            'anomalies detected. Identifier case and leading zeros are retained.',
             'origin': 'local_rule'},
            {'operation': 'normalize_categories',
             'column': 'city',
             'params': {},
-            'explanation': 'Canonical casefolded categories; 198 noncanonical cells. No fuzzy '
+            'explanation': 'Canonical casefolded categories; 100 noncanonical cells. No fuzzy '
                            'merging of distinct categories.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'age',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in age; 27 formatting '
+            'explanation': 'Normalize surrounding spaces and blank cells in age; 11 formatting '
                            'anomalies detected. Identifier case and leading zeros are retained.',
             'origin': 'local_rule'},
            {'operation': 'convert_numeric',
             'column': 'age',
             'params': {},
-            'explanation': 'Convert currency/number strings to nullable numeric values; 199 '
+            'explanation': 'Convert currency/number strings to nullable numeric values; 100 '
                            'storage-type anomalies.',
             'origin': 'local_rule'},
            {'operation': 'remove_impossible_values',
@@ -89,7 +89,7 @@ PLAN = {'dataset': 'customers',
            {'operation': 'strip',
             'column': 'registration_date',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in registration_date; 23 '
+            'explanation': 'Normalize surrounding spaces and blank cells in registration_date; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained.',
             'origin': 'local_rule'},
@@ -102,7 +102,7 @@ PLAN = {'dataset': 'customers',
            {'operation': 'remove_duplicates',
             'column': None,
             'params': {},
-            'explanation': 'Remove identical normalized rows; 10 raw duplicates detected.',
+            'explanation': 'Remove identical normalized rows; 5 raw duplicates detected.',
             'origin': 'local_rule'}],
  'missing_policy': 'Preserve unknown business values; explicit fill_missing is opt-in only.',
  'provider': 'local_rules',

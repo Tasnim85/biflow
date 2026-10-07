@@ -7,11 +7,12 @@ def reset_filters():
     st.session_state.pop('filter_date',None)
 
 def global_filters(datasets,result):
+    for key,value in DEFAULTS.items(): st.session_state.setdefault(key,value)
     with st.sidebar.expander('Global view filters',expanded=False):
         if st.session_state.get('filter_dataset','All') not in ['All',*datasets]: st.session_state['filter_dataset']='All'
         st.selectbox('Dataset view',['All',*datasets],key='filter_dataset')
-        st.slider('Quality range',0,100,(0,100),key='filter_quality')
-        st.slider('Confidence range',0,100,(0,100),key='filter_confidence')
+        st.slider('Quality range',0,100,key='filter_quality')
+        st.slider('Confidence range',0,100,key='filter_confidence')
         st.selectbox('Severity',['All','Critical','High','Medium','Low'],key='filter_severity')
         st.selectbox('Status',['All','Completed','Pending','Running','Warning','Failed','Approved','Rejected','Modified'],key='filter_status')
         kinds=sorted({s['semantic_type'] for items in (result or {}).get('semantics',{}).values() for s in items})

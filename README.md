@@ -1,48 +1,16 @@
-# BO1 — VERSION FINALE UNIQUE
+# Intelligent Data Preparation & Integration
 
-Le projet final se trouve **directement dans ce dossier BO1**. `app.py`, `agents/`, `core/`, `data/` et `outputs/` constituent une seule application. Les anciennes versions et leurs copies sont conservées dans `.archive/`.
+A working local Streamlit prototype for the Multimodal Business Intelligence Agent. All scores, similarity matrices, profiles, changes and charts are computed from generated or uploaded data. No API key is required.
 
-## Démarrage sur cette machine
+## Run locally
 
-1. **Double-cliquez sur `run_demo.bat`.**
-2. Attendez le message `BO1 FINAL PRET`. Le navigateur s'ouvre automatiquement.
-3. Cliquez sur **▶ Lancer le pipeline BO1** dans l'accueil.
-4. Les résultats des cinq datasets apparaissent sur l'accueil. Les pages de gauche détaillent chaque DSO.
-
-Les données de démonstration sont chargées automatiquement. **Aucune installation ni clé API n'est nécessaire sur cette machine.** Le lanceur vérifie les dépendances, démarre un serveur Windows en arrière-plan, attend sa réponse puis ouvre le navigateur. Un autre double-clic réutilise le serveur actif. Vous pouvez fermer la fenêtre du lanceur après son message de confirmation.
-
-Le port préféré est **8501**. Si ce port est utilisé, un port disponible est choisi et le navigateur ouvre la bonne adresse. `logs/server.json` enregistre l'adresse active.
-
-## Les quatre DSO connectés
-
-| DSO | Fonction exécutée |
-|---|---|
-| **1** | Orchestrateur DAG, branches parallèles, dépendances, états, durées et erreurs ; choix asyncio ou LangGraph |
-| **6** | Embeddings et cosine similarity, correspondances de colonnes, matrice, recommandations et réutilisation de recettes |
-| **7** | 16 classes sémantiques, confiance heuristique et preuves par colonne |
-| **5** | Plans de nettoyage, validation Pydantic, moteur contrôlé, code exporté, audit et comparaison avant/après |
-
-Le mode par défaut utilise des embeddings locaux par hashing/concepts pour un démarrage rapide. MiniLM, installé localement dans `models/`, reste sélectionnable. L'application ne télécharge aucun modèle pendant l'exécution. L'option LLM utilise un plan JSON validé ; le Python reçu d'un LLM n'est jamais exécuté. En l'absence de clé API, les règles locales restent fonctionnelles.
-
-## Données personnelles
-
-Chargez un ou plusieurs CSV dans la barre latérale, puis cliquez sur **Load uploaded CSV files** et **Run BO1 Pipeline**. Les séparateurs virgule, point-virgule, tabulation et barre verticale sont reconnus. Les noms de colonnes doivent être uniques et le fichier doit contenir au moins une ligne de données. Les identifiants sont lus comme chaînes pour conserver leurs zéros initiaux.
-
-Les CSV de démonstration sont dans `data/generated/`. Les fichiers nettoyés, plans, audits et rapports sont dans `outputs/`. Le bouton **Télécharger tous les résultats** exporte les résultats de la session courante.
-
-## Vérifications
-
-Le lanceur `.bat` a été exécuté, l'accueil a été vérifié dans un navigateur, et le pipeline a été lancé par son bouton principal. La démonstration de 200 clients traite cinq datasets et produit 600 transactions enrichies. Le temps varie selon la machine et le backend. Les neuf tests couvrent aussi les neuf pages, MiniLM, le repli local, la concurrence des tâches, les erreurs, les plans non autorisés et les recettes réutilisées.
+On this machine, double-click `run_demo.bat`. Or run from this directory:
 
 ```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-## Installation sur une autre machine
-
-Python 3.11 ou supérieur est requis. Double-cliquez sur `installer.bat` une fois, puis sur `run_demo.bat`. L'installation des bibliothèques nécessite Internet. L'application fonctionne ensuite sans clé API, même sans poids MiniLM grâce au repli local.
-
-Installation manuelle depuis ce dossier :
+For a new machine (Python 3.11+):
 
 ```powershell
 py -3 -m venv .venv
@@ -50,51 +18,57 @@ py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-Pour installer explicitement le modèle neural local :
+## Demonstration walkthrough
 
-```powershell
-.\.venv\Scripts\python.exe download_embedding_model.py
-```
+1. Open Overview. Five reproducible dirty datasets are loaded automatically. Generate Demo Data offers 100, 500, 1000 or 5000 base rows per dataset; intentional duplicates add rows.
+2. Select the datasets to analyze and click Launch Demonstration. Watch the live execution graph: profiling precedes parallel similarity, semantics and quality analysis. Recommendations and plan validation follow.
+3. Explore the clickable pipeline and dedicated analysis pages. Each page explains its input, purpose, method and output. Global and contextual filters update applicable tables and charts.
+4. Review semantic meanings. Approve, reject or modify a meaning and provide a reason. Changed meanings require a new analysis before cleaning can be approved.
+5. In Intelligent Cleaning & Transformation, select/deselect operations, optionally modify the structured JSON plan, and inspect generated Python and explanations.
+6. Click Preview Cleaning. This transforms copies only. Inspect before/after scores, individual changes and the summary of every dataset in the approval scope.
+7. Enter an approval reason, check the confirmation, and click Approve & Execute. Execution uses the exact previewed plans; changed selections invalidate the preview. The live graph resumes through controlled execution and final validation.
+8. Inspect Transformation Impact, Audit Trail and BI Readiness. Download clean CSVs, individual reports or the complete ZIP with session decisions.
 
-`requirements-lock.txt` décrit l'environnement Windows/Python 3.12 vérifié. `.env.example` documente les variables facultatives ; `.env` n'est pas chargé automatiquement.
+Recipe reuse is available from earlier executed plans. The Similarity page displays mapped operations and requires recipe review before adding them to a plan. The target still needs preview and execution approval.
 
-## Diagnostic
+## Architecture
 
-- `logs/server-error.log` : erreurs de démarrage du serveur.
-- `logs/server.log` : sortie du serveur.
-- `logs/last_pipeline_error.log` : détail d'une exception du pipeline, si elle survient.
-- `.venv\Scripts\python.exe launcher.py --check` : vérification des dépendances.
-
-Le lanceur affiche une erreur lisible au lieu d'ouvrir une page avant que le serveur soit prêt. Si une ancienne page reste ouverte, utilisez l'adresse indiquée par `run_demo.bat` et actualisez la page.
-
-## Organisation finale
+The existing project is kept at this repository root to preserve the working launcher; there is no second nested application.
 
 ```text
-BO1/
-├── run_demo.bat           ← seul lanceur de l'application
-├── installer.bat          ← installation uniquement si nécessaire
-├── DEMARRAGE.txt
-├── launcher.py
-├── app.py
-├── pipeline.py
-├── data_generator.py
-├── download_embedding_model.py
-├── requirements.txt
-├── requirements-lock.txt
-├── README.md
-├── agents/
-├── core/
-├── utils/
-├── tests/
-├── data/generated/
-├── models/
-├── outputs/
-├── logs/
-├── docs/ARCHITECTURE.md
-├── .venv/
-└── .archive/              ← anciennes versions, sauvegardées
+app.py                  Streamlit workspace and human review workflow
+pipeline.py             analysis, reviewed execution and artifact exports
+data_generator.py       reproducible dirty customer/client/transaction/employee/product data
+agents/                 profiler, similarity, semantic, quality, cleaning, orchestrator
+core/                   DAG scheduler, embeddings, semantic classifier, quality,
+                        controlled cleaning, structured optional LLM and integration
+ui/                     shared stages, explanations, filtering, audit and charts
+utils/                  safe CSV ingestion, logging and Plotly visualizations
+tests/                  engine tests and Streamlit interaction tests
+data/generated/         generated CSV inputs
+outputs/                approved cleaned data, plans, reports and recipe registry
+outputs/logs/           timestamped human decisions (JSON Lines)
+logs/                   runtime diagnostics
 ```
 
-L'architecture, les formules de qualité, les règles et limites sont détaillées dans [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Les noms de l'ancien dossier dans cette annexe désignent le projet désormais regroupé à la racine.
+The NetworkX DAG is executed by asyncio or LangGraph. Independent branches use worker threads and per-dataset work uses a bounded thread pool. Quality derives its own semantic validation signals so it can run concurrently with the semantic review branch; both use the same configured reviewed meanings.
 
-Limites principales : CSV en mémoire, règles de dates/currency liées aux conventions de la démonstration, similarité et confiance heuristiques, valeurs manquantes conservées. Les scores sont calculés et ne sont pas une garantie de vérité métier. L'appel OpenAI réel reste facultatif et n'a pas été testé sans clé.
+## Measured methods and limits
+
+- Similarity uses real vector embeddings and cosine similarity, concept alignment, observed pattern/type/cardinality compatibility and column assignment. Default local hashing is an offline baseline. Select local Sentence Transformers / MiniLM for learned embeddings when model weights are available; failure falls back visibly. No model is downloaded automatically.
+- Semantic classification uses 16 business classes and evidence from names, values, ranges and uniqueness. Confidence is heuristic rule strength, not calibrated accuracy. Pattern inspection samples up to 500 present values.
+- Quality is the mean of completeness, uniqueness, validity, type consistency, categorical consistency and format consistency. Accuracy requires external truth. Missing business values are preserved; invalid values can become missing. IQR outliers are flagged for review.
+- Without an API key, local rules generate structured cleaning plans and reviewable code exports. Optional OpenAI enrichment returns validated JSON only. No arbitrary generated Python is executed. Pydantic and semantic checks reject unsupported operations, columns and protected identifier transformations.
+- Readiness requires the configured score threshold, zero detected invalid cells and zero duplicate rows. Semantic coverage is separately disclosed as the share of non-text meanings at confidence >=80%. Readiness is a demo gate, not proof of business correctness.
+- Sequential time is an estimate from the sum of measured task durations. Parallel time is actual elapsed processing including live UI overhead. Negative savings are possible. Human review waiting is excluded; there are no artificial delays or fabricated speedups.
+- CSVs are processed in memory. Date parsing follows ISO and day-first slash conventions. Category normalization uses casefolding without fuzzy merging. Cleaned data and decision logs persist locally; treat exports as containing the same information as the inputs.
+
+`.env.example` lists optional environment variables; `.env` is not automatically loaded. Install local MiniLM explicitly using `download_embedding_model.py` if required.
+
+## Verification
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```
+
+Tests cover actual quality improvements, unsafe plan rejection, identifier preservation, CSV ingestion, embedding alignment, DAG concurrency and failure handling, both scheduler backends, all 11 interface pages, explicit approval gating, downloads, filters and clickable navigation.

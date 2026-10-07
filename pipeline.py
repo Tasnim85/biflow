@@ -45,7 +45,7 @@ def persist(result):
     for name,content in artifacts.items():
         group='similarity' if name.startswith('similarity') else 'quality' if name.startswith(('quality','semantic','dataset')) else 'integration' if name.startswith(('integrat','bi_','dag_')) else 'cleaning'
         path=ROOT/'outputs'/name if name.startswith('cleaning/') else ROOT/'outputs'/group/name
-        path.parent.mkdir(parents=True,exist_ok=True); path.write_text(content,encoding='utf-8')
+        path.parent.mkdir(parents=True,exist_ok=True); path.write_text(content,encoding='utf-8',newline='')
     # Only recipes whose plans and transformations completed become reusable.
     registry=load_registry()
     for n,r in result['cleaning'].items():
@@ -66,6 +66,7 @@ def execute_reviewed(analysis,plans,callback=None):
     agent=OrchestratorAgent(analysis['datasets'],analysis['config'])
     data=analysis['datasets']; semantics=analysis['semantics']
     if set(plans)!=set(data): raise ValueError('Every selected dataset needs an explicit reviewed plan')
+    if any(plan.get('dataset')!=name for name,plan in plans.items()): raise ValueError('Reviewed plan dataset names must match the approval scope')
     functions={
         'Reviewed Plan Validation':lambda _:agent.parallel(lambda n:{'plan':validate_plan(plans[n],data[n],semantics[n]),'plan_hash':plan_digest(plans[n])}),
         'Controlled Execution':lambda s:agent.parallel(lambda n:execute_plan(data[n],s['Reviewed Plan Validation'][n]['plan'],semantics[n])),

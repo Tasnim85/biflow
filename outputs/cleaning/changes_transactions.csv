@@ -1,0 +1,277 @@
+row,column,before,after,reason,operation
+6,transaction_id, T000006 ,T000006,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+23,transaction_id, T000023 ,T000023,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+28,transaction_id, T000028 ,T000028,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+30,transaction_id, T000030 ,T000030,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+39,transaction_id, T000039 ,T000039,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+51,transaction_id, T000051 ,T000051,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+54,transaction_id, T000054 ,T000054,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+58,transaction_id, T000058 ,T000058,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+67,transaction_id, T000067 ,T000067,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+69,transaction_id, T000069 ,T000069,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+95,transaction_id, T000095 ,T000095,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+98,transaction_id, T000098 ,T000098,Normalize surrounding spaces and blank cells in transaction_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+15,client_id, C00080 ,C00080,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+30,client_id, C00073 ,C00073,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+39,client_id, C00090 ,C00090,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+44,client_id, C00080 ,C00080,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+48,client_id, C00032 ,C00032,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+52,client_id, C00009 ,C00009,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+69,client_id, C00038 ,C00038,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+77,client_id, C00012 ,C00012,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+79,client_id, C00086 ,C00086,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+82,client_id, C00013 ,C00013,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+85,client_id, C00059 ,C00059,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+94,client_id, C00044 ,C00044,Normalize surrounding spaces and blank cells in client_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+22,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+25,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+28,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+29,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+41,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+42,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+46,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+56,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+60,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+61,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+64,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+93,transaction_date, 2025-02-15 ,2025-02-15,Normalize surrounding spaces and blank cells in transaction_date; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+6,transaction_date,31/02/2025,,Parse ISO/day-first slash dates; preserve timestamp UTC where applicable; invalid values become missing.,convert_dates
+10,amount, $401.08 ,$401.08,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+12,amount, $58.81 ,$58.81,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+19,amount, $546.83 ,$546.83,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+28,amount, $39.05 ,$39.05,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+37,amount, $305.20 ,$305.20,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+43,amount, $119.86 ,$119.86,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+55,amount, $114.20 ,$114.20,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+62,amount, $567.88 ,$567.88,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+70,amount, $245.40 ,$245.40,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+93,amount, $193.15 ,$193.15,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+94,amount, $473.52 ,$473.52,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+96,amount, $261.69 ,$261.69,Normalize surrounding spaces and blank cells in amount; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+1,amount,$551.47,551.47,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+2,amount,$469.87,469.87,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+4,amount,$598.24,598.24,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+5,amount,$528.12,528.12,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+6,amount,$173.93,173.93,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+7,amount,unknown,,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+8,amount,$999999.00,999999.0,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+9,amount,$599.47,599.47,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+10,amount,$401.08,401.08,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+11,amount,$391.82,391.82,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+12,amount,$58.81,58.81,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+13,amount,$538.73,538.73,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+14,amount,$22.25,22.25,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+15,amount,$148.29,148.29,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+16,amount,$90.10,90.1,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+17,amount,$467.18,467.18,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+18,amount,$122.93,122.93,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+19,amount,$546.83,546.83,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+20,amount,$395.48,395.48,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+21,amount,$26.52,26.52,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+22,amount,$8.23,8.23,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+23,amount,$35.74,35.74,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+24,amount,$365.53,365.53,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+25,amount,$481.88,481.88,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+26,amount,$146.94,146.94,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+27,amount,$510.40,510.4,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+28,amount,$39.05,39.05,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+29,amount,$481.57,481.57,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+30,amount,$557.04,557.04,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+31,amount,$464.40,464.4,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+32,amount,$420.38,420.38,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+34,amount,$28.89,28.89,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+36,amount,$79.33,79.33,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+37,amount,$305.20,305.2,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+38,amount,$448.39,448.39,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+39,amount,$379.86,379.86,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+40,amount,$511.42,511.42,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+41,amount,$97.35,97.35,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+42,amount,$442.10,442.1,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+43,amount,$119.86,119.86,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+44,amount,$166.10,166.1,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+46,amount,$588.22,588.22,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+47,amount,$368.87,368.87,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+48,amount,$37.43,37.43,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+49,amount,$371.70,371.7,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+50,amount,$30.20,30.2,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+51,amount,$531.07,531.07,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+52,amount,$427.20,427.2,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+53,amount,$108.01,108.01,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+54,amount,$59.57,59.57,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+55,amount,$114.20,114.2,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+56,amount,$588.12,588.12,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+57,amount,$277.84,277.84,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+58,amount,$471.53,471.53,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+59,amount,$383.66,383.66,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+60,amount,$345.59,345.59,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+61,amount,$91.35,91.35,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+62,amount,$567.88,567.88,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+63,amount,$184.30,184.3,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+64,amount,$348.92,348.92,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+65,amount,$421.37,421.37,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+66,amount,$391.29,391.29,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+67,amount,$564.65,564.65,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+68,amount,$93.32,93.32,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+69,amount,$307.47,307.47,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+70,amount,$245.40,245.4,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+71,amount,$287.13,287.13,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+72,amount,$75.93,75.93,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+73,amount,$84.79,84.79,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+74,amount,$170.45,170.45,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+75,amount,$186.30,186.3,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+76,amount,$259.60,259.6,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+77,amount,$368.54,368.54,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+78,amount,$382.60,382.6,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+79,amount,$250.03,250.03,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+80,amount,$248.23,248.23,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+81,amount,$134.49,134.49,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+82,amount,$355.04,355.04,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+83,amount,$193.64,193.64,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+84,amount,$26.46,26.46,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+85,amount,$253.95,253.95,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+86,amount,$287.11,287.11,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+87,amount,$139.23,139.23,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+88,amount,$345.61,345.61,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+89,amount,$341.63,341.63,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+90,amount,$422.69,422.69,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+91,amount,$390.53,390.53,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+92,amount,$393.20,393.2,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+93,amount,$193.15,193.15,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+94,amount,$473.52,473.52,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+95,amount,$331.74,331.74,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+96,amount,$261.69,261.69,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+97,amount,$377.48,377.48,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+98,amount,$219.59,219.59,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+99,amount,$310.08,310.08,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+101,amount,$551.47,551.47,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+102,amount,$469.87,469.87,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+104,amount,$598.24,598.24,Convert currency/number strings to nullable numeric values; 98 storage-type anomalies.,convert_numeric
+10,payment_method, Card ,Card,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+14,payment_method, Cash ,Cash,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+16,payment_method, CASH ,CASH,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+40,payment_method, Transfer ,Transfer,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+41,payment_method, Transfer ,Transfer,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+49,payment_method, Card ,Card,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+54,payment_method, Card ,Card,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+59,payment_method, CARD ,CARD,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+65,payment_method, Cash ,Cash,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+77,payment_method, Card ,Card,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+98,payment_method, Card ,Card,Normalize surrounding spaces and blank cells in payment_method; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+0,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+1,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+2,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+3,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+4,payment_method,CARD,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+5,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+6,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+7,payment_method,CASH,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+8,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+9,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+10,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+11,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+12,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+14,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+15,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+16,payment_method,CASH,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+17,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+18,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+19,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+20,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+21,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+22,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+23,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+25,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+26,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+27,payment_method,CARD,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+28,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+29,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+30,payment_method,CASH,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+31,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+32,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+33,payment_method,CARD,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+34,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+35,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+36,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+37,payment_method,CARD,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+38,payment_method,CASH,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+39,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+40,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+41,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+42,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+43,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+44,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+45,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+46,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+47,payment_method,CASH,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+48,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+49,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+50,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+51,payment_method,CASH,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+52,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+53,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+54,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+55,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+56,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+58,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+59,payment_method,CARD,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+60,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+61,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+62,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+63,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+64,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+65,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+66,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+67,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+68,payment_method,CASH,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+69,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+70,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+71,payment_method,CARD,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+72,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+73,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+74,payment_method,CASH,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+75,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+76,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+77,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+79,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+80,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+81,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+82,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+83,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+84,payment_method,CARD,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+85,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+86,payment_method,TRANSFER,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+87,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+88,payment_method,CASH,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+89,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+91,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+92,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+93,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+94,payment_method,CARD,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+95,payment_method,CARD,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+96,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+97,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+98,payment_method,Card,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+99,payment_method,CASH,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+100,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+101,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+102,payment_method,Cash,cash,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+103,payment_method,Transfer,transfer,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+104,payment_method,CARD,card,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+4,product_id, P0031 ,P0031,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+5,product_id, P0019 ,P0019,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+9,product_id, P0005 ,P0005,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+13,product_id, P0030 ,P0030,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+24,product_id, P0085 ,P0085,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+42,product_id, P0094 ,P0094,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+43,product_id, P0085 ,P0085,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+51,product_id, P0051 ,P0051,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+76,product_id, P0032 ,P0032,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+78,product_id, P0026 ,P0026,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+79,product_id, P0003 ,P0003,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+94,product_id, P0053 ,P0053,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+104,product_id, P0031 ,P0031,Normalize surrounding spaces and blank cells in product_id; 13 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+100,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+101,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+102,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+103,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+104,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates

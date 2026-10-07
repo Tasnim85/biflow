@@ -5,46 +5,46 @@ PLAN = {'dataset': 'employees',
  'steps': [{'operation': 'strip',
             'column': 'employee_id',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in employee_id; 7 '
+            'explanation': 'Normalize surrounding spaces and blank cells in employee_id; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'employee_name',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in employee_name; 5 '
+            'explanation': 'Normalize surrounding spaces and blank cells in employee_name; 10 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'department',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in department; 6 '
+            'explanation': 'Normalize surrounding spaces and blank cells in department; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained.',
             'origin': 'local_rule'},
            {'operation': 'normalize_categories',
             'column': 'department',
             'params': {},
-            'explanation': 'Canonical casefolded categories; 50 noncanonical cells. No fuzzy '
+            'explanation': 'Canonical casefolded categories; 98 noncanonical cells. No fuzzy '
                            'merging of distinct categories.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'salary',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in salary; 6 formatting '
+            'explanation': 'Normalize surrounding spaces and blank cells in salary; 11 formatting '
                            'anomalies detected. Identifier case and leading zeros are retained.',
             'origin': 'local_rule'},
            {'operation': 'convert_numeric',
             'column': 'salary',
             'params': {},
-            'explanation': 'Convert currency/number strings to nullable numeric values; 50 '
+            'explanation': 'Convert currency/number strings to nullable numeric values; 99 '
                            'storage-type anomalies.',
             'origin': 'local_rule'},
            {'operation': 'strip',
             'column': 'hire_date',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in hire_date; 6 '
+            'explanation': 'Normalize surrounding spaces and blank cells in hire_date; 12 '
                            'formatting anomalies detected. Identifier case and leading zeros are '
                            'retained.',
             'origin': 'local_rule'},
@@ -57,7 +57,7 @@ PLAN = {'dataset': 'employees',
            {'operation': 'strip',
             'column': 'email',
             'params': {},
-            'explanation': 'Normalize surrounding spaces and blank cells in email; 20 formatting '
+            'explanation': 'Normalize surrounding spaces and blank cells in email; 42 formatting '
                            'anomalies detected. Identifier case and leading zeros are retained.',
             'origin': 'local_rule'},
            {'operation': 'lowercase',
@@ -73,7 +73,7 @@ PLAN = {'dataset': 'employees',
            {'operation': 'remove_duplicates',
             'column': None,
             'params': {},
-            'explanation': 'Remove identical normalized rows; 2 raw duplicates detected.',
+            'explanation': 'Remove identical normalized rows; 5 raw duplicates detected.',
             'origin': 'local_rule'}],
  'missing_policy': 'Preserve unknown business values; explicit fill_missing is opt-in only.',
  'provider': 'local_rules',
