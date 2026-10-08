@@ -1,0 +1,501 @@
+age,income,spending_score,transaction_amount,num_transactions,true_anomaly,anomaly_type
+19,44604.05,64,"  181,50  ",22,False,none
+42 unités,-28,64,166.05,18,False,none
+67,70359.89,53,76.21,21,False,none
+73,   ,"  21,00  ",72.29,2.5,False,none
+52,inconnu,44,66.19,23,False,none
+45,76349.18,59,77.57,20,False,none
+64,12158.61,"  58,00  ",68.68,18,False,none
+40,80130.67,42 unités,   ,17,False,none
+50,13131.49,94,114.98,inconnu,False,none
+-49,94906.64,"  59,00  ",111.48,-64,False,none
+62,"  23859,01  ",60,154.38,21,False,none
+72,41757.45,33,59.6,12,False,none
+72,89544.38,52,66.17,22,False,none
+37,42 EUR,56,178.45,22,False,none
+,72613.93,53,73.84,42 unités,False,none
+41,44355.79,77,-27,21,False,none
+26,"  49219,25  ",13,113.09,16,False,none
+20,42 EUR,5,95.83,18,False,none
+42 unités,non renseigné,87,163.23,23,False,none
+,"1,234.56",86,149.16,22,False,none
+74,62783.03,55,181.5,17,False,none
+"  59,00  ",77510.89,"  66,00  ","  20,28  ",16,False,none
+58,36794.9,42,-46,19,False,none
+52,49047.36,53,"1,234.56",26,False,none
+51,,65,62.58,18,False,none
+"  46,00  ",non renseigné,Infinity,31.94,20,False,none
+31,Infinity,24,183.61,23,False,none
+180,"1,234.56",7,90.75,"  22,00  ",False,none
+75,89058.07,10,non renseigné,Infinity,False,none
+20,64044.9,62,85.2,15,False,none
+24,   ,   ,196.8,24,False,none
+36,77689.45,92,29.74,23,False,none
+68,28681.9,1,81.41,10,False,none
+,89890.36,,82.92,13,False,none
+,"  45729,46  ",69,66.46,17,False,none
+48,74612.93,85,192.33,2.5,False,none
+inconnu,inconnu,83,149.52,20,False,none
+53,76081.33,79,9.68,17,False,none
+36,26688.38,"  52,00  ","  188,72  ",26,False,none
+Infinity,44898.72,95,192.67,27,False,none
+66,14656.59,96,89.67,21,False,none
+45,64698.86,7,60.29,"  22,00  ",False,none
+55,46793.18,55,66.71,12,False,none
+21,,inconnu,81.89,24,False,none
+38,51721.14,58,"  61,67  ",18,False,none
+180,   ,73,186.76,17,False,none
+22,53565.24,"  10,00  ",42.94,16,False,none
+46,42 EUR,88,69.53,16,False,none
+,93802.92,21,31.04,22,False,none
+69,29156.65,   ,166.23,"  26,00  ",False,none
+"  41,00  ",47150.98,99,191.58,20,False,none
+46,58735.26,92,"  159,69  ",18,False,none
+58,   ,59,16.17,18,False,none
+69,"  48416,15  ",14,111.06,"1,234.56",False,none
+75,60110.16,44,-71,-7,False,none
+52,95126.31,"1,234.56",187.46,26,False,none
+"1,234.56",26653.53,79,121.06,25,False,none
+24,"  59648,98  ",30,172.47,   ,False,none
+38,86230.57,94,48.49,20,False,none
+67,77899.5,72,"1,234.56",22,False,none
+46,58772.21,99,137.41,15,False,none
+27,23325.75,,78.01,16,False,none
+30,93573.07,78,152.66,19,False,none
+42,64664.1,91,inconnu,24,False,none
+,51931.99,"  35,00  ",151.24,"  25,00  ",False,none
+34,37392.33,"  8,00  ",58.32,26,False,none
+"1,234.56",-96,2,71.5,"  19,00  ",False,none
+58,62785.95,-71,"  30,12  ","  28,00  ",False,none
+40,inconnu,93,-92,42 unités,False,none
+inconnu,71995.53,9,Infinity,30,False,none
+Infinity,"  80363,55  ",31,6.8,18,False,none
+38,80122.52,27,160.34,,False,none
+57,-61,47,"  88,33  ",25,False,none
+53,74421.56,89,non renseigné,17,False,none
+19,57562.57,68,"1,234.56",28,False,none
+22,"  70394,65  ",44,,31,False,none
+23,58009.25,36,34.1,17,False,none
+Infinity,83341.16,63,22.3,20,False,none
+35,,53,171.41,12,False,none
+"  44,00  ",   ,85,inconnu,-30,False,none
+49,42 EUR,8,non renseigné,23,False,none
+31,61573.53,99,"  193,59  ",21,False,none
+"  50,00  ","  98228,81  ",37,101.78,23,False,none
+"  47,00  ",37040.34,"  9,00  ","  80,92  ",19,False,none
+,inconnu,Infinity,168.42,Infinity,False,none
+58,24538.38,"  64,00  ",188.34,23,False,none
+64,63934.64,56,   ,30,False,none
+56,16897.26,83,131.42,21,False,none
+67,73123.12,inconnu,81.13,"  17,00  ",False,none
+63,42136.87,89,127.47,21,False,none
+55,19609.98,78,"  125,19  ",13,False,none
+19,"  31327,21  ",2,137.66,,False,none
+"  65,00  ",49708.53,22,111.83,21,False,none
+,82049.23,Infinity,132.15,"  19,00  ",False,none
+23,92097.26,95,Infinity,16,False,none
+53,25753.19,,158.31,20,False,none
+inconnu,71964.44,45,115.63,17,False,none
+61,75175.77,92,84.08,23,False,none
+18,26033.72,42 unités,94.44,17,False,none
+30,77808.64,42 unités,48.21,19,False,none
+54,57347.71,99,-38,17,False,none
+39,inconnu,97,55.13,"  30,00  ",False,none
+50,-84,80,124.04,"  16,00  ",False,none
+47,73797.85,81,35.07,42 unités,False,none
+18,75316.04,83,176.54,20,False,none
+18,non renseigné,70,,21,False,none
+35,99101.81,64,122.87,22,False,none
+"  72,00  ",69922.64,13,-3,19,False,none
+51,-14,90,179.12,17,False,none
+48,51336.15,"  69,00  ","  141,28  ","  18,00  ",False,none
+54,86010.3,60,"  74,37  ",18,False,none
+18,"1,234.56",15,15.93,21,False,none
+54,94903.46,17,61.98,17,False,none
+58,59320.24,"  82,00  ",175.87,"  22,00  ",False,none
+44,89372.34,   ,139.53,18,False,none
+52,73003.09,7,-6,16,False,none
+50,55238.77,,non renseigné,23,False,none
+71,89891.14,   ,150.14,19,False,none
+51,71642.21,72,"1,234.56",12,False,none
+75,38931.65,3,8.28,29,False,none
+180,65153.37,59,,22,False,none
+"  54,00  ",19072.98,84,83.74,21,False,none
+"1,234.56",69067.74,14,78.94,12,False,none
+"  60,00  ",21244.45,39,94.7,42 unités,False,none
+74,13125.51,23,137.49,42 unités,False,none
+"1,234.56",18144.31,71,61.13,   ,False,none
+33,85130.16,"  61,00  ",114.22,14,False,none
+36,95178.08,26,50.44,15,False,none
+62,"  83629,60  ",   ,183.32,inconnu,False,none
+19,77631.13,11,172.93,14,False,none
+55,59538.99,"1,234.56",58.37,13,False,none
+"  38,00  ",83246.41,79,31.05,27,False,none
+54,15947.09,14,152.31,24,False,none
+72,74015.46,7,90.4,21,False,none
+37,"  70441,20  ",42 unités,,2.5,False,none
+-92,"1,234.56",42 unités,30.83,2.5,False,none
+70,,Infinity,60.87,25,False,none
+   ,93241.16,61,146.6,2.5,False,none
+70,96609.16,9,-28,"  29,00  ",False,none
+45,56674.49,60,57.52,18,False,none
+63,24866.18,52,33.96,19,False,none
+70,45651.64,"  79,00  ","  144,70  ",15,False,none
+inconnu,96460.48,94,71.56,"  22,00  ",False,none
+31,48356.99,38,94.49,   ,False,none
+70,89735.8,92,13.11,26,False,none
+24,62476.6,"  95,00  ","  147,28  ",20,False,none
+56,53198.34,18,,19,False,none
+31,42093.55,,16.85,22,False,none
+20,17961.9,12,13.61,13,False,none
+49,"1,234.56",64,non renseigné,19,False,none
+65,93300.47,20,"  89,63  ",21,False,none
+60,"  21113,92  ",40,188.69,21,False,none
+46,52832.55,42 unités,"  164,87  ",19,False,none
+,49717.76,16,191.93,19,False,none
+46,"  14022,08  ",85,80.46,24,False,none
+50,"  83480,38  ",47,"  34,13  ",11,False,none
+180,,11,61.64,12,False,none
+30,88351.15,76,66.43,19,False,none
+62,61572.79,69,127.36,17,False,none
+30,31826.47,41,-82,16,False,none
+47,53505.45,29,53.66,"  14,00  ",False,none
+64,27734.98,9,20.07,27,False,none
+55,64614.91,72,62.27,22,False,none
+   ,non renseigné,72,66.97,"  20,00  ",False,none
+54,88347.72,68,66.68,24,False,none
+59,42 EUR,82,175.95,23,False,none
+42 unités,"  71700,90  ",74,181.77,11,False,none
+42 unités,20595.12,25,-99,16,False,none
+25,81140.86,20,168.07,15,False,none
+24,"  39106,20  ",3,198.82,17,False,none
+"1,234.56",33830.7,61,7.97,22,False,none
+69,49644.15,46,,24,False,none
+54,27741.13,86,192.75,16,False,none
+"  65,00  ","  32848,93  ",13,41.77,23,False,none
+-33,14930.42,4,90.09,27,False,none
+28,63676.12,,87.09,13,False,none
+Infinity,"  57628,35  ",36,   ,24,False,none
+24,56544.52,84,31.07,16,False,none
+40,47145.8,55,199.7,24,False,none
+-13,19899.9,-12,non renseigné,19,False,none
+41,49782.68,42,,18,False,none
+70,28319.85,150,39.09,14,False,none
+57,"1,234.56",62,36.99,20,False,none
+21,75950.36,80,123.52,17,False,none
+"1,234.56","  90962,58  ",90,,29,False,none
+32,56360.43,74,non renseigné,18,False,none
+27,Infinity,31,64.43,18,False,none
+42,42735.36,78,148.67,15,False,none
+20,52493.33,98,69.12,24,False,none
+38,67839.46,9,80.18,22,False,none
+"  26,00  ",47953.96,65,18.9,42 unités,False,none
+"  46,00  ",,17,197.63,13,False,none
+39,34382.24,inconnu,150.57,17,False,none
+57,16150.91,"  62,00  ",29.94,"  18,00  ",False,none
+,54356.73,"  45,00  ",132.65,42 unités,False,none
+73,74415.15,49,18.64,27,False,none
+   ,14328.99,59,168.71,12,False,none
+58,24599.09,50,14.27,21,False,none
+46,53460.42,"  46,00  ",91.7,16,False,none
+38,24444.01,,33.51,inconnu,False,none
+,44530.44,70,140.76,23,False,none
+20,34058.18,12,129.86,21,False,none
+25,inconnu,42 unités,   ,16,False,none
+180,Infinity,93,non renseigné,16,False,none
+65,50557.07,8,129.9,16,False,none
+72,96918.74,150,-98,24,False,none
+"  36,00  ","  26210,37  ",27,34.21,23,False,none
+"  18,00  ",77447.61,91,8.59,25,False,none
+61,61156.18,"  75,00  ",75.83,22,False,none
+68,44109.08,76,103.37,20,False,none
+,63948.64,64,34.33,15,False,none
+44,"  35533,58  ",150,50.81,15,False,none
+61,   ,16,106.32,2.5,False,none
+55,25016.9,41,115.98,23,False,none
+32,80411.26,95,197.08,15,False,none
+70,12678.76,   ,116.83,19,False,none
+"  39,00  ",63815.51,"  47,00  ",   ,10,False,none
+23,Infinity,24,"  163,07  ",26,False,none
+37,27062.22,42 unités,"1,234.56",19,False,none
+31,57540.61,56,53.1,22,False,none
+   ,99110.13,,116.33,16,False,none
+65,"1,234.56",inconnu,165.41,16,False,none
+23,86077.34,42,36.72,24,False,none
+22,51123.56,47,72.82,16,False,none
+70,61293.06,49,150.92,20,False,none
+"  72,00  ",76825.3,,   ,21,False,none
+24,62619.96,80,161.72,"  14,00  ",False,none
+74,81368.64,"  12,00  ",39.99,18,False,none
+-93,41144.06,93,50.54,28,False,none
+36,20702.54,-8,non renseigné,"1,234.56",False,none
+53,-97,88,39.41,"  21,00  ",False,none
+52,23390.14,100,54.05,14,False,none
+24,   ,30,inconnu,22,False,none
+42,"1,234.56",35,"1,234.56",18,False,none
+inconnu,   ,11,167.31,22,False,none
+31,39215.87,95,70.4,25,False,none
+,27988.27,-39,non renseigné,16,False,none
+52,48181.22,57,99.92,2.5,False,none
+Infinity,59454.9,55,"  141,53  ",14,False,none
+46,95610.63,57,158.84,21,False,none
+70,66576.62,29,192.8,22,False,none
+71,14184.39,12,"  147,68  ","1,234.56",False,none
+inconnu,78900.0,76,"  124,76  ",2.5,False,none
+19,non renseigné,57,68.21,18,False,none
+,"  37195,32  ",7,"  93,90  ",21,False,none
+42,49221.35,85,166.23,30,False,none
+71,57374.51,inconnu,113.8,42 unités,False,none
+26,,"  72,00  ",173.88,42 unités,False,none
+56,76775.63,85,inconnu,19,False,none
+29,66498.56,54,"  32,08  ",23,False,none
+40,"  34880,10  ",16,144.97,28,False,none
+24,29382.68,20,56.2,22,False,none
+62,79442.89,33,72.07,,False,none
+46,39529.52,68,124.05,17,False,none
+57,35727.17,66,76.77,,False,none
+180,42872.23,28,"  75,55  ",14,False,none
+48,22521.67,28,26.98,"1,234.56",False,none
+31,Infinity,39,,31,False,none
+65,29417.88,33,114.86,19,False,none
+23,non renseigné,"  12,00  ",26.54,19,False,none
+38,62724.94,"1,234.56",143.17,16,False,none
+42,68789.06,73,70.35,,False,none
+51,   ,"  7,00  ",167.47,23,False,none
+58,18242.63,49,61.97,12,False,none
+180,60981.68,"  54,00  ",138.47,17,False,none
+33,92489.02,inconnu,46.36,21,False,none
+23,22815.98,84,114.31,19,False,none
+61,42 EUR,62,50.74,"  15,00  ",False,none
+-20,58655.04,29,138.16,25,False,none
+31,61194.55,74,38.36,42 unités,False,none
+45,21621.56,60,150.02,14,False,none
+47,38209.74,39,74.61,20,False,none
+38,inconnu,25,non renseigné,21,False,none
+44,42903.29,28,145.08,16,False,none
+41,66344.42,57,-66,22,False,none
+41,38166.34,13,non renseigné,16,False,none
+56,40050.17,42 unités,19.87,28,False,none
+47,90591.95,27,Infinity,"  22,00  ",False,none
+61,15071.32,,136.66,22,False,none
+68,15878.87,99,78.72,"  19,00  ",False,none
+36,96230.11,19,"  184,71  ",Infinity,False,none
+51,64736.18,1,,19,False,none
+51,48317.07,35,164.94,25,False,none
+73,60416.06,10,   ,18,False,none
+58,67369.78,70,   ,inconnu,False,none
+47,36154.22,9,49.54,22,False,none
+44,15044.07,94,191.88,"1,234.56",False,none
+34,73842.39,inconnu,93.53,18,False,none
+42 unités,51966.45,63,90.2,23,False,none
+63,"  40756,05  ","  81,00  ",73.13,15,False,none
+24,"  92367,81  ",inconnu,172.68,12,False,none
+51,,3,188.92,25,False,none
+34,55749.11,46,46.06,22,False,none
+38,44942.82,"1,234.56","  89,23  ",17,False,none
+23,non renseigné,85,90.33,18,False,none
+73,94641.29,33,Infinity,19,False,none
+55,74112.72,92,70.49,18,False,none
+64,41182.3,Infinity,15.2,23,False,none
+30,36351.74,"  21,00  ",71.93,18,False,none
+"1,234.56",72624.36,95,40.77,25,False,none
+,12914.05,8,35.29,22,False,none
+59,89602.14,   ,113.08,16,False,none
+31,"  92397,08  ",9,46.65,"  18,00  ",False,none
+Infinity,,41,123.47,"  21,00  ",False,none
+31,31370.26,73,Infinity,   ,False,none
+57,"  23287,21  ",   ,99.5,26,False,none
+69,91717.77,62,inconnu,17,False,none
+66,62513.69,61,"  141,74  ",22,False,none
+53,47702.97,46,15.37,28,False,none
+-69,"  56390,90  ",,99.57,17,False,none
+53,inconnu,68,75.69,20,False,none
+22,77644.84,36,62.84,Infinity,False,none
+42,"  38272,76  ",,non renseigné,17,False,none
+42 unités,88812.19,72,"  149,72  ",Infinity,False,none
+-77,   ,73,7.82,18,False,none
+180,87798.12,18,47.21,25,False,none
+72,77467.18,24,189.35,14,False,none
+22,42 EUR,1,12.27,13,False,none
+65,58702.99,91,184.37,21,False,none
+36,59488.71,33,71.51,18,False,none
+42 unités,"  41455,55  ",,65.34,18,False,none
+"  41,00  ","1,234.56",58,"1,234.56",26,False,none
+72,15498.08,"1,234.56",48.19,25,False,none
+62,82342.12,32,71.35,18,False,none
+35,64720.53,38,90.38,17,False,none
+inconnu,74133.9,77,199.38,20,False,none
+Infinity,45732.0,19,57.44,15,False,none
+62,36096.97,42,186.14,16,False,none
+43,27419.89,92,inconnu,"  27,00  ",False,none
+"  34,00  ","1,234.56","  23,00  ",159.14,2.5,False,none
+32,31434.7,80,166.63,23,False,none
+,24081.0,8,141.22,Infinity,False,none
+29,81006.5,27,58.29,"  22,00  ",False,none
+37,15146.15,59,57.22,19,False,none
+-19,-17,   ,13.84,"  21,00  ",False,none
+64,51419.81,39,126.55,22,False,none
+67,52989.24,36,110.08,,False,none
+"1,234.56",65908.02,77,6.68,2.5,False,none
+48,79220.94,54,10.55,22,False,none
+67,59255.86,inconnu,88.5,"  25,00  ",False,none
+31,23428.95,44,162.8,inconnu,False,none
+69,Infinity,inconnu,65.78,18,False,none
+49,50321.83,33,194.65,17,False,none
+46,84709.33,inconnu,186.5,17,False,none
+41,37930.08,49,161.6,17,False,none
+30,44209.9,69,33.15,20,False,none
+29,61385.93,inconnu,166.5,18,False,none
+,93673.73,62,118.21,12,False,none
+   ,40094.4,70,non renseigné,19,False,none
+68,94231.13,16,115.38,18,False,none
+19,16578.57,-25,151.05,15,False,none
+69,85052.49,"  36,00  ",non renseigné,24,False,none
+73,34968.77,42,72.64,16,False,none
+62,86604.61,150,59.66,20,False,none
+46,93798.47,-97,49.73,18,False,none
+18,18178.91,-2,10.51,19,False,none
+22,15263.81,100,57.21,,False,none
+63,72082.46,42 unités,"  44,63  ",20,False,none
+64,45165.33,97,41.4,"  16,00  ",False,none
+,24144.3,17,non renseigné,24,False,none
+"  75,00  ",23017.37,32,42 EUR,18,False,none
+61,85067.53,-77,11.97,19,False,none
+43,36009.56,42 unités,142.92,15,False,none
+45,51020.02,96,non renseigné,23,False,none
+"  49,00  ",50585.56,70,166.72,17,False,none
+44,98612.46,72,132.17,20,False,none
+67,15041.48,74,"1,234.56","1,234.56",False,none
+50,inconnu,2,155.94,15,False,none
+51,99337.31,"  1,00  ","  35,83  ","  17,00  ",False,none
+30,63664.96,40,90.63,16,False,none
+60,69193.98,42,"  93,13  ",10,False,none
+"  74,00  ",49100.88,98,"  144,14  ",18,False,none
+44,42 EUR,"  80,00  ",51.36,21,False,none
+33,23481.65,24,187.58,28,False,none
+51,99437.33,38,151.3,"  27,00  ",False,none
+Infinity,43207.48,5,97.81,17,False,none
+64,65068.16,1,"  45,95  ",19,False,none
+38,16675.79,150,non renseigné,23,False,none
+"  66,00  ",74438.24,52,169.39,20,False,none
+47,49433.61,99,97.49,14,False,none
+180,,99,25.08,18,False,none
+31,91788.02,75,76.51,14,False,none
+68,50320.16,"1,234.56",91.08,42 unités,False,none
+42 unités,37230.03,13,-90,20,False,none
+56,99717.48,64,   ,20,False,none
+57,79471.44,89,"  22,38  ",24,False,none
+54,84130.69,17,63.74,24,False,none
+61,,68,196.69,-54,False,none
+36,88176.94,28,"  168,05  ",20,False,none
+52,42 EUR,,inconnu,17,False,none
+23,"  60418,04  ",42,174.86,Infinity,False,none
+67,81887.67,24,190.34,20,False,none
+   ,31437.09,37,125.01,17,False,none
+34,21625.79,60,"  13,43  ","  16,00  ",False,none
+71,88699.57,64,172.33,25,False,none
+-13,,31,153.71,12,False,none
+42,63534.69,5,63.83,23,False,none
+33,28627.76,7,29.39,13,False,none
+25,90641.41,31,118.99,22,False,none
+180,non renseigné,49,112.43,42 unités,False,none
+   ,,44,38.38,,False,none
+72,87898.99,72,101.71,22,False,none
+64,22260.28,77,50.95,26,False,none
+"  75,00  ","  95739,96  ",54,30.83,23,False,none
+Infinity,inconnu,52,16.21,   ,False,none
+"1,234.56",26152.87,150,62.77,27,False,none
+47,37569.94,31,54.32,20,False,none
+64,67222.56,48,12.03,19,False,none
+"1,234.56",inconnu,25,76.51,16,False,none
+32,81343.11,88,88.39,24,False,none
+31,Infinity,63,172.75,,False,none
+53,76173.71,37,125.39,22,False,none
+40,96003.83,60,54.36,24,False,none
+22,62267.5,67,53.49,"  21,00  ",False,none
+31,68368.42,11,12.16,18,False,none
+,96065.97,71,"1,234.56",21,False,none
+62,83907.59,inconnu,32.71,18,False,none
+27,63027.67,68,,Infinity,False,none
+42,"1,234.56",88,44.64,22,False,none
+59,74160.73,8,103.98,22,False,none
+70,92259.93,33,69.95,14,False,none
+inconnu,51358.67,88,   ,24,False,none
+31,96789.12,"  59,00  ","  93,65  ",-67,False,none
+74,-57,15,182.0,19,False,none
+"1,234.56","  66460,44  ",22,165.52,28,False,none
+20,38218.34,86,"  169,65  ",22,False,none
+48,34213.5,72,inconnu,19,False,none
+62,88608.45,29,non renseigné,17,False,none
+29,26313.41,73,186.69,24,False,none
+40,"  86014,84  ",2,97.49,22,False,none
+47,14794.82,42 unités,100.09,16,False,none
+39,66899.14,100,,24,False,none
+45,"  60006,20  ",150,175.23,22,False,none
+"  39,00  ",22026.71,90,75.76,17,False,none
+57,   ,53,137.06,23,False,none
+66,57469.64,Infinity,164.07,21,False,none
+180,47392.98,"  71,00  ",141.25,inconnu,False,none
+180,63527.08,62,30.58,"  24,00  ",False,none
+44,91045.33,44,53.01,20,False,none
+35,58573.79,68,140.88,"  18,00  ",False,none
+42 unités,84769.29,"1,234.56",195.22,21,False,none
+38,98422.13,16,"  168,62  ",21,False,none
+180,74930.66,12,-71,13,False,none
+48,22841.52,,133.48,29,False,none
+"  45,00  ",70310.28,2,43.54,19,False,none
+"  52,00  ",-65,85,63.8,24,False,none
+67,98572.71,25,59.08,"  17,00  ",False,none
+58,58421.66,88,27.1,   ,False,none
+36,66205.7,"  85,00  ","  28,11  ",2.5,False,none
+48,74714.57,72,inconnu,23,False,none
+41,72607.05,53,118.16,15,False,none
+"1,234.56",65546.39,59,95.4,17,False,none
+-14,"  25297,64  ",9,82.33,21,False,none
+66,"  71532,05  ",93,6.24,20,False,none
+58,49389.3,12,35.48,27,False,none
+   ,38030.13,6,85.79,21,False,none
+34,98322.47,14,9.3,42 unités,False,none
+67,43710.82,25,165.45,"1,234.56",False,none
+"  48,00  ",-1,96,36.34,23,False,none
+inconnu,54143.4,"  57,00  ",-77,"  18,00  ",False,none
+20,51464.9,4,"  116,79  ",15,False,none
+73,80992.72,inconnu,158.22,16,False,none
+19,56159.5,92,26.63,"  26,00  ",False,none
+62,17051.32,25,145.7,21,False,none
+-86,80423.44,   ,"  151,90  ",22,False,none
+49,15016.51,48,162.24,18,False,none
+33,88426.15,20,178.5,17,False,none
+62,71535.27,-11,69.54,17,False,none
+43,87934.92,inconnu,90.64,19,False,none
+32,non renseigné,75,24.24,26,False,none
+   ,93976.85,14,197.38,25,False,none
+   ,97096.5,inconnu,161.67,"  14,00  ",False,none
+25,13586.71,12,162.78,19,False,none
+68,"  14613,60  ",inconnu,106.71,16,False,none
+53,non renseigné,8,38.43,17,False,none
+,52272.8,48,non renseigné,17,False,none
+,69164.4,14,,19,False,none
+,57224.52,84,39.14,24,False,none
+"  37,00  ",29585.84,18,60.86,"1,234.56",False,none
+67,,3,7.86,"  18,00  ",False,none
+72,19221.04,66,139.68,16,False,none
+21,"  51968,97  ",   ,"  194,30  ",17,False,none
+65,21303.61,,39.1,22,False,none
+30,46927.42,17,104.9,16,False,none
+Infinity,25780.77,51,"  9,77  ","  16,00  ",False,none
+36,58319.08,36,100.04,24,False,none
+63,non renseigné,61,137.64,"  15,00  ",False,none
+18,59110.15,"1,234.56",31.59,26,False,none
+"  23,00  ",15806.29,49,67.57,23,False,none
+64,14935.91,46,7.67,13,False,none
+68,52930.39,"  82,00  ",78.89,20,False,none
+"  42,00  ",80221.16,25,37.45,15,False,none
+75,96048.21,-33,48.25,23,False,none
+34,"1,234.56",59,"  55,03  ",20,False,none
+53,27284.7,,168.24,15,False,none
+48,96936.63,29,146.2,16,False,none
+62,68270.47,64,23.72,"1,234.56",False,none
+73,21440.7,"  100,00  ",114.29,17,False,none
+52,"  79117,58  ",35,non renseigné,25,False,none
+-18,21268.33,23,63.35,27,False,none

@@ -4,3 +4,4 @@ numpy
 scikit-learn
 shap
 matplotlib
+neo4j>=5.26,<7

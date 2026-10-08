@@ -1,0 +1,71 @@
+{
+  "id": "customer-cleaning",
+  "version": "1.1.0",
+  "context": "synthetic_customers",
+  "status": "approved_demo",
+  "approval": {
+    "DQ": "Repository demo policy selection",
+    "SEM": "Demo roles validated; financial values never imputed",
+    "ETL": "Deterministic execution"
+  },
+  "roles": {
+    "age": "numeric",
+    "income": "financial",
+    "spending_score": "numeric",
+    "transaction_amount": "financial",
+    "num_transactions": "numeric",
+    "channel": "category",
+    "signup_date": "date",
+    "customer_id": "identifier"
+  },
+  "rules": [
+    {
+      "id": "age-missing",
+      "column": "age",
+      "action": "review_missing"
+    },
+    {
+      "id": "income-missing",
+      "column": "income",
+      "action": "review_missing"
+    },
+    {
+      "id": "spending_score-missing",
+      "column": "spending_score",
+      "action": "review_missing"
+    },
+    {
+      "id": "transaction_amount-missing",
+      "column": "transaction_amount",
+      "action": "review_missing"
+    },
+    {
+      "id": "num_transactions-missing",
+      "column": "num_transactions",
+      "action": "review_missing"
+    },
+    {
+      "id": "channel-unknown",
+      "column": "channel",
+      "action": "fill_category",
+      "value": "Unknown",
+      "optional": true
+    },
+    {
+      "id": "signup-iso",
+      "column": "signup_date",
+      "action": "normalize_date",
+      "formats": [
+        "%Y-%m-%d",
+        "%d/%m/%Y"
+      ],
+      "optional": true
+    },
+    {
+      "id": "duplicate-id-review",
+      "column": "customer_id",
+      "action": "review_duplicates",
+      "optional": true
+    }
+  ]
+}
