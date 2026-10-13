@@ -1,18 +1,18 @@
 {
   "backend": "asyncio",
-  "started_at": "2026-10-13T21:33:12.787479+00:00",
-  "elapsed_seconds": 4.244262,
-  "sum_task_seconds": 5.7853829999999995,
+  "started_at": "2026-10-13T21:59:05.996473+00:00",
+  "elapsed_seconds": 3.715258,
+  "sum_task_seconds": 4.95072,
   "nodes": {
     "Profiling": {
       "agent": "Profiling",
       "status": "COMPLETED",
       "dependencies": [],
-      "started_at": "2026-10-13T21:33:12.957681+00:00",
-      "ended_at": "2026-10-13T21:33:13.119417+00:00",
-      "start_offset_seconds": 0.17022550001274794,
-      "end_offset_seconds": 0.3319581000250764,
-      "duration_seconds": 0.133985,
+      "started_at": "2026-10-13T21:59:06.130110+00:00",
+      "ended_at": "2026-10-13T21:59:06.275936+00:00",
+      "start_offset_seconds": 0.13365829997928813,
+      "end_offset_seconds": 0.2794815999804996,
+      "duration_seconds": 0.123212,
       "input": {
         "customers": {
           "rows": 105,
@@ -158,11 +158,11 @@
       "dependencies": [
         "Profiling"
       ],
-      "started_at": "2026-10-13T21:33:13.160755+00:00",
-      "ended_at": "2026-10-13T21:33:16.139248+00:00",
-      "start_offset_seconds": 0.37329389998922125,
-      "end_offset_seconds": 3.351787100022193,
-      "duration_seconds": 2.959043,
+      "started_at": "2026-10-13T21:59:06.319398+00:00",
+      "ended_at": "2026-10-13T21:59:08.728836+00:00",
+      "start_offset_seconds": 0.3229412999935448,
+      "end_offset_seconds": 2.7323977000196464,
+      "duration_seconds": 2.373871,
       "input": {
         "Profiling": {
           "customers": {
@@ -270,11 +270,11 @@
       "dependencies": [
         "Profiling"
       ],
-      "started_at": "2026-10-13T21:33:13.402354+00:00",
-      "ended_at": "2026-10-13T21:33:14.721549+00:00",
-      "start_offset_seconds": 0.6149141999776475,
-      "end_offset_seconds": 1.934085300017614,
-      "duration_seconds": 0.646815,
+      "started_at": "2026-10-13T21:59:06.620719+00:00",
+      "ended_at": "2026-10-13T21:59:07.735502+00:00",
+      "start_offset_seconds": 0.6242648999905214,
+      "end_offset_seconds": 1.739041900029406,
+      "duration_seconds": 0.778442,
       "input": {
         "Profiling": {
           "customers": {
@@ -381,11 +381,11 @@
       "dependencies": [
         "Profiling"
       ],
-      "started_at": "2026-10-13T21:33:13.138828+00:00",
-      "ended_at": "2026-10-13T21:33:14.518925+00:00",
-      "start_offset_seconds": 0.3513643000042066,
-      "end_offset_seconds": 1.7314660000265576,
-      "duration_seconds": 1.358256,
+      "started_at": "2026-10-13T21:59:06.298555+00:00",
+      "ended_at": "2026-10-13T21:59:07.224101+00:00",
+      "start_offset_seconds": 0.30209840001771227,
+      "end_offset_seconds": 1.2276413000072353,
+      "duration_seconds": 0.904772,
       "input": {
         "Profiling": {
           "customers": {
@@ -550,11 +550,11 @@
         "Semantic Understanding",
         "Data Quality"
       ],
-      "started_at": "2026-10-13T21:33:16.164647+00:00",
-      "ended_at": "2026-10-13T21:33:16.189202+00:00",
-      "start_offset_seconds": 3.377223799994681,
-      "end_offset_seconds": 3.401739099994302,
-      "duration_seconds": 0.002074,
+      "started_at": "2026-10-13T21:59:08.751746+00:00",
+      "ended_at": "2026-10-13T21:59:08.778641+00:00",
+      "start_offset_seconds": 2.755286200030241,
+      "end_offset_seconds": 2.782183100003749,
+      "duration_seconds": 0.006661,
       "input": {
         "Profiling": {
           "customers": {
@@ -804,11 +804,11 @@
         "Cleaning Recommendations",
         "Semantic Understanding"
       ],
-      "started_at": "2026-10-13T21:33:16.213439+00:00",
-      "ended_at": "2026-10-13T21:33:16.237170+00:00",
-      "start_offset_seconds": 3.425979699997697,
-      "end_offset_seconds": 3.4497057999833487,
-      "duration_seconds": 0.002955,
+      "started_at": "2026-10-13T21:59:08.795588+00:00",
+      "ended_at": "2026-10-13T21:59:08.820604+00:00",
+      "start_offset_seconds": 2.799128799990285,
+      "end_offset_seconds": 2.824144200014416,
+      "duration_seconds": 0.00286,
       "input": {
         "Cleaning Recommendations": {
           "customers": {
@@ -962,11 +962,11 @@
       "dependencies": [
         "Plan Validation"
       ],
-      "started_at": "2026-10-13T21:33:27.418182+00:00",
-      "ended_at": "2026-10-13T21:33:27.429499+00:00",
-      "start_offset_seconds": 3.5086510999531075,
-      "end_offset_seconds": 3.5199686999835595,
-      "duration_seconds": 0.003667,
+      "started_at": "2026-10-13T21:59:16.322779+00:00",
+      "ended_at": "2026-10-13T21:59:16.335855+00:00",
+      "start_offset_seconds": 2.887586100017976,
+      "end_offset_seconds": 2.9006512000252007,
+      "duration_seconds": 0.002959,
       "input": {
         "reviewed_datasets": [
           "customers",
@@ -1054,11 +1054,11 @@
       "dependencies": [
         "Reviewed Plan Validation"
       ],
-      "started_at": "2026-10-13T21:33:27.437680+00:00",
-      "ended_at": "2026-10-13T21:33:28.107870+00:00",
-      "start_offset_seconds": 3.528146199968882,
-      "end_offset_seconds": 4.198337799956329,
-      "duration_seconds": 0.663046,
+      "started_at": "2026-10-13T21:59:16.353357+00:00",
+      "ended_at": "2026-10-13T21:59:17.099606+00:00",
+      "start_offset_seconds": 2.918154900011465,
+      "end_offset_seconds": 3.6644025000188014,
+      "duration_seconds": 0.738271,
       "input": {
         "Reviewed Plan Validation": {
           "customers": {
@@ -1330,11 +1330,11 @@
       "dependencies": [
         "Controlled Execution"
       ],
-      "started_at": "2026-10-13T21:33:28.118670+00:00",
-      "ended_at": "2026-10-13T21:33:28.143548+00:00",
-      "start_offset_seconds": 4.209138300007448,
-      "end_offset_seconds": 4.23401579997107,
-      "duration_seconds": 0.015542,
+      "started_at": "2026-10-13T21:59:17.111372+00:00",
+      "ended_at": "2026-10-13T21:59:17.138567+00:00",
+      "start_offset_seconds": 3.6761692000346704,
+      "end_offset_seconds": 3.7033643000087215,
+      "duration_seconds": 0.019672,
       "input": {
         "Controlled Execution": {
           "customers": {
@@ -1644,137 +1644,137 @@
     {
       "agent": "Profiling",
       "status": "PENDING",
-      "offset_seconds": 0.000195
+      "offset_seconds": 0.000165
     },
     {
       "agent": "Dataset Similarity",
       "status": "PENDING",
-      "offset_seconds": 0.047715
+      "offset_seconds": 0.03902
     },
     {
       "agent": "Semantic Understanding",
       "status": "PENDING",
-      "offset_seconds": 0.071712
+      "offset_seconds": 0.059098
     },
     {
       "agent": "Data Quality",
       "status": "PENDING",
-      "offset_seconds": 0.097402
+      "offset_seconds": 0.075534
     },
     {
       "agent": "Cleaning Recommendations",
       "status": "PENDING",
-      "offset_seconds": 0.12036
+      "offset_seconds": 0.095666
     },
     {
       "agent": "Plan Validation",
       "status": "PENDING",
-      "offset_seconds": 0.144221
+      "offset_seconds": 0.116065
     },
     {
       "agent": "Profiling",
       "status": "RUNNING",
-      "offset_seconds": 0.170282
+      "offset_seconds": 0.133709
     },
     {
       "agent": "Profiling",
       "status": "COMPLETED",
-      "offset_seconds": 0.332015
+      "offset_seconds": 0.279542
     },
     {
       "agent": "Data Quality",
       "status": "RUNNING",
-      "offset_seconds": 0.351452
+      "offset_seconds": 0.302182
     },
     {
       "agent": "Dataset Similarity",
       "status": "RUNNING",
-      "offset_seconds": 0.373419
+      "offset_seconds": 0.323039
     },
     {
       "agent": "Semantic Understanding",
       "status": "RUNNING",
-      "offset_seconds": 0.615157
+      "offset_seconds": 0.624395
     },
     {
       "agent": "Data Quality",
       "status": "COMPLETED",
-      "offset_seconds": 1.731655
+      "offset_seconds": 1.227733
     },
     {
       "agent": "Semantic Understanding",
       "status": "COMPLETED",
-      "offset_seconds": 1.934189
+      "offset_seconds": 1.739136
     },
     {
       "agent": "Dataset Similarity",
       "status": "COMPLETED",
-      "offset_seconds": 3.351925
+      "offset_seconds": 2.732736
     },
     {
       "agent": "Cleaning Recommendations",
       "status": "RUNNING",
-      "offset_seconds": 3.378152
+      "offset_seconds": 2.755452
     },
     {
       "agent": "Cleaning Recommendations",
       "status": "COMPLETED",
-      "offset_seconds": 3.401858
+      "offset_seconds": 2.782314
     },
     {
       "agent": "Plan Validation",
       "status": "RUNNING",
-      "offset_seconds": 3.426162
+      "offset_seconds": 2.799275
     },
     {
       "agent": "Plan Validation",
       "status": "COMPLETED",
-      "offset_seconds": 3.449842
+      "offset_seconds": 2.82428
     },
     {
       "agent": "Reviewed Plan Validation",
       "status": "PENDING",
-      "offset_seconds": 3.478337
+      "offset_seconds": 2.8439639999999997
     },
     {
       "agent": "Controlled Execution",
       "status": "PENDING",
-      "offset_seconds": 3.487569
+      "offset_seconds": 2.857027
     },
     {
       "agent": "Final Validation & BI",
       "status": "PENDING",
-      "offset_seconds": 3.49518
+      "offset_seconds": 2.864537
     },
     {
       "agent": "Reviewed Plan Validation",
       "status": "RUNNING",
-      "offset_seconds": 3.508689
+      "offset_seconds": 2.8876399999999998
     },
     {
       "agent": "Reviewed Plan Validation",
       "status": "COMPLETED",
-      "offset_seconds": 3.520024
+      "offset_seconds": 2.900683
     },
     {
       "agent": "Controlled Execution",
       "status": "RUNNING",
-      "offset_seconds": 3.528213
+      "offset_seconds": 2.9182319999999997
     },
     {
       "agent": "Controlled Execution",
       "status": "COMPLETED",
-      "offset_seconds": 4.198416
+      "offset_seconds": 3.664469
     },
     {
       "agent": "Final Validation & BI",
       "status": "RUNNING",
-      "offset_seconds": 4.209326
+      "offset_seconds": 3.676328
     },
     {
       "agent": "Final Validation & BI",
       "status": "COMPLETED",
-      "offset_seconds": 4.2341429999999995
+      "offset_seconds": 3.7035009999999997
     }
   ],
   "acyclic": true,

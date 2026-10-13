@@ -7,3 +7,5 @@ models/
 logs/
 dist/
 /tmp/**.db
+*.db
+archive_ancienne_version/biflow_ancienne_version_complete.zip

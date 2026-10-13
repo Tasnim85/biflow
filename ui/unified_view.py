@@ -89,7 +89,7 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
 
         if selected_df is not None:
             st.caption(f"Aperçu des données : **{len(selected_df)} lignes** × **{len(selected_df.columns)} colonnes**")
-            st.dataframe(selected_df.head(4), use_container_width=True, hide_index=True)
+            st.dataframe(selected_df.head(4), width='stretch', hide_index=True)
 
     with col_input_right:
         st.markdown("### 💬 2. Question Métier en Langage Naturel")
@@ -134,7 +134,7 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
             launch_clicked = st.button(
                 "🚀 Exécuter l'Orchestrateur Complet (DAG)",
                 type="primary",
-                use_container_width=True
+                width='stretch'
             )
 
     st.markdown("---")
@@ -233,7 +233,7 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
         st.caption(f"**Type sélectionné automatiquement :** `{result.chart_recommendation.chart_type.upper()}` — **Raisonnement :** {result.chart_recommendation.rationale}")
         
         if result.plotly_figure:
-            st.plotly_chart(result.plotly_figure, use_container_width=True)
+            st.plotly_chart(result.plotly_figure, width='stretch')
 
         # Recognized Business Entities (NER)
         with st.expander("🏷️ Entités Reconnues dans le Glossaire Métier (NER)", expanded=True):
@@ -262,7 +262,7 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
             st.write(f"**Occurrences sensibles identifiées :** `{result.pii_count}`")
             st.caption("Masquage déterministe via HMAC (Emails, Téléphones, Identifiants).")
             if result.pii_count > 0:
-                st.dataframe(result.pii_detections.head(5), use_container_width=True, hide_index=True)
+                st.dataframe(result.pii_detections.head(5), width='stretch', hide_index=True)
             else:
                 st.info("Aucune donnée PII directe non masquée détectée dans ce jeu.")
 
@@ -281,7 +281,7 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
         st.caption("Visualisation de la chaîne causale complète : Données Sources ➔ Transformations de Nettoyage ➔ Filtres Qualité ➔ Métriques & KPIs Décisionnels.")
 
         if result.lineage_dot:
-            st.graphviz_chart(result.lineage_dot, use_container_width=True)
+            st.graphviz_chart(result.lineage_dot, width='stretch')
         else:
             st.info("Graphe de lignage non disponible.")
 
@@ -314,7 +314,7 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
                                 title=f"Importance des variables (Row {rec['row_index']})"
                             )
                             fig_shap.update_layout(height=240, margin=dict(l=20, r=20, t=35, b=20))
-                            st.plotly_chart(fig_shap, use_container_width=True)
+                            st.plotly_chart(fig_shap, width='stretch')
             else:
                 st.info("Aucune anomalie significative à auditer sur cet échantillon.")
 
@@ -337,7 +337,7 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
                         "Statut": rep["status"],
                         "Agents signalés": ", ".join(rep["flagged_agents"]) if rep["flagged_agents"] else "Aucun"
                     })
-                st.dataframe(pd.DataFrame(drift_rows), use_container_width=True, hide_index=True)
+                st.dataframe(pd.DataFrame(drift_rows), width='stretch', hide_index=True)
 
     # -------------------------------------------------------------------------
     # TAB 4 : BO1 - Orchestration DAG & Intelligence Sources
@@ -355,19 +355,19 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
                 "Durée (s)": f"{n.duration:.3f} s",
                 "Description": n.summary
             })
-        st.dataframe(pd.DataFrame(node_records), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame(node_records), width='stretch', hide_index=True)
 
         col_bo1_a, col_bo1_b = st.columns(2)
         with col_bo1_a:
             st.markdown("#### 🧬 Détection de Similarité de Datasets (BO1)")
             st.caption("Comparaison vectorielle de schémas pour identifier des recettes réutilisables :")
-            st.dataframe(pd.DataFrame(result.similarity_matches), use_container_width=True, hide_index=True)
+            st.dataframe(pd.DataFrame(result.similarity_matches), width='stretch', hide_index=True)
 
         with col_bo1_b:
             st.markdown("#### 🏷️ Classification Sémantique Automatique (NLP+ML)")
             st.caption("Inférence des rôles sémantiques métier sur les colonnes sources :")
             sem_rows = [{"Colonne": s["column"], "Type Sémantique": s["semantic_type"], "Confiance": f"{s['confidence']:.1%}"} for s in result.semantic_types]
-            st.dataframe(pd.DataFrame(sem_rows), use_container_width=True, hide_index=True)
+            st.dataframe(pd.DataFrame(sem_rows), width='stretch', hide_index=True)
 
     # -------------------------------------------------------------------------
     # TAB 5 : Données BI-Ready & Export
@@ -375,7 +375,7 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
     with tab_export:
         st.subheader("💾 Données Nettoyées & Export des Artefacts d'Audit")
         st.caption("Les données ci-dessous ont passé avec succès l'ensemble des filtres de gouvernance et de qualité :")
-        st.dataframe(result.cleaned_df.head(15), use_container_width=True)
+        st.dataframe(result.cleaned_df.head(15), width='stretch')
 
         col_exp1, col_exp2 = st.columns(2)
         with col_exp1:
@@ -385,7 +385,7 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
                 data=csv_data,
                 file_name=f"biflow_cleaned_{result.dataset_name}",
                 mime="text/csv",
-                use_container_width=True
+                width='stretch'
             )
 
         with col_exp2:
@@ -405,5 +405,5 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
                 data=json.dumps(manifest_dict, indent=2, ensure_ascii=False).encode("utf-8"),
                 file_name=f"biflow_manifest_{result.dataset_name}.json",
                 mime="application/json",
-                use_container_width=True
+                width='stretch'
             )
