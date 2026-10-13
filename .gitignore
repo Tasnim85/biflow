@@ -6,5 +6,4 @@ models/
 .archive/
 logs/
 dist/
-/tmp/*
-
+/tmp/**.db

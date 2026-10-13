@@ -16,6 +16,9 @@ from ui.dashboard import mean_quality,issue_rows
 from utils.helpers import ROOT,load_csv,safe_name,json_text
 from utils.visualization import dag_figure,similarity_figure,quality_figure,timeline_figure
 from bo4 import BusinessIntelligenceAgent
+from ui.unified_view import render_unified_scenario_view
+from ui.governance_view import render_governance_view
+from ui.xai_audit_view import render_xai_audit_view
 
 st.set_page_config(page_title='Intelligent Data Preparation & Integration',page_icon='◈',layout='wide')
 st.markdown('''<style>
@@ -28,7 +31,7 @@ st.title('Intelligent Data Preparation & Integration')
 st.caption('From heterogeneous raw data to reliable BI-ready data')
 st.markdown('<div class="hero">MULTIMODAL BUSINESS INTELLIGENCE AGENT &nbsp; / &nbsp; Explainable preparation workspace</div>',unsafe_allow_html=True)
 if 'datasets' not in st.session_state: st.session_state.datasets=generate_data(500,42,balanced=True)
-st.session_state.setdefault('nav','Overview')
+st.session_state.setdefault('nav','🎯 Scénario Complet E2E (Sarra)')
 
 def invalidate():
     for k in ['result','preview','reviewed_plans','analysis','semantic_overrides']: st.session_state.pop(k,None)
@@ -84,8 +87,6 @@ if run:
     except Exception as error: st.error(f'Analysis failed: {error}')
     finally: progress.empty()
 result=st.session_state.get('result')
-global_filters(datasets,result); pipeline_strip(result,datasets)
-st.subheader(page); explain(page)
 
 def table(data):
     frame=data if isinstance(data,pd.DataFrame) else pd.DataFrame(data)
@@ -102,6 +103,16 @@ def impact(name,cleaned):
     metrics([('Quality before',f"{before['score']:.1f}%"),('Quality after',f"{after['score']:.1f}%"),('Quality improvement',f"{after['score']-before['score']:+.1f} pp"),('Rows removed',cleaned['impact']['rows_removed']),('Values transformed',cleaned['impact']['values_transformed']),('Rows affected',cleaned['impact']['rows_affected']),('Columns affected',cleaned['impact']['columns_affected']),('Operations applied',len(cleaned['audit']))])
     st.plotly_chart(quality_figure(before,after),width='stretch')
     table([{'metric':k,'before':before[k],'after':after[k]} for k in ['missing_rate','duplicate_rate','invalid_rate','categorical_inconsistency_rate']])
+
+if page=='🎯 Scénario Complet E2E (Sarra)':
+    render_unified_scenario_view(datasets)
+elif page=='Gouvernance & Lignage (BO2)':
+    render_governance_view(datasets)
+elif page=='Explicabilité XAI & Audit (BO3)':
+    render_xai_audit_view(datasets)
+else:
+    global_filters(datasets,result); pipeline_strip(result,datasets)
+    st.subheader(page); explain(page)
 
 if page=='Overview':
     visible=names(datasets,result)
