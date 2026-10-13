@@ -59,14 +59,14 @@ def compute_hash(prev_hash, batch_id, row_id, position, column_name,
 
 
 class AuditLogStore:
-    def __init__(self, db_path: str = "audit_log.db"):
+    def __init__(self, db_path: str = "audit_log.db", extra_rules: dict | None = None):
         self.db_path = db_path
         self.conn = sqlite3.connect(db_path, check_same_thread=False)
         self.conn.row_factory = sqlite3.Row
         self.conn.executescript(SCHEMA)
         self.conn.executemany(
             "INSERT OR IGNORE INTO rules (rule_id, description) VALUES (?, ?)",
-            RULES.items(),
+            {**RULES, **(extra_rules or {})}.items(),
         )
         self.conn.commit()
 

@@ -7,5 +7,6 @@ st.set_page_config(page_title="BIFlow Auditor", layout="wide")
 home = st.Page("views/home.py", title="Home", icon="🏠", default=True)
 xai = st.Page("views/xai_view.py", title="XAI: Explain a decision", icon="🔍")
 audit = st.Page("views/audit_view.py", title="Audit log: Trace a change", icon="📜")
+drift = st.Page("views/drift_view.py", title="Drift: Monitor agents", icon="📈")
 
-st.navigation([home, xai, audit]).run()
+st.navigation([home, xai, audit, drift]).run()

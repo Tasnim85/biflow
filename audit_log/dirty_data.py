@@ -12,11 +12,12 @@ from data.data_generator import FEATURES, generate_dataset
 CITIES = ["Tunis", "Sfax", "Sousse", "Bizerte", "Gabès", "Nabeul"]
 
 
-def generate_dirty_dataset(seed: int = 7) -> pd.DataFrame:
+def generate_dirty_dataset(seed: int = 7, base: pd.DataFrame | None = None) -> pd.DataFrame:
     rng = np.random.default_rng(seed)
 
     # ---- 1. Clean base: same customers as prototype 1 --------------------
-    df = generate_dataset()[FEATURES].copy()
+    source = base if base is not None else generate_dataset()
+    df = source[FEATURES].copy()
     df.insert(0, "customer_id", range(1, len(df) + 1))
     df["city"] = rng.choice(CITIES, size=len(df))
     df["planted_defect"] = "none"
