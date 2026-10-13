@@ -6,3 +6,5 @@ models/
 .archive/
 logs/
 dist/
+/tmp/*
+/tests/*

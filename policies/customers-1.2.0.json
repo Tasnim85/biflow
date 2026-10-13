@@ -1,0 +1,55 @@
+{
+  "id": "customer-cleaning",
+  "version": "1.2.0",
+  "context": "synthetic_customers",
+  "status": "approved_demo",
+  "approval": {
+    "DQ": "Repository demo policy selection",
+    "SEM": "Demo roles validated; financial values never imputed",
+    "ETL": "Deterministic execution"
+  },
+  "roles": {
+    "age": "numeric",
+    "income": "financial",
+    "spending_score": "numeric",
+    "transaction_amount": "financial",
+    "num_transactions": "numeric"
+  },
+  "rules": [
+    {
+      "id": "age-numeric",
+      "column": "age",
+      "action": "normalize_numeric",
+      "min": 0,
+      "max": 120,
+      "integer": true
+    },
+    {
+      "id": "income-numeric",
+      "column": "income",
+      "action": "normalize_numeric",
+      "min": 0
+    },
+    {
+      "id": "spending_score-numeric",
+      "column": "spending_score",
+      "action": "normalize_numeric",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "id": "transaction_amount-numeric",
+      "column": "transaction_amount",
+      "action": "normalize_numeric",
+      "min": 0
+    },
+    {
+      "id": "num_transactions-numeric",
+      "column": "num_transactions",
+      "action": "normalize_numeric",
+      "min": 0,
+      "integer": true
+    }
+  ],
+  "numeric_convention": "Comma is a decimal separator; grouping separators are not accepted. Demo-only context."
+}
