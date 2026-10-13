@@ -394,35 +394,52 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
     st.dataframe(pd.DataFrame(node_records), width='stretch', hide_index=True)
 
     # Export
-    st.markdown("#### 💾 Export des Artefacts")
-    col_exp1, col_exp2, col_exp3 = st.columns(3)
+    st.markdown("#### 💾 Données Finales Nettoyées & Export des Artefacts BI-Ready")
+    st.info(
+        "💡 **Garantie de Gouvernance & Qualité :** Le fichier ci-dessous est le jeu de données **entièrement nettoyé, standardisé et gouverné** :\n"
+        "• **Données personnelles (PII)** : Noms, emails et numéros de téléphone masqués par hachage HMAC déterministe.\n"
+        "• **Conformité numérique** : Virgules décimales converties, unités textuelles retirées, nombres négatifs et hors-domaine corrigés.\n"
+        "• **Standardisation** : Dates normalisées au format ISO (YYYY-MM-DD), catégories nettoyées et cohérentes."
+    )
+
+    clean_file_base = result.dataset_name if result.dataset_name.endswith(".csv") else f"{result.dataset_name}.csv"
+    download_filename = f"biflow_cleaned_{clean_file_base}"
+
+    col_exp1, col_exp2 = st.columns([1, 1])
     with col_exp1:
         csv_data = result.cleaned_df.to_csv(index=False).encode("utf-8")
         st.download_button(
-            "📥 Données Nettoyées (CSV)", data=csv_data,
-            file_name=f"biflow_cleaned_{result.dataset_name}", mime="text/csv",
+            label=f"📥 Télécharger les Données Nettoyées ({download_filename})",
+            data=csv_data,
+            file_name=download_filename,
+            mime="text/csv",
+            type="primary",
             use_container_width=True
         )
     with col_exp2:
         manifest_dict = {
-            "dataset_name": result.dataset_name, "timestamp": result.start_time,
-            "total_duration_seconds": result.total_duration, "query": result.query,
+            "dataset_name": result.dataset_name,
+            "timestamp": result.start_time,
+            "total_duration_seconds": result.total_duration,
+            "query": result.query,
             "quality_before": result.quality_before["score"],
             "quality_after": result.quality_after["score"],
             "anomalies_detected": result.anomaly_count,
-            "pii_masked": result.pii_count,
+            "pii_masked_count": result.pii_count,
             "audit_chain_verified": result.audit_chain_valid,
             "chart_type": result.chart_recommendation.chart_type,
             "kpis": result.kpis
         }
         st.download_button(
-            "📜 Manifeste d'Audit (JSON)",
+            label="📜 Télécharger le Manifeste d'Audit & Traçabilité (JSON)",
             data=json.dumps(manifest_dict, indent=2, ensure_ascii=False).encode("utf-8"),
-            file_name=f"biflow_manifest_{result.dataset_name}.json", mime="application/json",
+            file_name=f"biflow_manifest_{clean_file_base}.json",
+            mime="application/json",
             use_container_width=True
         )
-    with col_exp3:
-        st.dataframe(result.cleaned_df.head(8), width='stretch', hide_index=True)
+
+    st.markdown("##### 👁️ Aperçu des Données Finales Nettoyées (Prêtes pour la BI) :")
+    st.dataframe(result.cleaned_df.head(25), width='stretch', hide_index=True)
 
 
 def _step_header(step_num: int, bo: str, icon: str, title: str, description: str, node=None):

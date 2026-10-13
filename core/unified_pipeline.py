@@ -256,31 +256,53 @@ def run_unified_scenario(
     # Assess baseline quality
     quality_before = assess_quality(df_raw, semantics=semantic_types)
     
-    has_customer_schema = set(FEATURES).issubset(set(df_raw.columns))
+    # Start cleaning from pii_df to preserve PII masking across the entire pipeline
+    base_for_cleaning = pii_df.copy() if pii_count > 0 else df_raw.copy()
+    has_customer_schema = set(FEATURES).issubset(set(base_for_cleaning.columns))
     playbook_used = f"Playbook versionné 'customers-{policy_version}.json'" if has_customer_schema else "Playbook Dynamique (Règles LLM/Pydantic)"
     
     if has_customer_schema:
         try:
             policy = load_policy(policy_version)
-            cleaned_res = clean_dataset(df_raw.astype(str), policy)
+            cleaned_res = clean_dataset(base_for_cleaning.astype(str), policy)
             cleaned_df = cleaned_res.data.copy()
-            # Clean and cast numeric fields back
-            for col in FEATURES:
-                s = cleaned_df[col].astype(str).str.replace(',', '.', regex=False).str.extract(r'([-+]?\d*\.?\d+)', expand=False)
-                cleaned_df[col] = pd.to_numeric(s, errors="coerce")
-                med = cleaned_df[col].median()
-                cleaned_df[col] = cleaned_df[col].fillna(med if pd.notna(med) else 0.0)
         except Exception:
-            cleaned_df = df_raw.copy()
-            for col in FEATURES:
-                s = cleaned_df[col].astype(str).str.replace(',', '.', regex=False).str.extract(r'([-+]?\d*\.?\d+)', expand=False)
-                cleaned_df[col] = pd.to_numeric(s, errors="coerce")
-                med = cleaned_df[col].median()
-                cleaned_df[col] = cleaned_df[col].fillna(med if pd.notna(med) else 0.0)
+            cleaned_df = base_for_cleaning.copy()
     else:
-        cleaned_df = df_raw.copy()
-        for c in cleaned_df.select_dtypes(include=[np.number]).columns:
-            cleaned_df[c] = cleaned_df[c].fillna(cleaned_df[c].median())
+        cleaned_df = base_for_cleaning.copy()
+
+    # 1. Enforce strict domain validity and numeric cleaning on FEATURES
+    for col in FEATURES:
+        if col in cleaned_df.columns:
+            s = cleaned_df[col].astype(str).str.replace(',', '.', regex=False).str.extract(r'([-+]?\d*\.?\d+)', expand=False)
+            num = pd.to_numeric(s, errors="coerce")
+            valid_median = num[num.notna() & (num >= 0)].median()
+            med_val = valid_median if pd.notna(valid_median) else 25.0
+
+            if col == "age":
+                cleaned_df[col] = num.apply(lambda x: int(med_val) if (pd.isna(x) or x < 18 or x > 100) else int(x))
+            elif col in ["income", "transaction_amount"]:
+                cleaned_df[col] = num.apply(lambda x: round(float(med_val), 2) if (pd.isna(x) or x < 0) else round(float(x), 2))
+            elif col == "spending_score":
+                cleaned_df[col] = num.apply(lambda x: int(med_val) if (pd.isna(x) or x < 1 or x > 100) else int(x))
+            elif col == "num_transactions":
+                cleaned_df[col] = num.apply(lambda x: int(med_val) if (pd.isna(x) or x < 0) else int(round(float(x))))
+
+    # 2. Enforce standard ISO format on all Date columns
+    for col in cleaned_df.columns:
+        if "date" in col.lower():
+            try:
+                cleaned_df[col] = pd.to_datetime(cleaned_df[col], errors="coerce", dayfirst=True).dt.strftime("%Y-%m-%d").fillna("2026-01-01")
+            except Exception:
+                pass
+
+    # 3. Normalize categorical string columns (Title case, trim whitespace)
+    for col in cleaned_df.select_dtypes(include=["object"]).columns:
+        if col not in ["email", "phone", "full_name"]:  # keep masked tokens intact
+            try:
+                cleaned_df[col] = cleaned_df[col].astype(str).str.strip().str.title().replace({"None": "Inconnu", "Nan": "Inconnu", "": "Inconnu"})
+            except Exception:
+                pass
     
     # Profiler & Anomaly Detection (Isolation Forest + Robust MAD)
     prof_result = run_profiler(cleaned_df)
