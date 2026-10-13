@@ -47,12 +47,20 @@ def render_unified_scenario_view(datasets: dict[str, pd.DataFrame]):
             demo_choice = st.selectbox(
                 "Sélectionner un jeu de données :",
                 [
+                    "🔥 Benchmark Complet Non Nettoyé (2000 lignes brutes avec erreurs réelles)",
                     "Clients & Transactions (500 clients avec anomalies réelles)",
                     "Clients avec Défauts de Qualité (Dirty Data)",
                     "Données Retail Multi-Tables (Transactions)",
                 ]
             )
-            if "500 clients" in demo_choice:
+            if "2000 lignes" in demo_choice:
+                try:
+                    selected_df = pd.read_csv("data/customers_dirty_2000.csv")
+                except Exception:
+                    from data.generate_comprehensive_dirty_2000 import generate_comprehensive_dirty_dataset
+                    selected_df = generate_comprehensive_dirty_dataset(2000)
+                dataset_name = "customers_dirty_2000.csv"
+            elif "500 clients" in demo_choice:
                 selected_df = generate_dataset(500, anomaly_rate=0.04, seed=42)
                 dataset_name = "customers_transactions_synthetic.csv"
             elif "Défauts" in demo_choice:
