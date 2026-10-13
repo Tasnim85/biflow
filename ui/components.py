@@ -9,7 +9,7 @@ def display_execution(execution):
     nodes={label(n):{**s,'dependencies':[label(p) for p in s['dependencies']]} for n,s in execution['nodes'].items()}
     return nodes,[(label(a),label(b)) for a,b in execution['edges']]
 
-PAGES=['Overview','Data Sources','Data Profiling','Dataset Similarity Detection','Automatic Semantic Classification','Data Quality','Intelligent Cleaning & Transformation','Parallel Agent Orchestration','Transformation Impact','Audit Trail','BI Readiness']
+PAGES=['Overview','Data Sources','Data Profiling','Dataset Similarity Detection','Automatic Semantic Classification','Data Quality','Intelligent Cleaning & Transformation','Parallel Agent Orchestration','Transformation Impact','Audit Trail','BI Readiness','Democratize BI (BO4)']
 STAGES=[('Data Sources','Data Sources',None),('Profiling','Data Profiling','Profiling'),('Similarity','Dataset Similarity Detection','Dataset Similarity'),('Semantic Understanding','Automatic Semantic Classification','Semantic Understanding'),('Quality','Data Quality','Data Quality'),('Cleaning','Intelligent Cleaning & Transformation','Controlled Execution'),('Validation','BI Readiness','Final Validation & BI'),('BI-ready Data','BI Readiness','Final Validation & BI')]
 EXPLANATIONS={
     'Overview':('Coordinate the preparation journey','Loaded tables','Actual independent tasks execute concurrently, then a human reviews proposed changes.','Validated tables and reports','NetworkX dependency graph + asynchronous agents'),
@@ -22,7 +22,8 @@ EXPLANATIONS={
     'Parallel Agent Orchestration':('Reduce unnecessary waiting while respecting dependencies','Loaded data and dependency graph','Similarity, semantic and quality tasks overlap after profiling; cleaning waits for all three.','Real task statuses, inputs, outputs and durations','asyncio / LangGraph + NetworkX'),
     'Transformation Impact':('Explain exactly what changed','Original data and approved plan','Track value changes at each operation and original row positions.','Before/after values, reasons and affected rows','Controlled engine change capture'),
     'Audit Trail':('Make decisions and execution traceable','Agent events and human actions','Record timestamps, decisions, reasons, statuses and transformations.','Downloadable audit records','Append-only JSON Lines decision log + task event log'),
-    'BI Readiness':('Validate downstream suitability','Approved clean data','Recalculate quality and enforce configured score, uniqueness and validity gates.','Readiness decision, reports and clean CSV files','Quality gate + many-to-one integration validation')}
+    'BI Readiness':('Validate downstream suitability','Approved clean data','Recalculate quality and enforce configured score, uniqueness and validity gates.','Readiness decision, reports and clean CSV files','Quality gate + many-to-one integration validation'),
+    'Democratize BI (BO4)':('Empower business users with conversational analytics','Clean datasets & natural language query','Parse intent via Business Glossary (NER), recommend optimal charts, and detect misleading visual comparisons.','Interactive charts, NLU answer summaries, and misleading alerts','NLU semantic parser + Rule-based chart classifier + Visual bias heuristics')}
 
 def navigate(page): st.session_state['nav']=page
 def pipeline_strip(result,datasets):
