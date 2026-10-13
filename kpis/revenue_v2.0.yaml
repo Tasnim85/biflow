@@ -1,0 +1,12 @@
+name: Revenue
+version: "2.0"
+status: approved
+description: Total revenue generated from customer orders
+formula: SUM(order_total)
+source_table: orders
+source_columns:
+  - order_total
+aggregation_grain: order
+grain_key: order_id
+filters: []
+owner: Finance

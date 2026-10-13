@@ -1,0 +1,12 @@
+name: Revenue
+version: "1.0"
+status: deprecated
+description: Legacy definition of revenue from customer orders
+formula: SUM(order_total)
+source_table: orders
+source_columns:
+  - order_total
+aggregation_grain: order
+grain_key: order_id
+filters: []
+owner: Sales Ops

@@ -1,0 +1,4 @@
+order_id,customer_id,order_total
+1,C01,100
+2,C02,200
+3,C03,150
