@@ -1,0 +1,13 @@
+Intelligent Data Preparation & Integration
+
+1. Double-cliquez sur run_demo.bat.
+2. Cliquez sur Launch Demonstration pour analyser les donnees.
+3. Explorez les pages Similarity, Semantic et Quality.
+4. Dans Intelligent Cleaning & Transformation, selectionnez les operations.
+5. Cliquez sur Preview Cleaning et verifiez les impacts.
+6. Indiquez une raison, confirmez la revue, puis Approve & Execute.
+7. Explorez Transformation Impact, Audit Trail et BI Readiness.
+
+Aucune cle API necessaire. Les valeurs sont calculees sur les donnees.
+Le code final est directement dans ce dossier; README.md explique les limites.
+Les donnees brutes sont conservees. Le nettoyage exige votre approbation.

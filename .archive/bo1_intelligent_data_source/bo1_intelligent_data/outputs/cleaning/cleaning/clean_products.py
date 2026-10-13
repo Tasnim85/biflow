@@ -1,0 +1,54 @@
+# Generated from a validated allowlisted plan. Run from this project.
+from core.cleaning_engine import execute_plan
+
+PLAN = {'dataset': 'products',
+ 'steps': [{'operation': 'strip',
+            'column': 'product_id',
+            'params': {},
+            'explanation': 'Normalize surrounding spaces and blank cells in product_id; 3 '
+                           'formatting anomalies detected. Identifier case and leading zeros are '
+                           'retained.',
+            'origin': 'local_rule'},
+           {'operation': 'strip',
+            'column': 'product_name',
+            'params': {},
+            'explanation': 'Normalize surrounding spaces and blank cells in product_name; 4 '
+                           'formatting anomalies detected. Identifier case and leading zeros are '
+                           'retained.',
+            'origin': 'local_rule'},
+           {'operation': 'strip',
+            'column': 'category',
+            'params': {},
+            'explanation': 'Normalize surrounding spaces and blank cells in category; 3 formatting '
+                           'anomalies detected. Identifier case and leading zeros are retained.',
+            'origin': 'local_rule'},
+           {'operation': 'normalize_categories',
+            'column': 'category',
+            'params': {},
+            'explanation': 'Canonical casefolded categories; 31 noncanonical cells. No fuzzy '
+                           'merging of distinct categories.',
+            'origin': 'local_rule'},
+           {'operation': 'strip',
+            'column': 'price',
+            'params': {},
+            'explanation': 'Normalize surrounding spaces and blank cells in price; 3 formatting '
+                           'anomalies detected. Identifier case and leading zeros are retained.',
+            'origin': 'local_rule'},
+           {'operation': 'convert_numeric',
+            'column': 'price',
+            'params': {},
+            'explanation': 'Convert currency/number strings to nullable numeric values; 30 '
+                           'storage-type anomalies.',
+            'origin': 'local_rule'},
+           {'operation': 'remove_duplicates',
+            'column': None,
+            'params': {},
+            'explanation': 'Remove identical normalized rows; 2 raw duplicates detected.',
+            'origin': 'local_rule'}],
+ 'missing_policy': 'Preserve unknown business values; explicit fill_missing is opt-in only.',
+ 'provider': 'local_rules',
+ 'provider_message': 'No API key required.',
+ 'reused_steps': 0}
+
+def clean(df, semantics):
+    return execute_plan(df, PLAN, semantics)["cleaned"]

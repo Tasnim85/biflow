@@ -1,0 +1,6 @@
+,customers,clients_2026,transactions,employees,products
+customers,1.0,0.8203,0.3352,0.3872,0.2084
+clients_2026,0.8203,1.0,0.3742,0.4376,0.2381
+transactions,0.3352,0.3742,1.0,0.3278,0.3181
+employees,0.3872,0.4376,0.3278,1.0,0.2398
+products,0.2084,0.2381,0.3181,0.2398,1.0

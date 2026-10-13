@@ -1,0 +1,159 @@
+[
+  {
+    "step": 0,
+    "column": "location",
+    "operation": "strip",
+    "changed_cells": 12,
+    "missing_before": 6,
+    "missing_after": 6,
+    "explanation": "Normalize surrounding spaces and blank cells in location; 12 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 1,
+    "column": "location",
+    "operation": "normalize_categories",
+    "changed_cells": 99,
+    "missing_before": 6,
+    "missing_after": 6,
+    "explanation": "Canonical casefolded categories; 99 noncanonical cells. No fuzzy merging of distinct categories. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 2,
+    "column": "email_address",
+    "operation": "strip",
+    "changed_cells": 12,
+    "missing_before": 5,
+    "missing_after": 5,
+    "explanation": "Normalize surrounding spaces and blank cells in email_address; 38 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 3,
+    "column": "email_address",
+    "operation": "lowercase",
+    "changed_cells": 31,
+    "missing_before": 5,
+    "missing_after": 5,
+    "explanation": "Normalize email case under the demo policy. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 4,
+    "column": "email_address",
+    "operation": "validate_email",
+    "changed_cells": 2,
+    "missing_before": 5,
+    "missing_after": 7,
+    "explanation": "Mask invalid email formats (2 detected). Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 5,
+    "column": "client_identifier",
+    "operation": "strip",
+    "changed_cells": 13,
+    "missing_before": 0,
+    "missing_after": 0,
+    "explanation": "Normalize surrounding spaces and blank cells in client_identifier; 13 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 6,
+    "column": "customer_age",
+    "operation": "strip",
+    "changed_cells": 12,
+    "missing_before": 6,
+    "missing_after": 6,
+    "explanation": "Normalize surrounding spaces and blank cells in customer_age; 12 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 7,
+    "column": "customer_age",
+    "operation": "convert_numeric",
+    "changed_cells": 99,
+    "missing_before": 6,
+    "missing_after": 6,
+    "explanation": "Convert currency/number strings to nullable numeric values; 99 storage-type anomalies. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 8,
+    "column": "customer_age",
+    "operation": "remove_impossible_values",
+    "changed_cells": 4,
+    "missing_before": 6,
+    "missing_after": 10,
+    "explanation": "Age must be an integer between 0 and 120.",
+    "origin": "local_rule"
+  },
+  {
+    "step": 9,
+    "column": "telephone",
+    "operation": "strip",
+    "changed_cells": 13,
+    "missing_before": 5,
+    "missing_after": 5,
+    "explanation": "Normalize surrounding spaces and blank cells in telephone; 13 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 10,
+    "column": "telephone",
+    "operation": "normalize_phone",
+    "changed_cells": 1,
+    "missing_before": 5,
+    "missing_after": 5,
+    "explanation": "Remove phone presentation separators and convert international 00 prefix to +. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 11,
+    "column": "telephone",
+    "operation": "validate_phone",
+    "changed_cells": 2,
+    "missing_before": 5,
+    "missing_after": 7,
+    "explanation": "Require 8–15 digits with optional +; 2 invalid phones detected. No country prefix is invented. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 12,
+    "column": "signup_date",
+    "operation": "strip",
+    "changed_cells": 10,
+    "missing_before": 5,
+    "missing_after": 5,
+    "explanation": "Normalize surrounding spaces and blank cells in signup_date; 10 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 13,
+    "column": "signup_date",
+    "operation": "convert_dates",
+    "changed_cells": 100,
+    "missing_before": 5,
+    "missing_after": 6,
+    "explanation": "Parse ISO/day-first slash dates; preserve timestamp UTC where applicable; invalid values become missing. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 14,
+    "column": "full_name",
+    "operation": "strip",
+    "changed_cells": 12,
+    "missing_before": 5,
+    "missing_after": 5,
+    "explanation": "Normalize surrounding spaces and blank cells in full_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained. Reused from a prior validated recipe with matching semantic class.",
+    "origin": "recipe:customers"
+  },
+  {
+    "step": 15,
+    "operation": "remove_duplicates",
+    "rows_removed": 5,
+    "explanation": "Remove identical normalized rows; 5 raw duplicates detected.",
+    "origin": "local_rule"
+  }
+]

@@ -1,0 +1,106 @@
+location,email_address,client_identifier,customer_age,telephone,signup_date,full_name
+Sfax,CLIENT0@EXAMPLE.COM,C00001,,+21620000000,01/01/2025,Samar Karoui
+Paris,invalid-email,C00002,65,+21620000001,02/01/2025,Nour Mansour
+Sfax,CLIENT2@EXAMPLE.COM,C00003,-12,+21620000002,03/01/2025,Youssef Karoui
+Sousse,client3@example.com,C00004,210, +21620000003 ,04/01/2025,Lina Mansour
+,client4@example.com, C00005 ,48,123,05/01/2025,Lina Hamdi
+Sfax, CLIENT5@EXAMPLE.COM , C00006 ,25,00216 20 000 005,06/01/2025,Adam Hamdi
+PARIS,client6@example.com,C00007,35,+21620000006,31/02/2025,Samar Hamdi
+Paris,client7@example.com,C00008,49,+21620000007,08/01/2025,Nour Hamdi
+ SFAX ,CLIENT8@EXAMPLE.COM,C00009,35,+21620000008,09/01/2025,Amine Trabelsi
+PARIS,client9@example.com,C00010,24,+21620000009,10/01/2025,Samar Hamdi
+SFAX,client10@example.com,C00011,55,+21620000010,11/01/2025,Youssef Ben Ali
+Sousse,,C00012, 56 ,+21620000011,12/01/2025,Adam Hamdi
+PARIS,client12@example.com,C00013,24,+21620000012,13/01/2025, Nour Trabelsi 
+Sfax, client13@example.com ,C00014,34,+21620000013,14/01/2025, Nour Trabelsi 
+Sousse,CLIENT14@EXAMPLE.COM,C00015, 31 ,+21620000014,,Nour Trabelsi
+,CLIENT15@EXAMPLE.COM,C00016, 55 ,+21620000015,16/01/2025, Nour Trabelsi 
+TUNIS, CLIENT16@EXAMPLE.COM ,C00017,59,+21620000016,17/01/2025,
+ TUNIS , client17@example.com ,C00018,59,+21620000017, 18/01/2025 ,Samar Mansour
+ Sfax ,client18@example.com,C00019,71,+21620000018,19/01/2025,Adam Ben Ali
+ PARIS ,client19@example.com,C00020,61,+21620000019,20/01/2025,
+Tunis,CLIENT20@EXAMPLE.COM,C00021,36,+21620000020,21/01/2025,Youssef Trabelsi
+SFAX,client21@example.com,C00022,24,+21620000021,22/01/2025, Lina Hamdi 
+SOUSSE,,C00023,53,+21620000022,23/01/2025,Amine Hamdi
+Tunis, client23@example.com ,C00024,70,+21620000023,24/01/2025,Adam Trabelsi
+SOUSSE,CLIENT24@EXAMPLE.COM,C00025,73,+21620000024,25/01/2025,Nour Karoui
+Sfax,client25@example.com,C00026,31,+21620000025, 26/01/2025 ,Youssef Trabelsi
+ Paris ,client26@example.com,C00027,31,+21620000026,27/01/2025, Lina Mansour 
+Sousse,client27@example.com,C00028,20, +21620000027 ,28/01/2025, Nour Hamdi 
+Sousse,client28@example.com,C00029,,+21620000028,01/01/2025, Youssef Trabelsi 
+,client29@example.com,C00030,49,+21620000029, 02/01/2025 ,Lina Hamdi
+Sfax,client30@example.com,C00031,49,+21620000030,03/01/2025,Lina Trabelsi
+PARIS,CLIENT31@EXAMPLE.COM, C00032 ,39,+21620000031,04/01/2025,
+ Tunis ,CLIENT32@EXAMPLE.COM, C00033 ,35,+21620000032, 05/01/2025 ,Samar Mansour
+,client33@example.com,C00034,65,,06/01/2025,Youssef Trabelsi
+Sfax,client34@example.com,C00035,44,+21620000034,07/01/2025,Adam Hamdi
+SOUSSE,client35@example.com,C00036,64,+21620000035,08/01/2025,Samar Ben Ali
+Sousse,CLIENT36@EXAMPLE.COM,C00037,72,+21620000036,09/01/2025,Adam Hamdi
+Sfax,client37@example.com,C00038,36,+21620000037,,Nour Mansour
+SFAX, CLIENT38@EXAMPLE.COM ,C00039, 29 ,+21620000038, 11/01/2025 ,Amine Ben Ali
+Sousse,,C00040, 72 ,+21620000039,,Youssef Trabelsi
+Tunis,client40@example.com,C00041, 54 ,+21620000040,13/01/2025,Samar Karoui
+Sousse,client41@example.com,C00042,34, +21620000041 ,14/01/2025,Nour Ben Ali
+TUNIS, CLIENT42@EXAMPLE.COM ,C00043,53,+21620000042,15/01/2025,Nour Ben Ali
+ Sousse ,client43@example.com,C00044,47,+21620000043, 16/01/2025 ,Lina Trabelsi
+Sousse,CLIENT44@EXAMPLE.COM,C00045,69,+21620000044,17/01/2025,Samar Karoui
+TUNIS,client45@example.com,C00046,32, +21620000045 , 18/01/2025 ,Adam Karoui
+ Paris ,client46@example.com,C00047,74,+21620000046,19/01/2025,Lina Mansour
+SFAX,client47@example.com,C00048, 71 ,+21620000047,20/01/2025,Adam Ben Ali
+Paris,client48@example.com,C00049,28,+21620000048,21/01/2025,Nour Karoui
+Tunis,client49@example.com,C00050,27,+21620000049,22/01/2025,Nour Mansour
+Tunis,client50@example.com,C00051,48,+21620000050,23/01/2025,Nour Karoui
+Sfax,client51@example.com, C00052 ,20,,24/01/2025,Amine Ben Ali
+Tunis,client52@example.com,C00053,35, +21620000052 ,25/01/2025,Lina Karoui
+SFAX,client53@example.com,C00054,42,+21620000053,26/01/2025,Lina Ben Ali
+ SOUSSE ,CLIENT54@EXAMPLE.COM,C00055,,+21620000054,27/01/2025,Lina Trabelsi
+Tunis, client55@example.com ,C00056,74,,,Samar Hamdi
+Sousse,client56@example.com,C00057,26,+21620000056,01/01/2025,Youssef Mansour
+Tunis,client57@example.com,C00058,68,+21620000057,02/01/2025,Samar Trabelsi
+Tunis,CLIENT58@EXAMPLE.COM,C00059,23,,03/01/2025,Nour Trabelsi
+Sousse, client59@example.com ,C00060,60,+21620000059,04/01/2025,Nour Hamdi
+Paris,client60@example.com,C00061, 66 ,+21620000060, 05/01/2025 , Adam Karoui 
+TUNIS,client61@example.com, C00062 ,68,+21620000061,06/01/2025,Nour Hamdi
+Sfax,client62@example.com,C00063,30,+21620000062,07/01/2025,Lina Trabelsi
+Paris,client63@example.com,C00064,68,+21620000063,08/01/2025,Adam Trabelsi
+PARIS,CLIENT64@EXAMPLE.COM, C00065 , 24 ,+21620000064,09/01/2025,Lina Trabelsi
+SOUSSE,client65@example.com,C00066,47,+21620000065,10/01/2025,Amine Karoui
+Sfax,CLIENT66@EXAMPLE.COM,C00067,44,+21620000066, 11/01/2025 ,Adam Ben Ali
+,client67@example.com,C00068,36,+21620000067,12/01/2025,Lina Mansour
+Sousse,client68@example.com,C00069,19,+21620000068,13/01/2025,Samar Ben Ali
+ Sousse ,CLIENT69@EXAMPLE.COM,C00070,62,+21620000069,14/01/2025,Lina Mansour
+Sfax, client70@example.com ,C00071,37,+21620000070,15/01/2025,Nour Mansour
+TUNIS,client71@example.com,C00072, 55 , +21620000071 ,16/01/2025,Amine Mansour
+Tunis,,C00073,, +21620000072 ,17/01/2025,Lina Hamdi
+Paris,client73@example.com,C00074,39,+21620000073,18/01/2025, Samar Hamdi 
+Sfax,client74@example.com,C00075, 68 ,+21620000074,19/01/2025,Nour Hamdi
+SFAX, client75@example.com ,C00076,23, +21620000075 ,20/01/2025,Lina Trabelsi
+Sfax,client76@example.com,C00077,59,+21620000076,21/01/2025,Amine Hamdi
+Paris,client77@example.com, C00078 ,60,+21620000077,22/01/2025,Amine Mansour
+Tunis,CLIENT78@EXAMPLE.COM,C00079,39,+21620000078,23/01/2025,
+Tunis,client79@example.com,C00080,32,+21620000079,24/01/2025,Nour Trabelsi
+SFAX,client80@example.com,C00081,18,+21620000080, 25/01/2025 ,Adam Karoui
+Sfax,client81@example.com, C00082 ,71,+21620000081,26/01/2025, Lina Mansour 
+ SOUSSE ,client82@example.com,C00083,72,+21620000082,27/01/2025, Samar Trabelsi 
+Sfax,client83@example.com,C00084,31,+21620000083,28/01/2025,Nour Hamdi
+SFAX,CLIENT84@EXAMPLE.COM,C00085,19, +21620000084 ,01/01/2025,Youssef Trabelsi
+PARIS,client85@example.com,C00086,24,+21620000085,02/01/2025,
+TUNIS, CLIENT86@EXAMPLE.COM ,C00087,21,+21620000086,03/01/2025,Samar Mansour
+Sousse,CLIENT87@EXAMPLE.COM, C00088 ,65,+21620000087,,Amine Ben Ali
+Sousse,,C00089,68,+21620000088,05/01/2025,Nour Ben Ali
+SFAX,client89@example.com,C00090,26,+21620000089,06/01/2025,Nour Ben Ali
+PARIS,CLIENT90@EXAMPLE.COM,C00091,60, +21620000090 ,07/01/2025,Lina Hamdi
+Sfax,client91@example.com,C00092, 28 ,+21620000091,08/01/2025,Nour Hamdi
+Paris,CLIENT92@EXAMPLE.COM,C00093,38,,09/01/2025,Adam Hamdi
+Sfax,client93@example.com,C00094,52,+21620000093,10/01/2025,Lina Ben Ali
+SOUSSE,CLIENT94@EXAMPLE.COM,C00095,59,+21620000094,11/01/2025,Adam Karoui
+Sousse,CLIENT95@EXAMPLE.COM,C00096,67,+21620000095,12/01/2025,Amine Mansour
+ Paris ,client96@example.com,C00097,20,+21620000096,13/01/2025,Amine Ben Ali
+Sfax,CLIENT97@EXAMPLE.COM,C00098,29, +21620000097 ,14/01/2025,Nour Mansour
+Sfax,client98@example.com, C00099 ,, +21620000098 ,15/01/2025,Youssef Ben Ali
+Tunis,client99@example.com, C00100 ,35,+21620000099,16/01/2025, Samar Karoui 
+Sfax,CLIENT0@EXAMPLE.COM,C00001,,+21620000000,01/01/2025,Samar Karoui
+Paris,invalid-email,C00002,65,+21620000001,02/01/2025,Nour Mansour
+Sfax,CLIENT2@EXAMPLE.COM,C00003,-12,+21620000002,03/01/2025,Youssef Karoui
+Sousse,client3@example.com,C00004,210, +21620000003 ,04/01/2025,Lina Mansour
+,client4@example.com, C00005 ,48,123,05/01/2025,Lina Hamdi

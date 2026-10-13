@@ -1,0 +1,29 @@
+{
+  "relationships": [
+    {
+      "parent": "customers",
+      "child": "transactions",
+      "parent_key": "customer_id",
+      "child_key": "client_id",
+      "coverage": 1.0,
+      "reason": "Unique parent key, repeated child key and at least 80% distinct-key coverage."
+    },
+    {
+      "parent": "clients_2026",
+      "child": "transactions",
+      "parent_key": "client_identifier",
+      "child_key": "client_id",
+      "coverage": 1.0,
+      "reason": "Unique parent key, repeated child key and at least 80% distinct-key coverage."
+    },
+    {
+      "parent": "products",
+      "child": "transactions",
+      "parent_key": "product_id",
+      "child_key": "product_id",
+      "coverage": 1.0,
+      "reason": "Unique parent key, repeated child key and at least 80% distinct-key coverage."
+    }
+  ],
+  "note": "Inferred joins are exploratory. No entity merging or invented values. Many-to-one validation prevents row multiplication."
+}

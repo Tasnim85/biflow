@@ -1,0 +1,31 @@
+employee_id,employee_name,department,salary
+1,Worker 1,Engineering,7587.0
+2,Worker 2,Finance,7325.0
+3,Worker 3,Sales,5772.0
+4,Worker 4,Finance,4367.0
+5,Worker 5,Sales,5759.0
+6,Worker 6,Finance,3914.0
+7,Worker 7,Finance,4088.0
+8,Worker 8,,5652.0
+9,Worker 9,Sales,
+10,,Engineering,5485.0
+11,Worker 11,Finance,4308.0
+12,Worker 12,Finance,4454.0
+13,Worker 13,Finance,2061.0
+14,Worker 14,Finance,5610.0
+15,Worker 15,Finance,5454.0
+16,Worker 16,Finance,7612.0
+17,Worker 17,Sales,5025.0
+18,Worker 18,Engineering,4805.0
+19,Worker 19,Engineering,2406.0
+20,Worker 20,Engineering,3180.0
+21,Worker 21,Sales,4028.0
+22,Worker 22,Finance,4263.0
+23,Worker 23,Sales,4176.0
+24,Worker 24,Engineering,4364.0
+25,Worker 25,Engineering,6613.0
+26,Worker 26,Finance,2786.0
+27,Worker 27,Finance,3993.0
+28,Worker 28,Sales,2977.0
+29,Worker 29,Finance,3846.0
+30,Worker 30,Finance,6107.0

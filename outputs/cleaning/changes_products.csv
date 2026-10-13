@@ -1,0 +1,253 @@
+row,column,before,after,reason,operation
+7,product_id, P0008 ,P0008,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+18,product_id, P0019 ,P0019,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+21,product_id, P0022 ,P0022,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+47,product_id, P0048 ,P0048,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+58,product_id, P0059 ,P0059,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+74,product_id, P0075 ,P0075,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+81,product_id, P0082 ,P0082,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+87,product_id, P0088 ,P0088,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+89,product_id, P0090 ,P0090,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+91,product_id, P0092 ,P0092,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+95,product_id, P0096 ,P0096,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+96,product_id, P0097 ,P0097,Normalize surrounding spaces and blank cells in product_id; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+6,product_name, Product 7 ,Product 7,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+10,product_name, Product 11 ,Product 11,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+11,product_name, Product 12 ,Product 12,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+20,product_name, Product 21 ,Product 21,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+27,product_name, Product 28 ,Product 28,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+30,product_name, Product 31 ,Product 31,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+37,product_name, Product 38 ,Product 38,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+69,product_name, Product 70 ,Product 70,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+73,product_name, Product 74 ,Product 74,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+79,product_name, Product 80 ,Product 80,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+81,product_name, Product 82 ,Product 82,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+99,product_name, Product 100 ,Product 100,Normalize surrounding spaces and blank cells in product_name; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+13,category, Hardware ,Hardware,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+18,category, Hardware ,Hardware,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+19,category, Software ,Software,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+34,category, Software ,Software,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+41,category, Hardware ,Hardware,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+42,category, Hardware ,Hardware,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+47,category, Services ,Services,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+48,category, SOFTWARE ,SOFTWARE,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+55,category, Software ,Software,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+85,category, Hardware ,Hardware,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+86,category, Software ,Software,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+99,category, Software ,Software,Normalize surrounding spaces and blank cells in category; 12 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+0,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+1,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+2,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+3,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+4,category,SOFTWARE,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+5,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+6,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+7,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+8,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+9,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+10,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+12,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+13,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+14,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+15,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+16,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+17,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+18,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+19,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+20,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+21,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+22,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+23,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+24,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+25,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+26,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+27,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+28,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+29,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+30,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+31,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+32,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+33,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+34,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+35,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+36,category,SOFTWARE,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+38,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+39,category,SOFTWARE,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+40,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+41,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+42,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+43,category,SOFTWARE,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+44,category,SOFTWARE,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+45,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+46,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+47,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+48,category,SOFTWARE,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+49,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+50,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+51,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+52,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+53,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+54,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+55,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+56,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+57,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+58,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+59,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+61,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+62,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+63,category,SOFTWARE,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+65,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+66,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+67,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+68,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+69,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+70,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+71,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+72,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+73,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+74,category,SOFTWARE,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+75,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+76,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+77,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+78,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+80,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+81,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+82,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+83,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+84,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+85,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+86,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+87,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+88,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+89,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+90,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+91,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+92,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+93,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+94,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+95,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+96,category,Hardware,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+97,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+98,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+99,category,Software,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+100,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+101,category,Services,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+102,category,HARDWARE,hardware,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+103,category,SERVICES,services,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+104,category,SOFTWARE,software,Canonical casefolded categories; 100 noncanonical cells. No fuzzy merging of distinct categories.,normalize_categories
+11,price, $165.81 ,$165.81,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+28,price, $175.63 ,$175.63,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+32,price, $51.17 ,$51.17,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+37,price, $77.85 ,$77.85,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+52,price, $109.53 ,$109.53,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+56,price, $80.09 ,$80.09,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+74,price, $170.47 ,$170.47,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+84,price, $30.76 ,$30.76,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+85,price, $124.80 ,$124.80,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+89,price, $187.51 ,$187.51,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+95,price, $160.05 ,$160.05,Normalize surrounding spaces and blank cells in price; 11 formatting anomalies detected. Identifier case and leading zeros are retained.,strip
+0,price,$132.13,132.13,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+1,price,$174.16,174.16,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+2,price,$93.51,93.51,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+3,price,$53.33,53.33,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+4,price,$51.15,51.15,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+5,price,$150.47,150.47,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+6,price,$164.23,164.23,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+7,price,$25.53,25.53,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+8,price,$17.98,17.98,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+9,price,$120.91,120.91,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+10,price,$33.50,33.5,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+11,price,$165.81,165.81,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+13,price,$33.06,33.06,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+14,price,$184.59,184.59,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+15,price,$37.28,37.28,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+16,price,$60.52,60.52,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+17,price,$34.95,34.95,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+18,price,$27.52,27.52,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+19,price,$9.12,9.12,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+20,price,$15.80,15.8,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+21,price,$39.06,39.06,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+22,price,$15.41,15.41,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+23,price,$120.27,120.27,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+24,price,$137.74,137.74,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+25,price,$81.76,81.76,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+26,price,$67.01,67.01,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+27,price,$103.38,103.38,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+28,price,$175.63,175.63,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+29,price,$170.97,170.97,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+30,price,$13.48,13.48,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+31,price,$40.39,40.39,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+32,price,$51.17,51.17,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+33,price,$53.63,53.63,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+34,price,$116.39,116.39,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+35,price,$86.17,86.17,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+36,price,$14.60,14.6,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+37,price,$77.85,77.85,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+38,price,$107.13,107.13,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+39,price,$24.83,24.83,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+40,price,$167.52,167.52,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+41,price,$15.13,15.13,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+42,price,$185.34,185.34,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+43,price,$24.33,24.33,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+44,price,$169.50,169.5,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+45,price,$181.02,181.02,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+46,price,$196.02,196.02,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+47,price,$161.40,161.4,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+48,price,$157.00,157.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+49,price,$130.28,130.28,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+50,price,$156.90,156.9,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+51,price,$31.24,31.24,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+52,price,$109.53,109.53,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+54,price,$172.23,172.23,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+55,price,$95.25,95.25,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+56,price,$80.09,80.09,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+57,price,$129.71,129.71,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+58,price,$56.96,56.96,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+59,price,$32.25,32.25,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+60,price,$98.19,98.19,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+61,price,$86.29,86.29,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+62,price,$50.35,50.35,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+63,price,$76.66,76.66,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+64,price,$76.45,76.45,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+65,price,$68.86,68.86,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+66,price,$79.00,79.0,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+67,price,$138.72,138.72,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+68,price,$62.89,62.89,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+70,price,$183.69,183.69,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+71,price,$98.78,98.78,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+72,price,$69.03,69.03,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+73,price,$109.41,109.41,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+74,price,$170.47,170.47,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+75,price,$132.25,132.25,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+76,price,$161.86,161.86,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+77,price,$108.88,108.88,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+78,price,$128.42,128.42,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+79,price,$61.19,61.19,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+80,price,$148.30,148.3,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+81,price,$44.47,44.47,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+82,price,$140.49,140.49,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+84,price,$30.76,30.76,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+85,price,$124.80,124.8,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+86,price,$23.54,23.54,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+87,price,$146.51,146.51,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+88,price,$21.48,21.48,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+89,price,$187.51,187.51,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+90,price,$31.79,31.79,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+91,price,$191.98,191.98,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+92,price,$161.17,161.17,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+93,price,$120.77,120.77,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+94,price,$157.61,157.61,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+95,price,$160.05,160.05,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+96,price,$189.48,189.48,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+97,price,$54.41,54.41,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+98,price,$120.06,120.06,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+100,price,$132.13,132.13,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+101,price,$174.16,174.16,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+102,price,$93.51,93.51,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+103,price,$53.33,53.33,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+104,price,$51.15,51.15,Convert currency/number strings to nullable numeric values; 100 storage-type anomalies.,convert_numeric
+100,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+101,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+102,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+103,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates
+104,(record),Duplicate record,Removed,Remove identical normalized rows; 5 raw duplicates detected.,remove_duplicates

@@ -1,0 +1,101 @@
+customer_id,first_name,last_name,email,phone,city,age,registration_date
+C00001,Samar,Karoui,,+21620000000,sfax,38.0,2025-01-01
+C00002,Nour,Mansour,,+21620000001,paris,65.0,2025-01-02
+C00003,Youssef,Karoui,client2@example.com,+21620000002,sfax,,2025-01-03
+C00004,Lina,Mansour,client3@example.com,+21620000003,sousse,,2025-01-04
+C00005,Lina,Hamdi,client4@example.com,,sfax,48.0,2025-01-05
+C00006,Adam,Hamdi,client5@example.com,+21620000005,sfax,25.0,2025-01-06
+C00007,Samar,,client6@example.com,+21620000006,paris,35.0,
+C00008,Nour,Hamdi,client7@example.com,,paris,49.0,2025-01-08
+C00009,Amine,Trabelsi,client8@example.com,+21620000008,sfax,35.0,2025-01-09
+C00010,Samar,Hamdi,client9@example.com,+21620000009,paris,24.0,2025-01-10
+C00011,Youssef,Ben Ali,,+21620000010,sfax,55.0,2025-01-11
+C00012,Adam,Hamdi,client11@example.com,+21620000011,,56.0,2025-01-12
+C00013,Nour,Trabelsi,client12@example.com,+21620000012,paris,24.0,2025-01-13
+C00014,Nour,Trabelsi,client13@example.com,+21620000013,sfax,34.0,2025-01-14
+C00015,Nour,Trabelsi,client14@example.com,+21620000014,sousse,31.0,2025-01-15
+C00016,Nour,Trabelsi,client15@example.com,+21620000015,sfax,55.0,2025-01-16
+C00017,Youssef,Mansour,client16@example.com,+21620000016,tunis,59.0,2025-01-17
+C00018,Samar,Mansour,client17@example.com,+21620000017,tunis,59.0,2025-01-18
+C00019,Adam,Ben Ali,client18@example.com,+21620000018,sfax,71.0,2025-01-19
+C00020,Lina,Mansour,client19@example.com,+21620000019,paris,61.0,2025-01-20
+C00021,Youssef,Trabelsi,client20@example.com,+21620000020,tunis,36.0,2025-01-21
+C00022,Lina,Hamdi,client21@example.com,+21620000021,sfax,24.0,2025-01-22
+C00023,Amine,Hamdi,client22@example.com,+21620000022,sousse,53.0,2025-01-23
+C00024,Adam,Trabelsi,client23@example.com,+21620000023,tunis,70.0,2025-01-24
+C00025,,Karoui,client24@example.com,+21620000024,sousse,73.0,2025-01-25
+C00026,Youssef,Trabelsi,client25@example.com,+21620000025,sfax,31.0,2025-01-26
+C00027,Lina,,client26@example.com,+21620000026,,31.0,2025-01-27
+C00028,Nour,Hamdi,,+21620000027,sousse,20.0,2025-01-28
+C00029,Youssef,Trabelsi,client28@example.com,+21620000028,sousse,26.0,2025-01-01
+C00030,Lina,Hamdi,client29@example.com,+21620000029,tunis,49.0,2025-01-02
+C00031,Lina,Trabelsi,client30@example.com,,sfax,49.0,2025-01-03
+C00032,Amine,Trabelsi,client31@example.com,+21620000031,paris,39.0,2025-01-04
+C00033,Samar,Mansour,client32@example.com,+21620000032,tunis,35.0,2025-01-05
+C00034,Youssef,Trabelsi,client33@example.com,+21620000033,paris,65.0,2025-01-06
+C00035,Adam,Hamdi,client34@example.com,+21620000034,sfax,44.0,2025-01-07
+C00036,Samar,Ben Ali,client35@example.com,+21620000035,sousse,64.0,2025-01-08
+C00037,Adam,Hamdi,client36@example.com,+21620000036,sousse,72.0,
+C00038,Nour,Mansour,client37@example.com,+21620000037,sfax,,2025-01-10
+C00039,Amine,Ben Ali,client38@example.com,+21620000038,sfax,29.0,2025-01-11
+C00040,Youssef,Trabelsi,client39@example.com,+21620000039,sousse,72.0,2025-01-12
+C00041,Samar,Karoui,client40@example.com,+21620000040,tunis,54.0,2025-01-13
+C00042,Nour,Ben Ali,client41@example.com,+21620000041,sousse,34.0,2025-01-14
+C00043,Nour,Ben Ali,client42@example.com,+21620000042,tunis,53.0,2025-01-15
+C00044,Lina,Trabelsi,client43@example.com,+21620000043,sousse,47.0,2025-01-16
+C00045,Samar,,client44@example.com,+21620000044,sousse,69.0,2025-01-17
+C00046,Adam,Karoui,client45@example.com,+21620000045,tunis,32.0,2025-01-18
+C00047,Lina,Mansour,client46@example.com,+21620000046,paris,74.0,2025-01-19
+C00048,Adam,Ben Ali,client47@example.com,+21620000047,sfax,71.0,2025-01-20
+C00049,Nour,Karoui,,+21620000048,paris,28.0,2025-01-21
+C00050,Nour,Mansour,,+21620000049,,27.0,2025-01-22
+C00051,Nour,Karoui,client50@example.com,+21620000050,tunis,48.0,2025-01-23
+C00052,Amine,,client51@example.com,+21620000051,sfax,20.0,2025-01-24
+C00053,Lina,Karoui,client52@example.com,+21620000052,tunis,35.0,2025-01-25
+C00054,Lina,Ben Ali,client53@example.com,+21620000053,sfax,42.0,2025-01-26
+C00055,Lina,Trabelsi,client54@example.com,+21620000054,sousse,73.0,2025-01-27
+C00056,Samar,Hamdi,client55@example.com,+21620000055,tunis,74.0,2025-01-28
+C00057,Youssef,Mansour,client56@example.com,+21620000056,sousse,26.0,2025-01-01
+C00058,Samar,Trabelsi,client57@example.com,+21620000057,tunis,68.0,2025-01-02
+C00059,Nour,Trabelsi,client58@example.com,+21620000058,tunis,23.0,2025-01-03
+C00060,Nour,Hamdi,client59@example.com,+21620000059,sousse,60.0,2025-01-04
+C00061,Adam,Karoui,client60@example.com,+21620000060,paris,66.0,2025-01-05
+C00062,Nour,Hamdi,client61@example.com,,tunis,68.0,2025-01-06
+C00063,Lina,Trabelsi,client62@example.com,+21620000062,sfax,,2025-01-07
+C00064,Adam,Trabelsi,client63@example.com,+21620000063,paris,,2025-01-08
+C00065,,Trabelsi,client64@example.com,+21620000064,paris,24.0,2025-01-09
+C00066,Amine,Karoui,client65@example.com,+21620000065,sousse,47.0,2025-01-10
+C00067,,Ben Ali,client66@example.com,+21620000066,sfax,44.0,2025-01-11
+C00068,Lina,Mansour,client67@example.com,+21620000067,sfax,36.0,2025-01-12
+C00069,Samar,Ben Ali,client68@example.com,+21620000068,sousse,19.0,2025-01-13
+C00070,Lina,Mansour,client69@example.com,+21620000069,sousse,62.0,2025-01-14
+C00071,Nour,Mansour,client70@example.com,+21620000070,sfax,,2025-01-15
+C00072,Amine,Mansour,client71@example.com,+21620000071,tunis,55.0,
+C00073,Lina,Hamdi,client72@example.com,+21620000072,tunis,41.0,2025-01-17
+C00074,Samar,Hamdi,client73@example.com,+21620000073,paris,39.0,2025-01-18
+C00075,Nour,Hamdi,client74@example.com,+21620000074,sfax,68.0,2025-01-19
+C00076,Lina,Trabelsi,client75@example.com,+21620000075,sfax,23.0,2025-01-20
+C00077,Amine,Hamdi,client76@example.com,+21620000076,,59.0,2025-01-21
+C00078,Amine,Mansour,client77@example.com,+21620000077,paris,60.0,2025-01-22
+C00079,Youssef,Karoui,client78@example.com,+21620000078,tunis,39.0,2025-01-23
+C00080,,Trabelsi,client79@example.com,+21620000079,tunis,32.0,
+C00081,Adam,Karoui,client80@example.com,,sfax,18.0,2025-01-25
+C00082,Lina,Mansour,client81@example.com,+21620000081,sfax,71.0,2025-01-26
+C00083,Samar,Trabelsi,client82@example.com,+21620000082,sousse,72.0,2025-01-27
+C00084,Nour,Hamdi,client83@example.com,+21620000083,sfax,31.0,2025-01-28
+C00085,Youssef,Trabelsi,client84@example.com,+21620000084,sfax,19.0,2025-01-01
+C00086,Nour,Trabelsi,client85@example.com,+21620000085,paris,24.0,2025-01-02
+C00087,Samar,Mansour,client86@example.com,,tunis,,2025-01-03
+C00088,Amine,Ben Ali,client87@example.com,+21620000087,sousse,65.0,2025-01-04
+C00089,Nour,Ben Ali,client88@example.com,+21620000088,sousse,68.0,2025-01-05
+C00090,Nour,Ben Ali,client89@example.com,+21620000089,sfax,26.0,2025-01-06
+C00091,,Hamdi,client90@example.com,+21620000090,paris,60.0,2025-01-07
+C00092,Nour,Hamdi,client91@example.com,+21620000091,sfax,28.0,2025-01-08
+C00093,Adam,Hamdi,client92@example.com,+21620000092,paris,38.0,2025-01-09
+C00094,Lina,Ben Ali,client93@example.com,+21620000093,sfax,52.0,2025-01-10
+C00095,Adam,Karoui,client94@example.com,+21620000094,sousse,59.0,
+C00096,Amine,,client95@example.com,+21620000095,sousse,67.0,
+C00097,Amine,Ben Ali,client96@example.com,+21620000096,paris,20.0,2025-01-13
+C00098,Nour,Mansour,client97@example.com,+21620000097,sfax,29.0,2025-01-14
+C00099,Youssef,Ben Ali,client98@example.com,+21620000098,,33.0,2025-01-15
+C00100,Samar,Karoui,client99@example.com,+21620000099,tunis,35.0,2025-01-16

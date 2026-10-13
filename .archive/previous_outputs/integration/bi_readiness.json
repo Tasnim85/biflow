@@ -1,0 +1,42 @@
+{
+  "customers": {
+    "score": 99.15,
+    "threshold": 85.0,
+    "ready_for_bi": true,
+    "remaining_missing": 82,
+    "score_delta": 7.69,
+    "meaning": "Readiness is a configured demo quality gate, not a guarantee of business correctness. Missing values are disclosed."
+  },
+  "clients_2026": {
+    "score": 99.15,
+    "threshold": 85.0,
+    "ready_for_bi": true,
+    "remaining_missing": 71,
+    "score_delta": 8.25,
+    "meaning": "Readiness is a configured demo quality gate, not a guarantee of business correctness. Missing values are disclosed."
+  },
+  "transactions": {
+    "score": 99.53,
+    "threshold": 85.0,
+    "ready_for_bi": true,
+    "remaining_missing": 101,
+    "score_delta": 8.28,
+    "meaning": "Readiness is a configured demo quality gate, not a guarantee of business correctness. Missing values are disclosed."
+  },
+  "employees": {
+    "score": 99.33,
+    "threshold": 85.0,
+    "ready_for_bi": true,
+    "remaining_missing": 12,
+    "score_delta": 8.95,
+    "meaning": "Readiness is a configured demo quality gate, not a guarantee of business correctness. Missing values are disclosed."
+  },
+  "products": {
+    "score": 99.58,
+    "threshold": 85.0,
+    "ready_for_bi": true,
+    "remaining_missing": 3,
+    "score_delta": 11.09,
+    "meaning": "Readiness is a configured demo quality gate, not a guarantee of business correctness. Missing values are disclosed."
+  }
+}
