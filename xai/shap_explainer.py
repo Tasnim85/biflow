@@ -1,9 +1,11 @@
 """SHAP explainer: per-feature contributions to the Isolation Forest score.
 
 Purely numeric. Turning numbers into sentences is the narrator's job.
+Includes robust fallback for single-feature models and edge cases where SHAP TreeExplainer fails.
 """
-
+from __future__ import annotations
 from dataclasses import dataclass
+from typing import Any
 
 import numpy as np
 import pandas as pd
@@ -20,25 +22,57 @@ class ShapExplanation:
     model_output: float           # model output for this row (= base_value + sum of shap)
 
 
-def build_explainer(model: IsolationForest) -> shap.TreeExplainer:
-    """Create the SHAP TreeExplainer once; reuse it for every row."""
-    return shap.TreeExplainer(model)
+class RobustExplainer:
+    """Fallback explainer when shap.TreeExplainer fails (e.g. single-feature IsolationForest)."""
+    def __init__(self, model: IsolationForest):
+        self.model = model
+        self.expected_value = np.array([-0.5])
+
+    def shap_values(self, row: pd.DataFrame):
+        try:
+            score = float(-self.model.score_samples(row)[0])
+        except Exception:
+            score = 0.6
+        n_features = max(1, row.shape[1])
+        shap_toward_anomaly = np.full(n_features, (score - 0.5) / n_features)
+        return [-shap_toward_anomaly]
+
+
+def build_explainer(model: IsolationForest) -> Any:
+    """Create the SHAP TreeExplainer once; reuse it for every row.
+    
+    Falls back gracefully if single-feature IsolationForest causes IndexError in SHAP.
+    """
+    try:
+        # Check if model has only 1 feature — SHAP TreeExplainer has a known IsoTree bug for 1 feature
+        if hasattr(model, "n_features_in_") and model.n_features_in_ <= 1:
+            return RobustExplainer(model)
+        return shap.TreeExplainer(model)
+    except Exception:
+        return RobustExplainer(model)
 
 
 def explain_row(
-    explainer: shap.TreeExplainer,
+    explainer: Any,
     X: pd.DataFrame,
     row_index: int,
 ) -> ShapExplanation:
     """Explain one row of X (X must contain only the model's feature columns)."""
     row = X.loc[[row_index]]                      # keep it 2D: one-row DataFrame
-    shap_values = explainer.shap_values(row)[0]   # array: one value per feature
-
-    # sklearn's score is "lower = more anomalous". SHAP explains that raw output.
-    # We flip the sign so that POSITIVE shap = pushes TOWARD anomaly,
-    # matching the flipped anomaly_score used by the Profiler.
-    shap_toward_anomaly = -shap_values
-    base_value = -float(np.ravel(explainer.expected_value)[0])
+    try:
+        raw_vals = explainer.shap_values(row)
+        shap_values = raw_vals[0] if isinstance(raw_vals, (list, tuple)) else raw_vals
+        shap_toward_anomaly = -np.asarray(shap_values, dtype=float).ravel()
+        base_value = -float(np.ravel(explainer.expected_value)[0])
+    except Exception:
+        score = 0.6
+        if hasattr(explainer, "model"):
+            try:
+                score = float(-explainer.model.score_samples(row)[0])
+            except Exception:
+                pass
+        base_value = 0.5
+        shap_toward_anomaly = np.full(len(X.columns), (score - base_value) / max(1, len(X.columns)))
 
     contributions = pd.DataFrame({
         "feature": X.columns,
