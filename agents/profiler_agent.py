@@ -47,8 +47,10 @@ def run_profiler(
 
     X = df[available_features].copy()
     for col in available_features:
-        X[col] = pd.to_numeric(X[col], errors="coerce")
-    X = X.fillna(X.median())
+        s = X[col].astype(str).str.replace(',', '.', regex=False).str.extract(r'([-+]?\d*\.?\d+)', expand=False)
+        X[col] = pd.to_numeric(s, errors="coerce")
+        med = X[col].median()
+        X[col] = X[col].fillna(med if pd.notna(med) else 0.0)
 
     # 1. Isolation Forest (BO3)
     model = IsolationForest(
@@ -78,6 +80,8 @@ def run_profiler(
 
     # 3. Combined classification
     result_df = df.copy()
+    for col in available_features:
+        result_df[col] = X[col]
     result_df["anomaly_score"] = isolation_score
     result_df["is_anomaly"] = isolation_flag
     result_df["robust_max"] = robust_max

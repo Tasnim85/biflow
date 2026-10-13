@@ -29,7 +29,14 @@ class AuditorAgent:
     audit_log: list = field(default_factory=list)
 
     def __post_init__(self):
-        self._X = self.profiler_result.data[self.profiler_result.features]
+        # Ensure self._X is strictly numeric for medians and SHAP
+        X_df = self.profiler_result.data[self.profiler_result.features].copy()
+        for col in self.profiler_result.features:
+            s = X_df[col].astype(str).str.replace(',', '.', regex=False).str.extract(r'([-+]?\d*\.?\d+)', expand=False)
+            X_df[col] = pd.to_numeric(s, errors="coerce")
+            med = X_df[col].median()
+            X_df[col] = X_df[col].fillna(med if pd.notna(med) else 0.0)
+        self._X = X_df
         self._medians = self._X.median()
         self._explainer = build_explainer(self.profiler_result.model)
 

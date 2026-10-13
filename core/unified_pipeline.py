@@ -264,18 +264,26 @@ def run_unified_scenario(
             policy = load_policy(policy_version)
             cleaned_res = clean_dataset(df_raw.astype(str), policy)
             cleaned_df = cleaned_res.data.copy()
-            # cast numeric fields back
+            # Clean and cast numeric fields back
             for col in FEATURES:
-                cleaned_df[col] = pd.to_numeric(cleaned_df[col], errors="coerce")
+                s = cleaned_df[col].astype(str).str.replace(',', '.', regex=False).str.extract(r'([-+]?\d*\.?\d+)', expand=False)
+                cleaned_df[col] = pd.to_numeric(s, errors="coerce")
+                med = cleaned_df[col].median()
+                cleaned_df[col] = cleaned_df[col].fillna(med if pd.notna(med) else 0.0)
         except Exception:
             cleaned_df = df_raw.copy()
+            for col in FEATURES:
+                s = cleaned_df[col].astype(str).str.replace(',', '.', regex=False).str.extract(r'([-+]?\d*\.?\d+)', expand=False)
+                cleaned_df[col] = pd.to_numeric(s, errors="coerce")
+                med = cleaned_df[col].median()
+                cleaned_df[col] = cleaned_df[col].fillna(med if pd.notna(med) else 0.0)
     else:
         cleaned_df = df_raw.copy()
         for c in cleaned_df.select_dtypes(include=[np.number]).columns:
             cleaned_df[c] = cleaned_df[c].fillna(cleaned_df[c].median())
     
-    # Profiler & Anomaly Detection (Isolation Forest)
-    prof_result = run_profiler(df_raw)
+    # Profiler & Anomaly Detection (Isolation Forest + Robust MAD)
+    prof_result = run_profiler(cleaned_df)
     anomalies_df = prof_result.data[prof_result.data["is_anomaly"]].sort_values("anomaly_score", ascending=False)
     anomaly_count = int(prof_result.data["is_anomaly"].sum())
     
